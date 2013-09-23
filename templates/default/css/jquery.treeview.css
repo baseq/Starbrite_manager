@@ -1,0 +1,83 @@
+.treeview { 
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+    border: #E5E5E5 solid 1px;
+}
+
+.treeview ul {
+    background-color: white;
+    list-style: none;
+    margin-top: 4px;
+}
+
+.treeview .hitarea { 
+    height: 14px;
+    width: 20px;
+    margin-left: -20px;
+    float: left;
+    cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+    display: inline;
+    float:none;
+}
+
+.treeview li { 
+    margin: 3px 0;
+    padding: 0 0 0 20px;
+}
+
+.treeview a.selected {
+    background-color: #eee;
+}
+
+/*#treecontrol { margin: 1em 0; display: none; }*/
+
+/*.treeview .hover { color: red; cursor: pointer; }*/
+
+.treeview a { color: #958A82; text-decoration: none; }
+
+.treeview a:hover { color: red; cursor: pointer;}
+
+.treeview li { background: url(images/icon-folder-open.gif) no-repeat}
+.treeview li.collapsable, .treeview li.expandable { 
+    background-position: 0 -176px;
+}
+
+.treeview .expandable-hitarea { 
+    background-position: -80px -3px; 
+    background: url(images/icon-folder.gif) no-repeat;
+}
+
+.treeview .collapsable-hitarea {
+    background: url(images/icon-folder-open.gif) no-repeat;
+}
+
+.treeview li.last { 
+    background-position: 0 -1766px;
+    background: url(images/icon-folder-open.gif) no-repeat;
+}
+/*.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(images/icon-treelevel.gif); }*/  
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { 
+    background-position: 0;
+}
+
+.treeview li.last, .treeview .expandable-hitarea, .treeview .collapsable-hitarea{
+    background-position: left center;
+}
+
+.fileTree li, .fileTree li.last{
+    background: url(images/icon-file.gif) no-repeat;
+    background-position: left center;
+}
+
+.fileTree li.folder {background: url(images/icon-folder-open.gif) no-repeat;}
+
+.fileTree li.folder.expandable { 
+    background: url(images/icon-folder.gif) no-repeat;
+}

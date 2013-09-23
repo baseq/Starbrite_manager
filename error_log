@@ -1,0 +1,4 @@
+[26-Aug-2013 05:18:13 America/Chicago] PHP Fatal error:  Call to a member function addPaginator() on a non-object in /home/starbr/public_html/manager/page/test.php on line 11
+[26-Aug-2013 05:19:08 America/Chicago] PHP Fatal error:  Call to a member function addPaginator() on a non-object in /home/starbr/public_html/manager/page/test.php on line 11
+[26-Aug-2013 05:19:31 America/Chicago] PHP Fatal error:  Call to a member function addPaginator() on a non-object in /home/starbr/public_html/manager/page/test.php on line 11
+[26-Aug-2013 05:22:00 America/Chicago] PHP Fatal error:  Call to a member function addQuickSearch() on a non-object in /home/starbr/public_html/manager/page/test.php on line 14
