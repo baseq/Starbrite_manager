@@ -27,8 +27,6 @@ class BasicAuth extends Auth_Basic
         $form->addField('Line', 'username', $email);
         $form->addField('Password', 'password', $password);
         $form->addSubmit('Login');
-        $form->addButton('Register')->js('click')
-            ->univ()->location($this->api->getDestinationURL('page_signup'));
         return $form;
     }
 }
