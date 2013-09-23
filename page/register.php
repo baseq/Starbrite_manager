@@ -1,14 +1,11 @@
 <?php
-class page_signup extends Page
+class page_register extends Page
 {
     function init()
     {
         parent::init();
 
-/*        if ($this->api->auth->isLoggedIn()) {
-
-        }*/
-
+        $this->allow('Starbrite', 'Star2013');
         $this->addField('Ceva bun');
     }
 }
