@@ -3,7 +3,6 @@ class page_retailers extends page_base {
 
 	function init() {
 		parent::init();
-
 		$this->js(true)->_load('wizard/page_wizard');
 		$this->js(true)->tooltip();
 
