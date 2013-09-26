@@ -9,7 +9,7 @@ class page_rebates extends page_base {
 		$c=$this->add("CRUD", $props);
 		$c->setClass('template-master-details-grid template-master-details-grid-rows');
 		$c->setModel("Rebates");//, $fields);
-		$refresh = $c->add('Button')->set('Refresh Grid')->js('click', $this->js()->reload());
+		//$refresh = $c->add('Button')->set('Refresh Grid')->js('click', $this->js()->reload());
 		
 		if ($c->grid){
 			$c->grid->addPaginator(30);

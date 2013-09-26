@@ -5,7 +5,7 @@ class page_register extends Page
     {
         parent::init();
 
-        $this->allow('Starbrite', 'Star2013');
+        if($this->api->auth->isLoggedIn())$this->api->redirect('index');
         $this->addField('Ceva bun');
     }
 }
