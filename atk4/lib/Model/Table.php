@@ -57,7 +57,7 @@ class Model_Table extends Model {
     /** If you wish that alias is used for the table when selected, you can define it here.
      * This will help to keep SQL syntax shorter, but will not impact functionality */
     public $table_alias=null;   // Defines alias for the table, can improve readability of queries
-    public $entity_code=null;   // @osolete. Use $table
+    public $entity_code=null;   // @obsolete. Use $table
 
     public $relations=array();  // Joins
 
