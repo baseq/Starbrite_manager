@@ -35,9 +35,10 @@ class Frontend extends ApiFrontend {
  		$this->api->jui->addStaticStylesheet('ui.autocomplete');
         $menu = $this->add('Menu',null,'Menu')
             ->addMenuItem('register','Register');
+
         // If you wish to restrict access to your pages, use BasicAuth class
         $this->add('BasicAuth')
-            ->allow('Starbrite','Star2013')->check()
+            ->allow('Starbrite','Star2013')->allowPage('register')->check()
             // use check() and allowPage for white-list based auth checking
             //->check()
             ;

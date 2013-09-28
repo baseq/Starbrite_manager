@@ -4,8 +4,6 @@ class Model_Rebates extends Model_Table {
 
 	public $table='starbr_redeem';
 
-	//public $entity_code='starbr_comprofiler';
-
 	function init(){
 
 		parent::init();

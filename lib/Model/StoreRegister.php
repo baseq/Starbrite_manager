@@ -1,0 +1,40 @@
+<?php
+
+class Model_Store extends Model_Table
+{
+    public $table = 'starbr_store_registration';
+
+    function init()
+    {
+        parent::init();
+
+        $this->addField("cb_dealno")->caption("Deal No");
+        $this->addField('middlename')->caption('Middle name');
+        $this->addField("firstname")->mandatory('Enter First Name');
+        $this->addField('lastname')->mandatory('Enter lastname name');
+        $this->addField("cb_email")->caption("Contact Email")->mandatory('Email is required');
+        $this->addField("cb_storeno")->caption("Store Name");
+        $this->addField("cb_phone1")->caption("Phone1");
+        $this->addField("cb_phone2")->caption("Phone2");
+        $this->addField("website")->caption("Website");
+        $this->addField("cb_type")->caption("Type");
+        $this->addField("cb_notes")->caption("Notes");
+        $this->addField("cb_fax")->caption("Fax");
+        $this->addField("cb_onlinesell")->caption("Online Sell");
+        $this->addField("cb_dist1")->caption("Dist1");
+        $this->addField("cb_dist2")->caption("Dist2");
+        $this->addField("cb_dist1sale")->caption("Dist1 Sale");
+        $this->addField("cb_dist2sale")->caption("Dist2 Sale");
+        $this->addField("cb_code")->caption("Code");
+        $this->addField("cb_trade")->caption("Trade");
+        $this->addField("cb_storenumber")->caption("Store Number");
+        $this->addField("cb_itemnumber")->mandatory('Select at least one item number')->type('text')->caption("ITEMS");
+        $this->addField("cb_address1")->caption('Address 1');
+        $this->addField("cb_address2")->caption('Address 2');
+        $this->addField("cb_city")->caption('City');
+        $this->addField("cb_state")->caption('State');
+        $this->addField("cb_country")->caption('Country');
+        $this->addField("cb_zip")->caption('Zip Code');
+        $this->addField('password')->display(array('form'=>'password'))->mandatory('Type your password');
+   }
+}
