@@ -1,6 +1,6 @@
 <?php
 
-class Model_Store extends Model_Table
+class Model_StoreRegister extends Model_Table
 {
     public $table = 'starbr_store_registration';
 
@@ -35,6 +35,6 @@ class Model_Store extends Model_Table
         $this->addField("cb_state")->caption('State');
         $this->addField("cb_country")->caption('Country');
         $this->addField("cb_zip")->caption('Zip Code');
-        $this->addField('password')->display(array('form'=>'password'))->mandatory('Type your password');
+        //$this->addField('password')->display(array('form'=>'password'))->mandatory('Type your password');
    }
 }

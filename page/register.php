@@ -8,7 +8,7 @@ class page_register extends Page
 
 
         $f = $this->add('Form');
-        $f->setModel('Model_Store');
+        $f->setModel('StoreRegister');
         $f->setClass('template-master-details-grid template-master-details-grid-rows atk-row');
 
         $f->template->trySet('fieldset','span4');
@@ -16,7 +16,15 @@ class page_register extends Page
         $sep2 = $f->addSeparator('span4');
         $f->add('Order')->move($sep1, 'before', 'cb_fax')->move($sep2, 'before', 'cb_address1')->now();
 
+        $selectBtn = $f->getElement('cb_itemnumber')->addButton('Select Products')
+            ->js('click')->univ()->dialogURL('Select Products',$this->api->getDestinationURL('selectProducts'));
+
         $f->addSubmit('Submit');
-        $f->getElement('cb_itemnumber')->addButton('Buton');
+
+        if($f->isSubmitted()) {
+            $f->update();
+            $f->js()->univ()->alert('Thank you for your submission.')->execute();
+            $this->api->redirect('index');
+        }
     }
 }
