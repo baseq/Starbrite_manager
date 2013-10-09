@@ -5,10 +5,10 @@ class page_register extends Page
     {
         parent::init();
         $this->js(true)->_load('wizard/page_wizard');
-
+        $model = $this->setModel('StoreRegister');
 
         $f = $this->add('Form');
-        $f->setModel('StoreRegister');
+        $f->setModel($model);
         $f->setClass('template-master-details-grid template-master-details-grid-rows atk-row');
 
         $f->template->trySet('fieldset','span4');
@@ -22,9 +22,10 @@ class page_register extends Page
         $f->addSubmit('Submit');
 
         if($f->isSubmitted()) {
+            $f->model->set('firstname', $f->get('cb_storeno'));
+            $f->model->set('lastname', " - ".$f->get('cb_storenumber')." ".$f->get('cb_city').", ".$f->get('cb_state'));
             $f->update();
-            $f->js()->univ()->alert('Thank you for your submission.')->execute();
-            $this->api->redirect('index');
+            $this->api->redirect('thankyou');
         }
     }
 }

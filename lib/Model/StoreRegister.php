@@ -10,8 +10,8 @@ class Model_StoreRegister extends Model_Table
 
         $this->addField("cb_dealno")->caption("Deal No");
         $this->addField('middlename')->caption('Middle name');
-        $this->addField("firstname")->mandatory('Enter First Name');
-        $this->addField('lastname')->mandatory('Enter lastname name');
+        $this->addField("firstname")->system(true);//mandatory('Enter First Name');
+        $this->addField('lastname')->system(true);
         $this->addField("cb_email")->caption("Contact Email")->mandatory('Email is required');
         $this->addField("cb_storeno")->caption("Store Name");
         $this->addField("cb_phone1")->caption("Phone1");

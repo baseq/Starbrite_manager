@@ -16,7 +16,7 @@ class Model_Retailer extends Model_Table {
 		parent::init();
 
 
-		$this->addField("user_id")->visible(true)->editable(false);
+		$this->addField("user_id")->visible(false)->editable(true);
 		$this->addField("cb_dealno")->editable(false)->caption("Deal No");
 		$this->addField("firstname")->visible(false);
 		$this->addField("lastname")->visible(false);
@@ -46,6 +46,7 @@ class Model_Retailer extends Model_Table {
 		$this->addField("cb_country")->caption('Country');
 		$this->addField("cb_zip")->caption('Zip Code');
 		$this->addField('address')->calculated($this->duplicateExpression)->visible(false);
+        $this->addField('cb_fieldsetname')->system(true);
 		$this->join('starbr_users', 'user_id');
 
 	}
@@ -74,5 +75,4 @@ class Model_Retailer extends Model_Table {
         }
         return $value;
     }
-
 }

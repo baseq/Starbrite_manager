@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/selectProducts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/thankyou.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Frontend.php" afterPath="$PROJECT_DIR$/lib/Frontend.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Retailer.php" afterPath="$PROJECT_DIR$/lib/Model/Retailer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/StoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/rebates.php" afterPath="$PROJECT_DIR$/page/rebates.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/register.php" afterPath="$PROJECT_DIR$/page/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/retailers.php" afterPath="$PROJECT_DIR$/page/retailers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Frontend.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380211636836" ignored="false" />
-    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380462547987" ignored="false" />
+    <file path="/Frontend.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380987072680" ignored="false" />
+    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381237884582" ignored="false" />
     <file path="/index.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380039584114" ignored="false" />
     <file path="/BasicAuth.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379951434795" ignored="false" />
     <file path="/register_stores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379954900490" ignored="false" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380729146877" ignored="false" />
+    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381309486645" ignored="false" />
     <file path="/login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379957500269" ignored="false" />
-    <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380646332261" ignored="false" />
+    <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380991793634" ignored="false" />
     <file path="/Login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379958389118" ignored="false" />
     <file path="/Rebates.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380379216229" ignored="false" />
     <file path="/Store.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380352536767" ignored="false" />
@@ -29,9 +31,13 @@
     <file path="/name.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380358614453" ignored="false" />
     <file path="/atk-main.css" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380380381605" ignored="false" />
     <file path="/RebatesExport.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380381595256" ignored="false" />
-    <file path="/StoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380382646753" ignored="false" />
+    <file path="/StoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380991517519" ignored="false" />
     <file path="/products.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380458862134" ignored="false" />
     <file path="/selectProducts.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380461190027" ignored="false" />
+    <file path="/*.regexp" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381237799720" ignored="false" />
+    <file path="/thankyou.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380986964655" ignored="false" />
+    <file path="/Retailer.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381220979498" ignored="false" />
+    <file path="/retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381238904346" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,64 +57,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rebates.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/rebates.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="61" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="retailers.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="retailers.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/retailers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="45" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormAndSave.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atk4-addons/formandsave/lib/FormAndSave.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="820" selection-end="820" vertical-scroll-proportion="-15.692307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/products.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="9" selection-start="81" selection-end="302" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectProducts.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page/selectProducts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="46" selection-start="818" selection-end="818" vertical-scroll-proportion="0.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/Product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="28" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
+            <state line="77" column="68" selection-start="3733" selection-end="3733" vertical-scroll-proportion="0.3658228">
               <folding />
             </state>
           </provider>
@@ -117,16 +69,16 @@
       <file leaf-file-name="Retailer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
+            <state line="48" column="56" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rebates.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/Rebates.php">
+      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="59" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0">
+            <state line="23" column="31" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,7 +87,16 @@
       <file leaf-file-name="StoreRegister.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="54" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Model/Product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="20" selection-start="795" selection-end="800" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -160,11 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/Frontend.php" />
-        <option value="$PROJECT_DIR$/lib/Model/Store.php" />
-        <option value="$PROJECT_DIR$/page/st.php" />
-        <option value="$PROJECT_DIR$/page/store.php" />
-        <option value="$PROJECT_DIR$/page/base.php" />
         <option value="$PROJECT_DIR$/page/rebates/store.php" />
         <option value="$PROJECT_DIR$/lib/Model/Rebates.php" />
         <option value="$PROJECT_DIR$/lib/RebatesExport.php" />
@@ -172,10 +128,15 @@
         <option value="$PROJECT_DIR$/page/rebates/redeemCode.php" />
         <option value="$PROJECT_DIR$/templates/default/css/atk-main.css" />
         <option value="$PROJECT_DIR$/page/rebates.php" />
-        <option value="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
         <option value="$PROJECT_DIR$/page/products.php" />
         <option value="$PROJECT_DIR$/page/selectProducts.php" />
+        <option value="$PROJECT_DIR$/page/thankyou.php" />
+        <option value="$PROJECT_DIR$/lib/Frontend.php" />
+        <option value="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
         <option value="$PROJECT_DIR$/page/register.php" />
+        <option value="$PROJECT_DIR$/lib/DuplicatesFilter.php" />
+        <option value="$PROJECT_DIR$/lib/Model/Retailer.php" />
+        <option value="$PROJECT_DIR$/page/retailers.php" />
       </list>
     </option>
   </component>
@@ -234,7 +195,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -319,6 +279,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,17 +296,17 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../prosaris" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="139" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="818" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="811" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="818" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="132" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="125" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -419,7 +380,11 @@
       <created>1380382551822</created>
       <updated>1380382551822</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=" added save store register form">
+      <created>1380729201665</created>
+      <updated>1380729201665</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -430,7 +395,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18638574" sideWeight="0.6705744" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1961102" sideWeight="0.67134506" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -439,7 +404,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32865497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -488,7 +453,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value=" minor version" />
+    <option name="LAST_COMMIT_MESSAGE" value=" added save store register form" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -505,109 +470,103 @@
     <MESSAGE value="vcs file" />
     <MESSAGE value="minor" />
     <MESSAGE value=" minor version" />
+    <MESSAGE value=" added save store register form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/default/css/atk-main.css">
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5969" column="0" selection-start="37292" selection-end="37292" vertical-scroll-proportion="0.0" />
+        <state line="310" column="66" selection-start="11313" selection-end="11313" vertical-scroll-proportion="0.33289987" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/PageInFrame.php">
+    <entry file="file://$PROJECT_DIR$/atk4-addons/documenting/lib/View/Example.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="85" selection-start="2444" selection-end="2489" vertical-scroll-proportion="0.0" />
+        <state line="22" column="42" selection-start="615" selection-end="615" vertical-scroll-proportion="-6.6923075" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/rebates/redeemCode.php">
+    <entry file="file://$PROJECT_DIR$/atk4-addons/billing/dbupdates/db.01.003.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="79" selection-start="364" selection-end="435" vertical-scroll-proportion="-7.1923075" />
+        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/RebatesExport.php">
+    <entry file="file://$PROJECT_DIR$/lib/Frontend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="500" selection-end="500" vertical-scroll-proportion="-11.115385" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atk4/lib/Grid/Basic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="46" selection-start="4624" selection-end="4624" vertical-scroll-proportion="-0.65384614" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/gallery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="499" selection-end="499" vertical-scroll-proportion="0.34979424" />
+        <state line="40" column="0" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.73913044" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/products.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="81" selection-end="302" vertical-scroll-proportion="0.0">
+        <state line="13" column="1" selection-start="307" selection-end="307" vertical-scroll-proportion="0.28333333" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/AbstractModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="34" selection-start="644" selection-end="644" vertical-scroll-proportion="0.4576923" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Model/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="26" selection-start="1205" selection-end="1205" vertical-scroll-proportion="-3.322335" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Model/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="795" selection-end="800" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/Rebates.php">
+    <entry file="file://$PROJECT_DIR$/page/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="59" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0">
+        <state line="6" column="70" selection-start="175" selection-end="175" vertical-scroll-proportion="0.12734082" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/thankyou.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="15" selection-start="183" selection-end="183" vertical-scroll-proportion="0.06351183" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/DuplicatesFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="-0.009578544" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="28" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atk4-addons/formandsave/lib/FormAndSave.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/retailers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="45" selection-start="1078" selection-end="1078" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/rebates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="61" selection-start="1162" selection-end="1162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="54" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+        <state line="48" column="56" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="820" selection-end="820" vertical-scroll-proportion="-15.692307">
+        <state line="23" column="31" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/selectProducts.php">
+    <entry file="file://$PROJECT_DIR$/atk4-addons/grid/lib/Controller/Grid/Format/inline.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="818" selection-end="818" vertical-scroll-proportion="0.5">
+        <state line="36" column="38" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.25095785" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/retailers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="68" selection-start="3733" selection-end="3733" vertical-scroll-proportion="0.3658228">
           <folding />
         </state>
       </provider>
