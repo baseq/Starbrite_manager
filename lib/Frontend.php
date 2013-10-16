@@ -34,14 +34,14 @@ class Frontend extends ApiFrontend {
  		$this->api->jui->addStaticInclude('atk4_univ_ext');
  		$this->api->jui->addStaticStylesheet('ui.autocomplete');
         $menu = $this->add('Menu',null,'Menu')
-            ->addMenuItem('register','Register');
+            ;//->addMenuItem('register','Register');
 
         // If you wish to restrict access to your pages, use BasicAuth class
-        $this->add('BasicAuth')
-            ->allow('Starbrite','Star2013')->allowPage(array('register','thankyou'))->check()
+        $auth = $this->add('BasicAuth')
+            ->allow('Starbrite','Star2013')->check();//allowPage(array('register','thankyou', 'selectProducts'))->check();
             // use check() and allowPage for white-list based auth checking
             //->check()
-            ;
+            //;
 
         // This method is executed for ALL the pages you are going to add,
         // before the page class is loaded. You can put additional checks
@@ -52,13 +52,8 @@ class Frontend extends ApiFrontend {
 
         // If you are using a complex menu, you can re-define
         // it and place in a separate class
-        $menu = $this->add('Menu',null,'Menu')
-            //->addMenuItem('index','Welcome')
-//             ->addMenuItem('examples','Bundled Examples')
-//             ->addMenuItem('how','Documentation')
-//             ->addMenuItem('dbtest','Database Test')
-//             ->addMenuItem('authtest','Auth test')
-            ->addMenuItem('retailers', 'Manager')
+
+        $menu->addMenuItem('retailers', 'Starlink')
             ->addMenuItem('rebates', 'Rebates')
             //->addMenuItem('logout')
             ;

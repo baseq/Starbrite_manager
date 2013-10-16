@@ -16,7 +16,8 @@ class Model_Retailer extends Model_Table {
 		parent::init();
 
 
-		$this->addField("user_id")->visible(false)->editable(true);
+        $this->addField('cb_goldstore')->visible(false)->editable(true)->datatype('boolean')->caption('Gold Star');
+        $this->addField("user_id")->visible(false)->editable(true);
 		$this->addField("cb_dealno")->editable(false)->caption("Deal No");
 		$this->addField("firstname")->visible(false);
 		$this->addField("lastname")->visible(false);

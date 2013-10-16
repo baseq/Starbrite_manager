@@ -2,6 +2,9 @@
 class page_rebates extends page_base {
 	function init(){
 		parent::init();
+        $this->add('HtmlElement')
+            ->setElement('h1')
+            ->set('Rebates');
 		$columns = array('store', 'store_city', 'store_st', 'purchase_date',
             'postmarkdate', 'type', 'size', 'make', 'comments1', 'comments2');
         $this->js(true)->_load('wizard/page_wizard');

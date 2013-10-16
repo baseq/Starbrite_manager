@@ -80,6 +80,8 @@ class Model_Product extends Model_Table {
     
 	function next() {
 		parent::next();
+        $this->productKey = '' . $this->getProductKey();
+        $this->set('elements', $this->productKey);
 		if (isset($this->products)) {
 			while($this->loaded()) {
 				$this->productKey = '' . $this->getProductKey();
