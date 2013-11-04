@@ -30,7 +30,7 @@ class page_rebates extends page_base {
 
             $c->grid->columns['redeemCode']['thparam'].=' style="width: 120px;"';
             $c->grid->addFormatter("redeemCode", "expander");
-			$quick_search = $c->grid->addQuickSearch(array('productNumbers', 'redeemCode'))->addClass('small-form-search');
+			$quick_search = $c->grid->addQuickSearch(array('productNumbers', 'redeemCode'))->addClass('small-form-search span2');
 			$quick_search->search_field->setAttr('placeholder', 'Product, Redeem Code');
 
 			$quick_search = $c->grid->addQuickSearch(array('firstName', 'lastName', 'email', 'phone'))->addClass('small-form-search');

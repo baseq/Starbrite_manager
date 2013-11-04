@@ -14,9 +14,9 @@ class page_selectProducts extends Page
     {
         parent::init();
         $model = $this->add('Model_Product');
-        $g = $this->add('GridExt\Grid_Extended');
+        $g = $this->add('Grid');
         $f = $this->add('Form');
-        $f->addField('line','selected');
+        $field = $f->addField('line','selected');
         /*$f->getElement('selected')->js(true)->closest('div')->prev()->hide();
         $f->getElement('selected')->js(true)->closest('input')->hide();*/
         $g->addSelectable($f->getElement('selected'));
@@ -31,7 +31,20 @@ class page_selectProducts extends Page
             $quick_search->search_field->setAttr('placeholder', 'Name, Elements');
         }
         if ($f->isSubmitted()) {
-
+        	$ids = json_decode($field->get());
+        	$value = '';
+        	$prefix = '';
+        	foreach($ids as $id) {
+        		$model->load($id);
+        		$prodKey = $model->getProductKey();
+        		if ($prodKey) {
+        			$value .= $prefix . $prodKey;
+        			$prefix = ',';
+        		}
+        	}
+        	$this->api->memorize('selected_record', $value);
+        	$this->js(null, $this->api->js()->_selector('body')
+        			->trigger('addSelectedText'))->univ()->closeDialog()->execute();
         }
 
     }

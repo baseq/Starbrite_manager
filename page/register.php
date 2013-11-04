@@ -1,28 +1,44 @@
 <?php
 class page_register extends Page
 {
+	private $form;
+	
     function init()
     {
         parent::init();
+        $menuitem = $this->api->stickyGET('MenuItem');
+        if($this->api->auth->isPageAllowed('register')){
+            //->js()->univ()->hide();
+        }
         $this->add('HtmlElement')
             ->setElement('h1')
             ->set('Register');
         $this->js(true)->_load('wizard/page_wizard');
         $model = $this->setModel('StoreRegister');
 
-        $f = $this->add('Form');
+       	$f = $this->add('Form');
+        $this->form = $f;
         $f->setModel($model);
         $f->setClass('template-master-details-grid template-master-details-grid-rows atk-row');
 
+        $selectBtn = $f->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px'));
+        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts'));
+        
         $f->template->trySet('fieldset','span4');
         $sep1 = $f->addSeparator('span4');
         $sep2 = $f->addSeparator('span4');
-        $f->add('Order')->move($sep1, 'before', 'cb_onlinesell')->move($sep2, 'before', 'cb_address1')->now();
-
-        $selectBtn = $f->getElement('cb_itemnumber')->addButton('+')
-            ->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts'));
+        $f->add('Order')->move($sep1, 'before', 'cb_onlinesell')->move($sep2, 'before', 'cb_address1')->move($selectBtn, 'after', 'cb_itemnumber')->now();
+        
+        
         //$selectBtn->grid->add('Button', 'press');
-
+        
+        //$this->js('addSelectedText', $f->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+        
+        if($this->api->recall('selected_record')){
+        	$f->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
+        	$this->api->forget('selected_record');
+        }
+        
         $f->getElement('cb_dealno')->setProperty('size', 40);
         $f->getElement('cb_email')->setProperty('size', 40);
         $f->getElement('cb_storeno')->setProperty('size', 40);
@@ -57,5 +73,13 @@ class page_register extends Page
             $f->update();
             $this->api->redirect('thankyou');
         }
+    }
+    
+    function render()
+    {
+    	parent::render();
+
+    	$this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+    	 
     }
 }
