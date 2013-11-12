@@ -2,49 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/View/StarlinkCRUD.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/pendingstarlink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atk4/lib/Form/Field/DatePicker.php" afterPath="$PROJECT_DIR$/atk4/lib/Form/Field/DatePicker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Frontend.php" afterPath="$PROJECT_DIR$/lib/Frontend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Retailer.php" afterPath="$PROJECT_DIR$/lib/Model/Retailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/StoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-default.php" afterPath="$PROJECT_DIR$/config-default.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config-distrib.php" afterPath="$PROJECT_DIR$/config-distrib.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/newstoreregister.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" afterPath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/RebatesExport.php" afterPath="$PROJECT_DIR$/lib/RebatesExport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/View/StarlinkCRUD.php" afterPath="$PROJECT_DIR$/lib/View/StarlinkCRUD.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/default/css/atk-main.css" afterPath="$PROJECT_DIR$/templates/default/css/atk-main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/pendingstarlink.php" afterPath="$PROJECT_DIR$/page/pendingstarlink.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/rebates.php" afterPath="$PROJECT_DIR$/page/rebates.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/register.php" afterPath="$PROJECT_DIR$/page/register.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/retailers.php" afterPath="$PROJECT_DIR$/page/retailers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/selectProducts.php" afterPath="$PROJECT_DIR$/page/selectProducts.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Frontend.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381913919774" ignored="false" />
-    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382953621672" ignored="false" />
+    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384268980514" ignored="false" />
     <file path="/index.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380039584114" ignored="false" />
     <file path="/BasicAuth.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379951434795" ignored="false" />
     <file path="/register_stores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379954900490" ignored="false" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1383548496381" ignored="false" />
+    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384261558761" ignored="false" />
     <file path="/login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379957500269" ignored="false" />
-    <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381913164253" ignored="false" />
+    <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384266616995" ignored="false" />
     <file path="/Login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379958389118" ignored="false" />
     <file path="/Rebates.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380379216229" ignored="false" />
     <file path="/Store.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380352536767" ignored="false" />
-    <file path="/rebates.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382962131347" ignored="false" />
+    <file path="/rebates.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1383830049536" ignored="false" />
     <file path="$PROJECT_DIR$/../pes/page/providers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380352385618" ignored="false" />
     <file path="/providers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380352278889" ignored="false" />
     <file path="/st.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380365375908" ignored="false" />
     <file path="$PROJECT_DIR$/../pes/page/providers/name.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380358633220" ignored="false" />
     <file path="/name.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380358614453" ignored="false" />
-    <file path="/atk-main.css" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380380381605" ignored="false" />
+    <file path="/atk-main.css" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384268438140" ignored="false" />
     <file path="/RebatesExport.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380381595256" ignored="false" />
-    <file path="/StoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380991517519" ignored="false" />
+    <file path="/StoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384269279830" ignored="false" />
     <file path="/products.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381743969538" ignored="false" />
     <file path="/selectProducts.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381657545309" ignored="false" />
     <file path="/*.regexp" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381237799720" ignored="false" />
     <file path="/thankyou.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380986964655" ignored="false" />
     <file path="/Retailer.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382682140439" ignored="false" />
-    <file path="/retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382687297014" ignored="false" />
+    <file path="/retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384157350068" ignored="false" />
     <file path="/a.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381311947314" ignored="false" />
     <file path="$PROJECT_DIR$/../prosaris/page/prosaris/SelectDoctors.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381586734789" ignored="false" />
     <file path="/SelectDoctors.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381586731488" ignored="false" />
@@ -68,8 +64,10 @@
     <file path="$PROJECT_DIR$/../prosaris/.idea/workspace.xml" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382632741069" ignored="false" />
     <file path="$PROJECT_DIR$/../prosaris/atk4/lib/Form/Field/DatePicker.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382685099990" ignored="false" />
     <file path="/PendingStores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382954215578" ignored="false" />
-    <file path="/StarlinkCRUD.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382960758221" ignored="false" />
-    <file path="/Pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382961141996" ignored="false" />
+    <file path="/StarlinkCRUD.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1383558996815" ignored="false" />
+    <file path="/Pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384265308197" ignored="false" />
+    <file path="/pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384158806620" ignored="false" />
+    <file path="/newstoreregister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384269953167" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,30 @@
       <file leaf-file-name="retailers.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/retailers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="107" selection-start="4971" selection-end="4971" vertical-scroll-proportion="-0.65384614">
+            <state line="157" column="55" selection-start="11283" selection-end="11283" vertical-scroll-proportion="-11.269231">
+              <folding>
+                <marker date="1384158759945" expanded="false" signature="6026:6044" placeholder="..." />
+                <marker date="1384158759945" expanded="false" signature="7242:7260" placeholder="..." />
+                <marker date="1384158759945" expanded="false" signature="8554:8572" placeholder="..." />
+                <marker date="1384158759945" expanded="false" signature="9860:9878" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RebatesExport.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/RebatesExport.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="19" selection-start="13" selection-end="26" vertical-scroll-proportion="-1.3076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rebates.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Model/Rebates.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="59" selection-start="1252" selection-end="1252" vertical-scroll-proportion="-18.23077">
               <folding />
             </state>
           </provider>
@@ -101,40 +122,13 @@
       <file leaf-file-name="pendingstarlink.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="32" selection-start="4067" selection-end="4067" vertical-scroll-proportion="0.64276403">
+            <state line="9" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19947849">
               <folding>
-                <marker date="1382960817547" expanded="false" signature="5998:6016" placeholder="..." />
-                <marker date="1382960817547" expanded="false" signature="6915:6933" placeholder="..." />
-                <marker date="1382960817547" expanded="false" signature="7908:7926" placeholder="..." />
-                <marker date="1382960817547" expanded="false" signature="8894:8912" placeholder="..." />
+                <marker date="1384270003924" expanded="false" signature="6276:6294" placeholder="..." />
+                <marker date="1384270003924" expanded="false" signature="7193:7211" placeholder="..." />
+                <marker date="1384270003924" expanded="false" signature="8186:8204" placeholder="..." />
+                <marker date="1384270003924" expanded="false" signature="9172:9190" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StarlinkCRUD.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/View/StarlinkCRUD.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Retailer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="29" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pendingstarlink.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="8" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -142,7 +136,34 @@
       <file leaf-file-name="rebates.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/rebates.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="5" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-26.153847">
+            <state line="16" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="-10.461538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="9" selection-start="231" selection-end="231" vertical-scroll-proportion="-7.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newstoreregister.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="-5.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atk4/lib/Page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="48" selection-start="749" selection-end="766" vertical-scroll-proportion="-5.9615383">
               <folding />
             </state>
           </provider>
@@ -151,25 +172,7 @@
       <file leaf-file-name="StoreRegister.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="46" selection-start="76" selection-end="101" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RetailerCRUD.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/View/RetailerCRUD.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="6" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CRUD.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/atk4/lib/View/CRUD.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="42" selection-start="5482" selection-end="5482" vertical-scroll-proportion="0.0">
+            <state line="37" column="107" selection-start="1917" selection-end="1917" vertical-scroll-proportion="-24.192308">
               <folding />
             </state>
           </provider>
@@ -194,22 +197,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/page/products.php" />
-        <option value="$PROJECT_DIR$/page/registerpopup.php" />
-        <option value="$PROJECT_DIR$/page/register.php" />
-        <option value="$PROJECT_DIR$/atk4/lib/Form/Field/DateSelector.php" />
-        <option value="$PROJECT_DIR$/lib/Model/Retailer.php" />
         <option value="$PROJECT_DIR$/atk4/lib/Form/Field/DatePicker.php" />
         <option value="$PROJECT_DIR$/page/pending.php" />
-        <option value="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
         <option value="$PROJECT_DIR$/lib/Model/PendingStores.php" />
         <option value="$PROJECT_DIR$/lib/Frontend.php" />
-        <option value="$PROJECT_DIR$/page/retailers.php" />
-        <option value="$PROJECT_DIR$/page/pendingstarlink.php" />
-        <option value="$PROJECT_DIR$/lib/View/StarlinkCRUD.php" />
-        <option value="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
-        <option value="$PROJECT_DIR$/page/rebates.php" />
         <option value="$PROJECT_DIR$/page/template.php" />
+        <option value="$PROJECT_DIR$/lib/RebatesExport.php" />
+        <option value="$PROJECT_DIR$/lib/View/StarlinkCRUD.php" />
+        <option value="$PROJECT_DIR$/page/retailers.php" />
+        <option value="$PROJECT_DIR$/page/rebates.php" />
+        <option value="$PROJECT_DIR$/page/recaptcha.php" />
+        <option value="$PROJECT_DIR$/page/register.php" />
+        <option value="$PROJECT_DIR$/templates/default/css/atk-main.css" />
+        <option value="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
+        <option value="$PROJECT_DIR$/page/newstoreregister.php" />
+        <option value="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
+        <option value="$PROJECT_DIR$/page/pendingstarlink.php" />
       </list>
     </option>
   </component>
@@ -451,6 +454,7 @@
       <recent name="C:\xampp\htdocs\starbrite\manager\page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\starbrite\manager\page" />
       <recent name="C:\xampp\htdocs\starbrite\manager\page\rebates" />
       <recent name="C:\xampp\htdocs\starbrite\manager\lib" />
     </key>
@@ -554,7 +558,11 @@
       <created>1381902814182</created>
       <updated>1381902814182</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Impolemented register, working on implementing pending starlink">
+      <created>1383550399322</created>
+      <updated>1383550399322</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -583,9 +591,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24797407" sideWeight="0.67215043" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20259319" sideWeight="0.6729191" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24797407" sideWeight="0.6729191" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17747164" sideWeight="0.6729191" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -594,7 +603,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -643,7 +651,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on implementing register" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impolemented register, working on implementing pending starlink" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -663,107 +671,126 @@
     <MESSAGE value=" added save store register form" />
     <MESSAGE value="register page, thank you redirect page, check box implementing" />
     <MESSAGE value="Working on implementing register" />
+    <MESSAGE value="Impolemented register, working on implementing pending starlink" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/atk4/lib/Form/Field/DatePicker.php">
+    <entry file="file://$PROJECT_DIR$/atk4/lib/QuickSearch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="27" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.3025641" />
+        <state line="41" column="40" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.639201" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4/lib/Form/Field/Date.php">
+    <entry file="file://$PROJECT_DIR$/lib/DuplicatesFilter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="83" selection-start="595" selection-end="595" vertical-scroll-proportion="0.360799" />
+        <state line="44" column="44" selection-start="630" selection-end="630" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/RebatesExport.php">
+    <entry file="file://$PROJECT_DIR$/lib/View/StarlinkCRUD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="55" selection-start="407" selection-end="407" vertical-scroll-proportion="0.2971286" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atk4-addons/billing/lib/billing/Model/PaymentMethod/CreditCard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="5" selection-start="5436" selection-end="5436" vertical-scroll-proportion="0.40574282" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="49" selection-start="2179" selection-end="2179" vertical-scroll-proportion="-10.461538" />
+        <state line="32" column="47" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="29" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="63" selection-start="2779" selection-end="2779" vertical-scroll-proportion="0.49365482" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="46" selection-start="76" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atk4/lib/View/CRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="42" selection-start="5482" selection-end="5482" vertical-scroll-proportion="0.0">
+        <state line="55" column="35" selection-start="2602" selection-end="2624" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/View/RetailerCRUD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
+        <state line="46" column="19" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/retailers.php">
+    <entry file="file://$PROJECT_DIR$/lib/RebatesExport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="107" selection-start="4971" selection-end="4971" vertical-scroll-proportion="-0.65384614">
+        <state line="2" column="19" selection-start="13" selection-end="26" vertical-scroll-proportion="-1.3076923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/View/StarlinkCRUD.php">
+    <entry file="file://$PROJECT_DIR$/lib/Model/Rebates.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0">
+        <state line="33" column="59" selection-start="1252" selection-end="1252" vertical-scroll-proportion="-18.23077">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/rebates.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="5" selection-start="2307" selection-end="2307" vertical-scroll-proportion="-26.153847">
+        <state line="16" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="-10.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="9" selection-start="231" selection-end="231" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/default/css/atk-main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2368" column="4" selection-start="29449" selection-end="29449" vertical-scroll-proportion="0.39658445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/retailers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="55" selection-start="11283" selection-end="11283" vertical-scroll-proportion="-11.269231">
+          <folding>
+            <marker date="1384158759945" expanded="false" signature="6026:6044" placeholder="..." />
+            <marker date="1384158759945" expanded="false" signature="7242:7260" placeholder="..." />
+            <marker date="1384158759945" expanded="false" signature="8554:8572" placeholder="..." />
+            <marker date="1384158759945" expanded="false" signature="9860:9878" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="107" selection-start="1917" selection-end="1917" vertical-scroll-proportion="-24.192308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.31029987">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="48" selection-start="749" selection-end="766" vertical-scroll-proportion="-5.9615383">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="32" selection-start="4067" selection-end="4067" vertical-scroll-proportion="0.64276403">
+        <state line="9" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.19947849">
           <folding>
-            <marker date="1382960817547" expanded="false" signature="5998:6016" placeholder="..." />
-            <marker date="1382960817547" expanded="false" signature="6915:6933" placeholder="..." />
-            <marker date="1382960817547" expanded="false" signature="7908:7926" placeholder="..." />
-            <marker date="1382960817547" expanded="false" signature="8894:8912" placeholder="..." />
+            <marker date="1384270003924" expanded="false" signature="6276:6294" placeholder="..." />
+            <marker date="1384270003924" expanded="false" signature="7193:7211" placeholder="..." />
+            <marker date="1384270003924" expanded="false" signature="8186:8204" placeholder="..." />
+            <marker date="1384270003924" expanded="false" signature="9172:9190" placeholder="..." />
           </folding>
         </state>
       </provider>

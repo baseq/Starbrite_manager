@@ -11,10 +11,9 @@ class page_rebates extends page_base {
 		$props = array('allow_add' => false, 'allow_edit' => false, 'allow_del' => true);
 		$fields = array('productNumbers', 'redeemCode', 'firstName', 'lastName');
 
-		$c=$this->add("CRUD", $props);
+		$c = $this->add("CRUD", $props);
 		$c->setClass('template-master-details-grid template-master-details-grid-rows');
 		$c->setModel("Rebates");//, $fields);
-		//$refresh = $c->add('Button')->set('Refresh Grid')->js('click', $this->js()->reload());
 
 		if ($c->grid){
 			$c->grid->addPaginator(30);

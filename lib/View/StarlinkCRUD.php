@@ -16,7 +16,6 @@
  =====================================================ATK4=*/
 class View_StarlinkCRUD extends View_CRUD {
 
-	public $productGrid;
 	/**
 	 * {@inheritdoc}
 	 *
@@ -31,6 +30,6 @@ class View_StarlinkCRUD extends View_CRUD {
 	function init()
 	{
 		parent::init();
-        $this->setModel('StoreRegister');
+        $this->setModel('Model_StoreRegister');
     }
 }

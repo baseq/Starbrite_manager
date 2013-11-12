@@ -11,7 +11,7 @@ class page_retailers extends page_base
         $this->js(true)->_load('wizard/page_wizard');
         $this->js(true)->tooltip();
 
-        $rootModel = $this->add('Model_Pendingstarlink');
+        $rootModel = $this->add('Model_Retailer');
         $id = null;
 
         if (isset($_GET['selected-id'])) {
@@ -34,7 +34,7 @@ class page_retailers extends page_base
         $this->memorize('selected-id', $id);
         $crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
         $crud->setClass('template-master-details-grid template-master-details-grid-rows');
-        $modelino = $crud->setModel('Pendingstarlink');
+        $modelino = $crud->setModel('Retailer');
         $rootModel->addCondition('id', '=', $id);
         $tabs = $this->add('Tabs');
         $tabDetails = $tabs->addTab('Retailer Details');
@@ -85,7 +85,7 @@ class page_retailers extends page_base
         $productModel->addProductKeyFilter($rootModel->get('cb_itemnumber'));
 
         if ($crud->grid) {
-            $crud->grid->addButton('Add Store')->js('click')->univ()->frameURL('Register New Retailer',$this->api->getDestinationURL('registerpopup'));
+            //$crud->grid->addButton('Add Store')->js('click')->univ()->frameURL('Register New Retailer',$this->api->getDestinationURL('register'));
             $crud->grid->addPaginator(5);
             $quick_search = $crud->grid->addQuickSearch(array('name', 'cb_phone1', 'cb_phone2', 'email'))->addClass('small-form-search');
             $quick_search->search_field->setAttr('placeholder', 'Name, Email, Phone');
@@ -104,10 +104,9 @@ class page_retailers extends page_base
             )))->_selector('#' . $crud->grid->name . ' tr');
             $crud->grid->js(true)->_selector('#' . $crud->grid->name . ' tr[data-id="' . $id . '"]')->gridMasterDetails(false);
         }
-        if ($formDetails->isSubmitted()) {
-            if ($formDetails->get('cb_expdate')){
 
-            }
+
+        if ($formDetails->isSubmitted()) {
             //update cb_fieldsetname for stores with missing phone and missing notes
             $sql1 = "UPDATE starbr_comprofiler
                         SET    cb_fieldsetname = CASE

@@ -3,10 +3,11 @@ class page_pendingstarlink extends page_base
 {
     function init()
     {
+        parent::init();
         $this->add('HtmlElement')
             ->setElement('h1')
             ->set('Pending Retailers');
-        parent::init();
+        $this->js("reloadpage", $this->js()->reload())->_selector("body");
         $this->js(true)->_load('wizard/page_wizard');
         $this->js(true)->tooltip();
         $rootModel = $this->add('Model_Pendingstarlink');
@@ -31,9 +32,9 @@ class page_pendingstarlink extends page_base
 
         $this->memorize('selected-id', $id);
         //$crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => true));
-        $crud = $this->add('View_StarlinkCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => true));
+        $crud = $this->add('View_StarlinkCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
         $crud->setClass('template-master-details-grid template-master-details-grid-rows');
-        //$modelino = $crud->setModel('Pendingstarlink');
+        $modelino = $crud->setModel('Pendingstarlink');
         $rootModel->addCondition('id', '=', $id);
         $tabs = $this->add('Tabs');
         $tabDetails = $tabs->addTab('Retailer Details');
@@ -75,13 +76,14 @@ class page_pendingstarlink extends page_base
         $formDetails->getElement('cb_country')->setProperty('size', 40);
         $formDetails->getElement('cb_zip')->setProperty('size', 40);
 
-        $tabProducts = $tabs->addTab('Products');
+/*        $tabProducts = $tabs->addTab('Products');
         $productGrid = $tabProducts->add('Grid');
         $productGrid->addPaginator(5);
         $productModel = $productGrid->setModel('Product');
-        $productModel->addProductKeyFilter($rootModel->get('cb_itemnumber'));
+        $productModel->addProductKeyFilter($rootModel->get('cb_itemnumber'));*/
 
         if ($crud->grid) {
+            $crud->grid->addButton('Add Store')->js('click')->univ()->frameURL('Register New Store',$this->api->getDestinationURL('newstoreregister'));
             $crud->grid->addPaginator(5);
             $quick_search = $crud->grid->addQuickSearch(array('name', 'cb_phone1', 'cb_phone2', 'email'))->addClass('small-form-search');
             $quick_search->search_field->setAttr('placeholder', 'Name, Email, Phone');
@@ -100,6 +102,8 @@ class page_pendingstarlink extends page_base
             )))->_selector('#' . $crud->grid->name . ' tr');
             $crud->grid->js(true)->_selector('#' . $crud->grid->name . ' tr[data-id="' . $id . '"]')->gridMasterDetails(false);
         }
+        $export = $crud->add("RebatesExport");
+
         if ($formDetails->isSubmitted()) {
             //update cb_fieldsetname for stores with missing phone and missing notes
             $sql1 = "UPDATE starbr_store_registration
