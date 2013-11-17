@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" afterPath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Retailer.php" afterPath="$PROJECT_DIR$/lib/Model/Retailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/StoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/newstoreregister.php" afterPath="$PROJECT_DIR$/page/newstoreregister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/pendingstarlink.php" afterPath="$PROJECT_DIR$/page/pendingstarlink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/register.php" afterPath="$PROJECT_DIR$/page/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/retailers.php" afterPath="$PROJECT_DIR$/page/retailers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
@@ -18,7 +11,7 @@
     <file path="/index.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380039584114" ignored="false" />
     <file path="/BasicAuth.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379951434795" ignored="false" />
     <file path="/register_stores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379954900490" ignored="false" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384668788958" ignored="false" />
+    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384669140361" ignored="false" />
     <file path="/login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379957500269" ignored="false" />
     <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384266616995" ignored="false" />
     <file path="/Login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379958389118" ignored="false" />
@@ -129,7 +122,7 @@
       <file leaf-file-name="newstoreregister.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="61" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.021573603">
+            <state line="77" column="61" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.021628499">
               <folding>
                 <marker date="1384512955653" expanded="false" signature="4185:4203" placeholder="..." />
                 <marker date="1384512955653" expanded="false" signature="5408:5426" placeholder="..." />
@@ -549,7 +542,11 @@
       <created>1384270016391</created>
       <updated>1384270016391</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Impolemented register, working on implementing pending starlink">
+      <created>1384669235528</created>
+      <updated>1384669235528</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -576,6 +573,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -590,7 +588,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -760,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="61" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.021573603">
+        <state line="77" column="61" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.021628499">
           <folding>
             <marker date="1384512955653" expanded="false" signature="4185:4203" placeholder="..." />
             <marker date="1384512955653" expanded="false" signature="5408:5426" placeholder="..." />
