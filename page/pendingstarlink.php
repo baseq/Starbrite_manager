@@ -31,9 +31,10 @@ class page_pendingstarlink extends page_base
 
         $this->memorize('selected-id', $id);
         //$crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => true));
-        $crud = $this->add('View_StarlinkCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
+        $crud = $this->add('CRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
+        
         $crud->setClass('template-master-details-grid template-master-details-grid-rows');
-        $modelino = $crud->setModel('Pendingstarlink');
+        $crud->setModel('Pendingstarlink');
         $rootModel->addCondition('id', '=', $id);
         $tabs = $this->add('Tabs');
         $tabDetails = $tabs->addTab('Retailer Details');
@@ -102,7 +103,7 @@ class page_pendingstarlink extends page_base
             )))->_selector('#' . $crud->grid->name . ' tr');
             $crud->grid->js(true)->_selector('#' . $crud->grid->name . ' tr[data-id="' . $id . '"]')->gridMasterDetails(false);
         }
-        //$export = $crud->add("RebatesExport");
+        $export = $crud->add("RebatesExport");
         $this->js("reload", $this->js()->reload())->_selector("body");
 
         if ($formDetails->isSubmitted()) {

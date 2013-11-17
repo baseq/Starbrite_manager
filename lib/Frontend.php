@@ -34,12 +34,14 @@ class Frontend extends ApiFrontend
             ->_load('ui.atk4_notify');
         $this->api->jui->addStaticInclude('atk4_univ_ext');
         $this->api->jui->addStaticStylesheet('ui.autocomplete');
-        $menu = $this->add('Menu', null, 'Menu')
-            ->addMenuItem('register', 'Register');
+        
+        $menu = $this->add('menu/Menu_Dropdown', null, 'Menu');
 
         // If you wish to restrict access to your pages, use BasicAuth class
         $auth = $this->add('BasicAuth')
-            ->allow('Starbrite', 'Star2013')->allowPage(array('register', 'thankyou', 'selectProducts'))->check();
+            ->allow('Starbrite', 'Star2013')->allowPage(array('register', 'thankyou', 'selectProducts'));
+            
+         
         // use check() and allowPage for white-list based auth checking
         //->check()
         //;
@@ -54,16 +56,26 @@ class Frontend extends ApiFrontend
         // If you are using a complex menu, you can re-define
         // it and place in a separate class
 
-        if (!$this->api->auth->isPageAllowed(array('register', 'thankyou'))){
+       /* if (!$this->api->auth->isPageAllowed(array('register'))){
             $menu->addMenuItem('retailers', 'Starlink')
-                ->addMenuItem('Pendingstarlink', 'Pending Starlink')
+                ->addMenuItem('pendingstarlink', 'Pending Starlink')
                 ->addMenuItem('rebates', 'Rebates')
                 //->addMenuItem('logout')
             ;
-        }
+        }*/
         if ($this->auth->isLoggedIn()) {
-            $menu->addMenuItem('logout');
+        	$menu->addMenuItem('retailers', 'Starlink');
+        	$menu->sub(); 
+            $menu->addMenuItem('pendingstarlink', 'Pending Starlink');
+            $menu->end();
+            $menu->addMenuItem('rebates', 'Rebates');
+            $menu->addMenuItem('logout', 'Logout');
+           
+        } else {
+        	$menu->addMenuItem('register', 'Register');
         }
+        
+        $auth->check();
 
         $this->addLayout('UserMenu');
     }
