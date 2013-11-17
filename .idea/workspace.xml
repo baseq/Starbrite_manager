@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" afterPath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
@@ -11,7 +12,7 @@
     <file path="/index.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380039584114" ignored="false" />
     <file path="/BasicAuth.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379951434795" ignored="false" />
     <file path="/register_stores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379954900490" ignored="false" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384669140361" ignored="false" />
+    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384669768224" ignored="false" />
     <file path="/login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379957500269" ignored="false" />
     <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384266616995" ignored="false" />
     <file path="/Login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379958389118" ignored="false" />
@@ -81,7 +82,7 @@
       <file leaf-file-name="retailers.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/retailers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="45" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
+            <state line="58" column="45" selection-start="2213" selection-end="2213" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -119,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newstoreregister.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="newstoreregister.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="61" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.021628499">
+            <state line="89" column="16" selection-start="4952" selection-end="4952" vertical-scroll-proportion="-8.5">
               <folding>
                 <marker date="1384512955653" expanded="false" signature="4185:4203" placeholder="..." />
                 <marker date="1384512955653" expanded="false" signature="5408:5426" placeholder="..." />
@@ -133,10 +134,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pendingstarlink.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Pendingstarlink.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="80" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
+            <state line="63" column="0" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.6040609">
               <folding />
             </state>
           </provider>
@@ -181,7 +182,6 @@
         <option value="$PROJECT_DIR$/page/rebates.php" />
         <option value="$PROJECT_DIR$/page/recaptcha.php" />
         <option value="$PROJECT_DIR$/templates/default/css/atk-main.css" />
-        <option value="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
         <option value="$PROJECT_DIR$/page/retailers.php" />
         <option value="$PROJECT_DIR$/page/register.php" />
         <option value="$PROJECT_DIR$/page/pendingstarlink.php" />
@@ -189,6 +189,7 @@
         <option value="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
         <option value="$PROJECT_DIR$/page/newstoreregister.php" />
         <option value="$PROJECT_DIR$/lib/Model/Retailer.php" />
+        <option value="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
       </list>
     </option>
   </component>
@@ -290,7 +291,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -393,20 +393,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="115" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="132" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../php" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="139" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="818" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="811" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="818" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="132" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="125" />
@@ -443,10 +444,10 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
       <method />
     </configuration>
-    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="LOCALHOST">
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
-    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="LOCALHOST">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -546,7 +547,11 @@
       <created>1384669235528</created>
       <updated>1384669235528</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Impolemented register, working on implementing pending starlink">
+      <created>1384669307557</created>
+      <updated>1384669307557</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -571,14 +576,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24797407" sideWeight="0.6729191" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1904376" sideWeight="0.6729191" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1936791" sideWeight="0.6729191" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -588,6 +592,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270809" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -663,11 +668,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/Model/Rebates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="59" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page/rebates.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" />
@@ -703,13 +703,6 @@
         <state line="26" column="7" selection-start="994" selection-end="994" vertical-scroll-proportion="-3.9230769" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="80" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="50" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
@@ -731,7 +724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/retailers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="45" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.0">
+        <state line="58" column="45" selection-start="2213" selection-end="2213" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
@@ -755,15 +748,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/page/rebates/redeemCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="1" selection-start="654" selection-end="654" vertical-scroll-proportion="0.3705128">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="61" selection-start="3786" selection-end="3786" vertical-scroll-proportion="0.021628499">
+        <state line="89" column="16" selection-start="4952" selection-end="4952" vertical-scroll-proportion="-8.5">
           <folding>
             <marker date="1384512955653" expanded="false" signature="4185:4203" placeholder="..." />
             <marker date="1384512955653" expanded="false" signature="5408:5426" placeholder="..." />
             <marker date="1384512955653" expanded="false" signature="6727:6745" placeholder="..." />
             <marker date="1384512955653" expanded="false" signature="8040:8058" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="3039" selection-end="3039" vertical-scroll-proportion="0.6040609">
+          <folding />
         </state>
       </provider>
     </entry>
