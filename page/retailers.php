@@ -32,7 +32,7 @@ class page_retailers extends page_base
         }
 
         $this->memorize('selected-id', $id);
-        $crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
+        $crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => true));
         $crud->setClass('template-master-details-grid template-master-details-grid-rows');
         $modelino = $crud->setModel('Retailer');
         $rootModel->addCondition('id', '=', $id);

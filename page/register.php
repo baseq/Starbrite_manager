@@ -39,7 +39,7 @@ class page_register extends Page
         	$this->api->forget('selected_record');
         }
         
-        $f->getElement('cb_dealno')->setProperty('size', 40);
+        //$f->getElement('cb_dealno')->setProperty('size', 40);
         $f->getElement('cb_email')->setProperty('size', 40);
         $f->getElement('cb_storeno')->setProperty('size', 40);
         $f->getElement('cb_phone1')->setProperty('size', 40);

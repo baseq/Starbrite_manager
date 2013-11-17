@@ -38,15 +38,15 @@ class Model_Pendingstarlink extends Model_Table {
         $this->addField("cb_code")->caption("Code");
         $this->addField("cb_trade")->caption("Trade");
         $this->addField("cb_storenumber")->caption("Store Number");
-        $this->addField("cb_itemnumber")->caption("Products")->type('text')->editable(false);
         $this->addField("cb_address1")->caption('Address 1');
         $this->addField("cb_address2")->caption('Address 2');
         $this->addField("cb_city")->caption('City');
         $this->addField("cb_state")->caption('State');
         $this->addField("cb_country")->caption('Country');
         $this->addField("cb_zip")->caption('Zip Code');
-        $this->addField('address')->calculated($this->duplicateExpression)->visible(false);
+        $this->addField("cb_itemnumber")->caption("Products");
         $this->addField('cb_fieldsetname')->system(true);
+        $this->addField('address')->calculated($this->duplicateExpression)->visible(false);
         //$this->join('starbr_users', 'user_id');
 
     }

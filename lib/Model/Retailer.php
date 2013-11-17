@@ -56,14 +56,11 @@ class Model_Retailer extends Model_Table {
 	function getDuplicatesValueList() {
 		$valueList = array();
 		$q = $this->dsql();
-		//$where = $q->where('count(*)', '>', 1);
 		$expr = 'SELECT ' . $this->duplicateExpression . ' AS address FROM starbr_comprofiler GROUP BY ' . $this->duplicateExpression . ' HAVING count(*) > 1';
-		//echo $expr;
 		//$q->field($q->expr($expr), null, 'address')->group('address')->having('count(*) > 1');
 		$q->useExpr($expr);
-		//echo 'sfdsfdsf ' . $q;
+
 		foreach ($q as $row) {
-			//echo 'sfdsfdsf ' . $row['address'];
 			$valueList[$row['address']] = $row['address'];
 		}
 		return $valueList;
