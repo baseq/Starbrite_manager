@@ -2,22 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/Export/BasicActualFields.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnly.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnlyActualFields.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSV.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSVActualFields.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/StarlinkExport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" afterPath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/RebatesExport.php" afterPath="$PROJECT_DIR$/lib/RebatesExport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Retailer.php" afterPath="$PROJECT_DIR$/lib/Model/Retailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/StoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/default/css/atk-main.css" afterPath="$PROJECT_DIR$/templates/default/css/atk-main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/newstoreregister.php" afterPath="$PROJECT_DIR$/page/newstoreregister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/pendingstarlink.php" afterPath="$PROJECT_DIR$/page/pendingstarlink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/register.php" afterPath="$PROJECT_DIR$/page/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/retailers.php" afterPath="$PROJECT_DIR$/page/retailers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
@@ -27,7 +11,7 @@
     <file path="/index.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380039584114" ignored="false" />
     <file path="/BasicAuth.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379951434795" ignored="false" />
     <file path="/register_stores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379954900490" ignored="false" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385285464052" ignored="false" />
+    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385286685729" ignored="false" />
     <file path="/login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379957500269" ignored="false" />
     <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385036537891" ignored="false" />
     <file path="/Login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379958389118" ignored="false" />
@@ -115,7 +99,7 @@
       <file leaf-file-name="pendingstarlink.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="44" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.68709254">
+            <state line="130" column="44" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.6888889">
               <folding>
                 <marker date="1385286535462" expanded="false" signature="7682:7700" placeholder="..." />
                 <marker date="1385286535462" expanded="false" signature="8905:8923" placeholder="..." />
@@ -701,7 +685,11 @@
       <created>1384673771313</created>
       <updated>1384673771313</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Export CSV, Register">
+      <created>1385286701467</created>
+      <updated>1385286701467</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -728,6 +716,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -742,7 +731,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590857" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -790,7 +778,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Export CSV, Register" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -812,6 +800,7 @@
     <MESSAGE value="Working on implementing register" />
     <MESSAGE value="Impolemented register, working on implementing pending starlink" />
     <MESSAGE value="database" />
+    <MESSAGE value="Export CSV, Register" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -936,7 +925,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="44" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.68709254">
+        <state line="130" column="44" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.6888889">
           <folding>
             <marker date="1385286535462" expanded="false" signature="7682:7700" placeholder="..." />
             <marker date="1385286535462" expanded="false" signature="8905:8923" placeholder="..." />
