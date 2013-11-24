@@ -1,12 +1,14 @@
 <?php
 class page_pendingstarlink extends page_base
 {
+    private $form;
     function init()
     {
         parent::init();
         $this->add('HtmlElement')
             ->setElement('h1')
             ->set('Pending Retailers');
+        $columns = array('cb_plug_lat', 'cb_plug_lng', 'email', 'cb_name', 'confirmed', 'username', 'cb_dealno', 'cb_fieldsetname');
         $this->js(true)->_load('wizard/page_wizard');
         $this->js(true)->tooltip();
         $rootModel = $this->add('Model_Pendingstarlink');
@@ -29,18 +31,22 @@ class page_pendingstarlink extends page_base
             }
         }
 
+
         $this->memorize('selected-id', $id);
         //$crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => true));
         $crud = $this->add('CRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
-        
         $crud->setClass('template-master-details-grid template-master-details-grid-rows');
         $crud->setModel('Pendingstarlink');
+        foreach($columns as $column) {
+            $crud->grid->removeColumn($column);
+        }
         $rootModel->addCondition('id', '=', $id);
         $tabs = $this->add('Tabs');
         $tabDetails = $tabs->addTab('Retailer Details');
 
 
         $formDetails = $tabDetails->add('Form');
+        $this->form = $formDetails;
         $formDetails->addSubmit("Save");
         $formDetails->setModel($rootModel);
         $formDetails->setClass('ignore_changes template-master-details-grid template-master-details-grid-rows atk-row');
@@ -75,7 +81,26 @@ class page_pendingstarlink extends page_base
         $formDetails->getElement('cb_state')->setProperty('size', 40);
         $formDetails->getElement('cb_country')->setProperty('size', 40);
         $formDetails->getElement('cb_zip')->setProperty('size', 40);
-        $formDetails->getElement('cb_itemnumber')->setProperty('size', 40);
+        $formDetails->getElement('cb_itemnumber')->setProperty('size', 40)->setProperty('readonly', 'true');;
+        $formDetails->getElement('cb_expiredate')->setProperty('size', 34);
+        $selectBtn = $formDetails->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
+        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts'));
+
+        $formDetails->template->trySet('fieldset','span4');
+        $sep1 = $formDetails->addSeparator('span4');
+        //$sep2 = $f->addSeparator('span4');
+        $formDetails->add('Order')->move($selectBtn, 'after', 'cb_itemnumber')->now();
+
+
+        //$selectBtn->grid->add('Button', 'press');
+
+        //$this->js('addSelectedText', $f->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+
+        if($this->api->recall('selected_record')){
+            $formDetails->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
+            $this->api->forget('selected_record');
+        }
+
         //$formDetails->addField('email');
 /*        $tabProducts = $tabs->addTab('Products');
         $productGrid = $tabProducts->add('Grid');
@@ -103,7 +128,7 @@ class page_pendingstarlink extends page_base
             )))->_selector('#' . $crud->grid->name . ' tr');
             $crud->grid->js(true)->_selector('#' . $crud->grid->name . ' tr[data-id="' . $id . '"]')->gridMasterDetails(false);
         }
-        $export = $crud->add("RebatesExport");
+        $export = $crud->add("StarlinkExport");
         $this->js("reload", $this->js()->reload())->_selector("body");
 
         if ($formDetails->isSubmitted()) {
@@ -160,5 +185,12 @@ class page_pendingstarlink extends page_base
                 $formDetails->js()->univ()->alert("Failed to save.")->execute();
             }
         }
+    }
+    function render()
+    {
+        parent::render();
+
+        $this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+
     }
 }

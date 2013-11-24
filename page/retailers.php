@@ -4,10 +4,10 @@ class page_retailers extends page_base
 
     function init()
     {
+        parent::init();
         $this->add('HtmlElement')
             ->setElement('h1')
             ->set('Retailers');
-        parent::init();
         $this->js(true)->_load('wizard/page_wizard');
         $this->js(true)->tooltip();
 
@@ -30,11 +30,11 @@ class page_retailers extends page_base
                 $id = $rootModel['id'];
             }
         }
-
         $this->memorize('selected-id', $id);
-        $crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => true));
+        $crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
         $crud->setClass('template-master-details-grid template-master-details-grid-rows');
         $modelino = $crud->setModel('Retailer');
+
         $rootModel->addCondition('id', '=', $id);
         $tabs = $this->add('Tabs');
         $tabDetails = $tabs->addTab('Retailer Details');

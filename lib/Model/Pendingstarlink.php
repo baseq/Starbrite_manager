@@ -14,12 +14,14 @@ class Model_Pendingstarlink extends Model_Table {
         parent::init();
 
 
-        $this->addField('cb_goldstore')->visible(false)->editable(true)->datatype('boolean')->caption('Gold Star');
-        $this->addField('cb_expiredate')->visible(false)->editable(true)->datatype('date')->caption('Expire Date');
+        $this->addField('cb_goldstore')->datatype('boolean')->caption('Gold Star');
+        $this->addField('cb_expiredate')->datatype('date')->caption('Expire Date');
         //$this->addField("user_id")->visible(false)->editable(true);
-        $this->addField("cb_dealno")->editable(false)->caption("Deal No");
-        $this->addField("firstname")->visible(false);
-        $this->addField("lastname")->visible(false);
+        $this->addField("cb_dealno")->caption("Deal No")->editable(false);
+        $this->addField("firstname");
+        $this->addField("lastname");
+        $this->addField("email")->editable(false);
+        $this->addField("username")->editable(false);
         //$this->addExpression("name", "firstname" + "lastname")->editable(false)->caption("Name");
         $this->addField("cb_email")->caption("Contact Email");
         //$this->addExpression("email", "cb_dealno" + "@invalid.com")->caption("Email");
@@ -45,8 +47,15 @@ class Model_Pendingstarlink extends Model_Table {
         $this->addField("cb_country")->caption('Country');
         $this->addField("cb_zip")->caption('Zip Code');
         $this->addField("cb_itemnumber")->caption("Products");
-        $this->addField('cb_fieldsetname')->system(true);
-        $this->addField('address')->calculated($this->duplicateExpression)->visible(false);
+        $this->addField('cb_fieldsetname')->editable(false);
+        $this->addField("cb_plug_lat")->editable(false);
+        $this->addField("cb_plug_lng")->editable(false);
+        $this->addField("cb_name")->editable(false);
+        $this->addField('address')->calculated($this->duplicateExpression);
+        $this->addField("status")->setValueList(array('New'=>'New', 'Exported'=>'Exported'))->defaultValue('New')->editable(false);
+        $this->addField("date_exported")->datatype('date')->editable(false);
+        $this->addField('approved')->editable(true)->datatype('list')->listData(array(0=>'Not Approved',1=>'Approved' ))->caption('Approved');
+        $this->addField("confirmed")->editable(false);
         //$this->join('starbr_users', 'user_id');
 
     }

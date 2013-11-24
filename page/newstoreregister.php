@@ -59,12 +59,15 @@ class page_newstoreregister extends Page
         $f->getElement('cb_itemnumber')->setProperty('size', 40);
         $f->getElement('cb_itemnumber')
             ->setProperty('style', 'width:210px')->setProperty('readonly', 'true');
+        $formDetails->getElement('cb_expiredate')->setProperty('size', 34);
         $f->addSubmit('Submit');
 
         if($f->isSubmitted()) {
             $pass = base64_encode(pack("H*", sha1('gicule')));
-            $cbdealno = $this->api->db->getOne('SELECT MAX(id) FROM starbr_store_registration');
-            $cbdealno = intval($cbdealno) + 1;
+            $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(id) FROM starbr_comprofiler');
+            $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(id) FROM starbr_store_registration');
+
+            $cbdealno = max(intval($cbdealno_comprof), intval($cbdealno_storeregister)) + 1;
             $cbdealno = 'A'.str_pad($cbdealno, 5, '0', STR_PAD_LEFT);
 
             $f->model->set('cb_dealno',  $cbdealno);
@@ -129,6 +132,8 @@ class page_newstoreregister extends Page
             catch(Exeption $e) {
                 $f->js()->univ()->alert("Failed to save.")->execute();
             }
+
+            //closes the entire form dialog
             $this->js(null, $this->api->js()->_selector('body')
                 ->trigger('reload'))->univ()->closeDialog()->execute();
         }

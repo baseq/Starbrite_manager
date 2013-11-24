@@ -16,6 +16,7 @@ class Model_Retailer extends Model_Table {
 		parent::init();
 
 
+        $this->addField('approved')->visible(false)->editable(true)->datatype('boolean')->caption('Approved');
         $this->addField('cb_goldstore')->visible(false)->editable(true)->datatype('boolean')->caption('Gold Star');
         $this->addField('cb_expiredate')->visible(false)->editable(true)->datatype('date')->caption('Expire Date');
         $this->addField("user_id")->visible(false)->editable(true);
@@ -67,7 +68,7 @@ class Model_Retailer extends Model_Table {
 	}
 	
 	/** Return value of the field. If unspecified will return array of all fields.  */
-    function get($name=null){
+    function get($name = null){
         $value = parent::get($name);
         if($value == "NULL") {
         	$value = "";

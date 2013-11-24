@@ -1,6 +1,6 @@
 <?php
 
-class Model_StoreRegister extends Model_Table
+class Model_NewStoreRegister extends Model_Table
 {
     public $table = 'starbr_store_registration';
 
@@ -8,8 +8,6 @@ class Model_StoreRegister extends Model_Table
     {
         parent::init();
 
-        $this->addField('cb_goldstore')->visible(false)->editable(true)->datatype('boolean')->caption('Gold Star');
-        $this->addField('cb_expiredate')->visible(false)->editable(true)->datatype('date')->caption('Expire Date');
         $this->addField("cb_dealno")->system(true);
         $this->addField("username")->system(true);
         $this->addField("password")->system(true);
@@ -41,7 +39,6 @@ class Model_StoreRegister extends Model_Table
         $this->addField("cb_country")->caption('Country');
         $this->addField("cb_zip")->caption('Zip Code');
         $this->addField("cb_fieldsetname")->system(true);
-        $this->addField('approved')->system(true);
         //$this->addField('password')->display(array('form'=>'password'))->mandatory('Type your password');
-   }
+    }
 }
