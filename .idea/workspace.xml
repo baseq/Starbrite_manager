@@ -2,88 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/Export/BasicActualFields.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnly.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnlyActualFields.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSV.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSVActualFields.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/StarlinkExport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" afterPath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/RebatesExport.php" afterPath="$PROJECT_DIR$/lib/RebatesExport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Retailer.php" afterPath="$PROJECT_DIR$/lib/Model/Retailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/StoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/default/css/atk-main.css" afterPath="$PROJECT_DIR$/templates/default/css/atk-main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/newstoreregister.php" afterPath="$PROJECT_DIR$/page/newstoreregister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/pendingstarlink.php" afterPath="$PROJECT_DIR$/page/pendingstarlink.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/register.php" afterPath="$PROJECT_DIR$/page/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/retailers.php" afterPath="$PROJECT_DIR$/page/retailers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Frontend.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381913919774" ignored="false" />
-    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385038297834" ignored="false" />
-    <file path="/index.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380039584114" ignored="false" />
-    <file path="/BasicAuth.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379951434795" ignored="false" />
-    <file path="/register_stores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379954900490" ignored="false" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385285464052" ignored="false" />
-    <file path="/login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379957500269" ignored="false" />
-    <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385036537891" ignored="false" />
-    <file path="/Login.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1379958389118" ignored="false" />
-    <file path="/Rebates.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380379216229" ignored="false" />
-    <file path="/Store.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380352536767" ignored="false" />
-    <file path="/rebates.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1383830049536" ignored="false" />
-    <file path="$PROJECT_DIR$/../pes/page/providers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380352385618" ignored="false" />
-    <file path="/providers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380352278889" ignored="false" />
-    <file path="/st.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380365375908" ignored="false" />
-    <file path="$PROJECT_DIR$/../pes/page/providers/name.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380358633220" ignored="false" />
-    <file path="/name.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380358614453" ignored="false" />
-    <file path="/atk-main.css" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385020314730" ignored="false" />
-    <file path="/RebatesExport.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385022260841" ignored="false" />
-    <file path="/StoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385024207388" ignored="false" />
-    <file path="/products.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381743969538" ignored="false" />
-    <file path="/selectProducts.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381657545309" ignored="false" />
-    <file path="/*.regexp" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381237799720" ignored="false" />
-    <file path="/thankyou.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1380986964655" ignored="false" />
-    <file path="/Retailer.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385023792197" ignored="false" />
-    <file path="/retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385026529538" ignored="false" />
-    <file path="/a.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381311947314" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/page/prosaris/SelectDoctors.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381586734789" ignored="false" />
-    <file path="/SelectDoctors.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381586731488" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/lib/Frontend.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/atk4/templates/js/ui.atk4_menu.js" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/editor/plug/codemirror/addon/hint/php-hint.js" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/DB/gopanda.jnlp" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/atk4/templates/js/jquery-ui-1.9.2.min.js" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/page/details.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/atk4/lib/AbstractObject.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/editor/plug/codemirror/mode/markdown/index.html" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381753172063" ignored="false" />
-    <file path="/registerpopup.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1381905413116" ignored="false" />
-    <file path="/pending.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382959956074" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/page/admin/base/Holydays.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382007871091" ignored="false" />
-    <file path="/Holydays.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382007871091" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/page/prosaris/services.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382012559649" ignored="false" />
-    <file path="/services.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382012466128" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/page/prosaris/calendar.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382013202163" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/page/prosaris/holidays.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382357160378" ignored="false" />
-    <file path="/holidays.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382357124549" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/.idea/workspace.xml" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384781249164" ignored="false" />
-    <file path="$PROJECT_DIR$/../prosaris/atk4/lib/Form/Field/DatePicker.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382685099990" ignored="false" />
-    <file path="/PendingStores.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1382954215578" ignored="false" />
-    <file path="/StarlinkCRUD.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1383558996815" ignored="false" />
-    <file path="/Pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385033889297" ignored="false" />
-    <file path="/pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385286530100" ignored="false" />
-    <file path="/newstoreregister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384512758080" ignored="false" />
-    <file path="/Servicetype.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384765842580" ignored="false" />
-    <file path="/NewStoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1384952416549" ignored="false" />
-    <file path="/ExportCSV.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385022292128" ignored="false" />
-    <file path="/CSVOnly.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385022308001" ignored="false" />
-    <file path="/Basic.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385038393842" ignored="false" />
-    <file path="/BasicActualFields.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385286335955" ignored="false" />
-    <file path="/CSVOnlyActualFields.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385286388276" ignored="false" />
-    <file path="/ExportCSVActualFields.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385286432802" ignored="false" />
-    <file path="/StarlinkExport.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385286493897" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +28,7 @@
       <file leaf-file-name="Basic.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/Basic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="57" selection-start="1149" selection-end="1156" vertical-scroll-proportion="-14.307693">
+            <state line="34" column="57" selection-start="1149" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="986">
               <folding />
             </state>
           </provider>
@@ -115,12 +37,12 @@
       <file leaf-file-name="pendingstarlink.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="44" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.68709254">
+            <state line="155" column="13" selection-start="9798" selection-end="9798" vertical-scroll-proportion="0.27517986" vertical-offset="2482" max-vertical-offset="3434">
               <folding>
-                <marker date="1385286535462" expanded="false" signature="7682:7700" placeholder="..." />
-                <marker date="1385286535462" expanded="false" signature="8905:8923" placeholder="..." />
-                <marker date="1385286535462" expanded="false" signature="10224:10242" placeholder="..." />
-                <marker date="1385286535462" expanded="false" signature="11537:11555" placeholder="..." />
+                <marker date="1385287300354" expanded="false" signature="7682:7700" placeholder="..." />
+                <marker date="1385287300354" expanded="false" signature="8905:8923" placeholder="..." />
+                <marker date="1385287300354" expanded="false" signature="10224:10242" placeholder="..." />
+                <marker date="1385287300354" expanded="false" signature="11537:11555" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -129,7 +51,7 @@
       <file leaf-file-name="BasicActualFields.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/BasicActualFields.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="32" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-14.961538">
+            <state line="35" column="32" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="986">
               <folding />
             </state>
           </provider>
@@ -138,7 +60,7 @@
       <file leaf-file-name="Advanced.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/Advanced.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
               <folding />
             </state>
           </provider>
@@ -147,7 +69,7 @@
       <file leaf-file-name="CSVOnly.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnly.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="35" selection-start="59" selection-end="59" vertical-scroll-proportion="-2.6153846">
+            <state line="4" column="35" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -156,7 +78,7 @@
       <file leaf-file-name="CSVOnlyActualFields.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnlyActualFields.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="65" selection-start="89" selection-end="89" vertical-scroll-proportion="-2.6153846">
+            <state line="4" column="65" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -165,7 +87,7 @@
       <file leaf-file-name="ExportCSV.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSV.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
               <folding />
             </state>
           </provider>
@@ -174,7 +96,7 @@
       <file leaf-file-name="ExportCSVActualFields.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSVActualFields.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="62" selection-start="170" selection-end="170" vertical-scroll-proportion="-1.9615384">
+            <state line="5" column="62" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="187">
               <folding />
             </state>
           </provider>
@@ -183,7 +105,7 @@
       <file leaf-file-name="RebatesExport.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/RebatesExport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="734" selection-end="734" vertical-scroll-proportion="-15.038462">
+            <state line="23" column="5" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -192,7 +114,7 @@
       <file leaf-file-name="StarlinkExport.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/StarlinkExport.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="55" selection-start="62" selection-end="62" vertical-scroll-proportion="-1.3076923">
+            <state line="2" column="55" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -254,7 +176,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
-    <option name="height" value="1010" />
+    <option name="height" value="776" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -337,6 +259,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -351,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
+              <option name="myItemId" value="Starbrite_manager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,7 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
+              <option name="myItemId" value="Starbrite_manager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -375,165 +298,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rebates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
+              <option name="myItemId" value="Starbrite_manager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="databases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atk4-addons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atk4-addons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atk4-addons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atk4-addons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="misc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Export" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -544,7 +318,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="136" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../php" />
+    <property name="last_opened_file_path" value="C:/php" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="139" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="818" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="811" />
@@ -725,17 +499,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24797407" sideWeight="0.67409146" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20988655" sideWeight="0.6733255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.209375" sideWeight="0.6713396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32865497" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -752,58 +527,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="false" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="database" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="vcs file" />
     <MESSAGE value="minor" />
     <MESSAGE value=" minor version" />
@@ -812,6 +539,7 @@
     <MESSAGE value="Working on implementing register" />
     <MESSAGE value="Impolemented register, working on implementing pending starlink" />
     <MESSAGE value="database" />
+    <option name="LAST_COMMIT_MESSAGE" value="database" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -821,127 +549,105 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="50" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="43" column="50" selection-start="2297" selection-end="2297" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="89" selection-start="969" selection-end="980" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1385037250363" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385037250363" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385037250363" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385037250363" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="25" column="89" selection-start="969" selection-end="980" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="12" selection-start="9633" selection-end="9633" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1385037903209" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385037903209" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385037903209" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1385037903209" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="135" column="12" selection-start="9633" selection-end="9633" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Model/NewStoreRegister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="25" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4/lib/Form/Field.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="67" selection-start="8914" selection-end="8914" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="254" column="67" selection-start="8914" selection-end="8914" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4/lib/Field.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="290" column="13" selection-start="8667" selection-end="8667" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="290" column="13" selection-start="8667" selection-end="8667" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/Advanced.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/Basic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="57" selection-start="1149" selection-end="1156" vertical-scroll-proportion="-14.307693">
+        <state line="34" column="57" selection-start="1149" selection-end="1156" vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/BasicActualFields.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="32" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-14.961538">
+        <state line="35" column="32" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnly.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="59" selection-end="59" vertical-scroll-proportion="-2.6153846">
+        <state line="4" column="35" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/Export/CSVOnlyActualFields.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="65" selection-start="89" selection-end="89" vertical-scroll-proportion="-2.6153846">
+        <state line="4" column="65" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSV.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/ExportCSVActualFields.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="62" selection-start="170" selection-end="170" vertical-scroll-proportion="-1.9615384">
+        <state line="5" column="62" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="187">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/RebatesExport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="734" selection-end="734" vertical-scroll-proportion="-15.038462">
+        <state line="23" column="5" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/StarlinkExport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="55" selection-start="62" selection-end="62" vertical-scroll-proportion="-1.3076923">
+        <state line="2" column="55" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="510">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="44" selection-start="7122" selection-end="7122" vertical-scroll-proportion="0.68709254">
+        <state line="155" column="13" selection-start="9798" selection-end="9798" vertical-scroll-proportion="0.27517986" vertical-offset="2482" max-vertical-offset="3434">
           <folding>
-            <marker date="1385286535462" expanded="false" signature="7682:7700" placeholder="..." />
-            <marker date="1385286535462" expanded="false" signature="8905:8923" placeholder="..." />
-            <marker date="1385286535462" expanded="false" signature="10224:10242" placeholder="..." />
-            <marker date="1385286535462" expanded="false" signature="11537:11555" placeholder="..." />
+            <marker date="1385287300354" expanded="false" signature="7682:7700" placeholder="..." />
+            <marker date="1385287300354" expanded="false" signature="8905:8923" placeholder="..." />
+            <marker date="1385287300354" expanded="false" signature="10224:10242" placeholder="..." />
+            <marker date="1385287300354" expanded="false" signature="11537:11555" placeholder="..." />
           </folding>
         </state>
       </provider>
