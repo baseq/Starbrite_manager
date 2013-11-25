@@ -7,9 +7,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class page_selectProducts extends Page
+class page_selectProducts2 extends Page
 {
-    protected $trigger = 'addSelectedText';
+    protected $trigger = 'addSelectedText2';
     function init()
     {
         parent::init();

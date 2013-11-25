@@ -84,8 +84,8 @@ class page_pendingstarlink extends page_base
         $formDetails->getElement('cb_itemnumber')->setProperty('size', 40)->setProperty('readonly', 'true');;
         $formDetails->getElement('cb_expiredate')->setProperty('size', 34);
         $selectBtn = $formDetails->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
-        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts'));
-
+        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->url('selectProducts'));
+        $formDetails->getElement('approved')->empty_text = null;
         $formDetails->template->trySet('fieldset','span4');
         $sep1 = $formDetails->addSeparator('span4');
         //$sep2 = $f->addSeparator('span4');
@@ -132,6 +132,21 @@ class page_pendingstarlink extends page_base
         $this->js("reload", $this->js()->reload())->_selector("body");
 
         if ($formDetails->isSubmitted()) {
+            $formDetails->update();
+            if ($formDetails->get('approved') == 1) {
+                $joomlausers = $this->add('Model_JoomlaUsers');
+                if ($formDetails->model->get('approved') == 1) {
+                    $joomlausers->addCondition('username', $formDetails->model->get('username'));
+                    $joomlausers->tryLoadAny();
+                }
+                $joomlausers->set('name', $formDetails->model->get('firstname').$formDetails->model->get('lastname'));
+                $joomlausers->set('username', $formDetails->model->get('username'));
+                $joomlausers->set('email', $formDetails->model->get('email'));
+                $joomlausers->set('password', $formDetails->model->get('password'));
+                $joomlausers->set('registerDate', date('Y-m-d h:i'));
+                $joomlausers->set('params', '{}');
+                $joomlausers->save();
+            }
             //update cb_fieldsetname for stores with missing phone and missing notes
             $sql1 = "UPDATE starbr_store_registration
                         SET    cb_fieldsetname = CASE
@@ -174,7 +189,6 @@ class page_pendingstarlink extends page_base
               ";
 
             try {
-                $formDetails->update();
                 $q = $this->api->db->query($sql1);
                 $q = $this->api->db->query($sql2);
                 $q = $this->api->db->query($sql3);

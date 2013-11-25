@@ -84,6 +84,7 @@ class page_register extends Page
 
             $f->model->set('firstname', $f->get('cb_storeno'));
             $f->model->set('lastname', " - ".$f->get('cb_storenumber')." ".$f->get('cb_city').", ".$f->get('cb_state'));
+
             $f->update();
             $sql1 = "UPDATE starbr_comprofiler
                         SET    cb_fieldsetname = CASE
@@ -139,14 +140,11 @@ class page_register extends Page
                 $q = $this->api->db->query($sql2);
                 $q = $this->api->db->query($sql3);
                 $q = $this->api->db->query($sql4);
-                $f->js()->univ()->successMessage("Saved.")->execute();
             }
             catch(Exeption $e) {
                 $f->js()->univ()->alert("Failed to save.")->execute();
             }
-            if($this->api->page == "register"){
-                $this->api->redirect('thankyou');
-            }
+            $this->api->redirect('thankyou');
         }
     }
     

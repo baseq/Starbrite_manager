@@ -16,7 +16,7 @@ class page_newstoreregister extends Page
         $f->setClass('template-master-details-grid template-master-details-grid-rows atk-row');
 
         $selectBtn = $f->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
-        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts'));
+        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->url('selectProducts2'));
 
         $f->template->trySet('fieldset','span4');
         $sep1 = $f->addSeparator('span4');
@@ -27,11 +27,6 @@ class page_newstoreregister extends Page
         //$selectBtn->grid->add('Button', 'press');
 
         //$this->js('addSelectedText', $f->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
-
-        if($this->api->recall('selected_record')){
-            $f->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
-            $this->api->forget('selected_record');
-        }
 
         //$f->getElement('cb_dealno')->setProperty('size', 40);
         $f->getElement('cb_email')->setProperty('size', 40);
@@ -57,18 +52,24 @@ class page_newstoreregister extends Page
         $f->getElement('cb_country')->setProperty('size', 40);
         $f->getElement('cb_zip')->setProperty('size', 40);
         $f->getElement('cb_itemnumber')->setProperty('size', 40);
-        $f->getElement('cb_itemnumber')
-            ->setProperty('style', 'width:210px')->setProperty('readonly', 'true');
-        $formDetails->getElement('cb_expiredate')->setProperty('size', 34);
+//        $f->getElement('cb_itemnumber')
+//            ->setProperty('style', 'width:210px')->setProperty('readonly', 'true');
+        $f->getElement('cb_expiredate')->setProperty('size', 34);
+        if($this->api->recall('selected_record')){
+            $f->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
+            $this->api->forget('selected_record');
+        }
         $f->addSubmit('Submit');
 
         if($f->isSubmitted()) {
+
             $pass = base64_encode(pack("H*", sha1('gicule')));
             $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(id) FROM starbr_comprofiler');
             $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(id) FROM starbr_store_registration');
 
-            $cbdealno = max(intval($cbdealno_comprof), intval($cbdealno_storeregister)) + 1;
-            $cbdealno = 'A'.str_pad($cbdealno, 5, '0', STR_PAD_LEFT);
+            $cbdealno = max(intval($cbdealno_comprof), intval($cbdealno_storeregister));
+            $cbdealno = $cbdealno + 1;
+            $cbdealno = 'A'.str_pad($cbdealno, 6, '0', STR_PAD_LEFT);
 
             $f->model->set('cb_dealno',  $cbdealno);
             $f->model->set('firstname', $f->get('cb_storeno'));
@@ -80,8 +81,20 @@ class page_newstoreregister extends Page
             } else {
                 $f->model->set('email', $f->get('cb_email'));
             }
-
+            $f->model->set('approved',  1);
             $f->update();
+
+            if ($f->model->get('approved') == 1) {
+                $joomlausers = $this->add('Model_JoomlaUsers');
+                $joomlausers->set('name', $f->model->get('firstname').$f->model->get('lastname'));
+                $joomlausers->set('username', $f->model->get('username'));
+                $joomlausers->set('email', $f->model->get('email'));
+                $joomlausers->set('password', $f->model->get('password'));
+                $joomlausers->set('registerDate', date('Y-m-d h:i'));
+                $joomlausers->set('params', '{}');
+                $joomlausers->update();
+            }
+
 
             $sql1 = "UPDATE starbr_store_registration
                         SET    cb_fieldsetname = CASE
@@ -143,7 +156,7 @@ class page_newstoreregister extends Page
     {
         parent::render();
 
-        $this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+        $this->js('addSelectedText2', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
 
     }
 }

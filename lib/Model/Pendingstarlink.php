@@ -54,8 +54,9 @@ class Model_Pendingstarlink extends Model_Table {
         $this->addField('address')->calculated($this->duplicateExpression);
         $this->addField("status")->setValueList(array('New'=>'New', 'Exported'=>'Exported'))->defaultValue('New')->editable(false);
         $this->addField("date_exported")->datatype('date')->editable(false);
-        $this->addField('approved')->editable(true)->datatype('list')->listData(array(0=>'Not Approved',1=>'Approved' ))->caption('Approved');
+        $this->addField('approved')->editable(true)->datatype('list')->listData(array(0=>'Not Approved',1=>'Approved'))->caption('Approved');
         $this->addField("confirmed")->editable(false);
+        $this->addField("password")->system(true);
         //$this->join('starbr_users', 'user_id');
 
     }
