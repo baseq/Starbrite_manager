@@ -50,7 +50,7 @@ class page_rebates extends page_base {
 			//$quick_search->search_field->setAttr('placeholder', 'Phone');
 
 			$quick_filter = $c->grid->add('QuickFilter', null, 'quick_search')->useWith($c->grid)->useFields(array('formName'));
-			$quick_filter = $c->grid->add('QuickFilter', null, 'quick_search')->useWith($c->grid)->useFields(array('status'));
+			$quick_filter = $c->grid->add('QuickFilter', null, 'quick_search')->useWith($c->grid)->useFields(array('status'))->setStyle('width:18% !important;');
 			
 			//$this->js('focus', $c->grid->js()->reload()->execute());
 		}

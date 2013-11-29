@@ -76,6 +76,7 @@ class page_register extends Page
             $f->model->set('lastname', " - ".$f->get('cb_storenumber')." ".$f->get('cb_city').", ".$f->get('cb_state'));
             $f->model->set('username', $cbdealno);
             $f->model->set('password', $pass);
+            $f->model->set('id', max(intval($cbdealno_comprof), intval($cbdealno_storeregister)) + 1);
             if (!$f->get('cb_email')) {
                 $f->model->set('email', $cbdealno.'@invalid.com');
             } else {

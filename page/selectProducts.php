@@ -17,8 +17,8 @@ class page_selectProducts extends Page
         $g = $this->add('Grid');
         $f = $this->add('Form');
         $field = $f->addField('line','selected');
-        /*$f->getElement('selected')->js(true)->closest('div')->prev()->hide();
-        $f->getElement('selected')->js(true)->closest('input')->hide();*/
+        $f->getElement('selected')->js(true)->closest('div')->prev()->hide();
+        $f->getElement('selected')->js(true)->closest('input')->hide();
         $g->addSelectable($f->getElement('selected'));
         $submit = $f->addSubmit('Done');
 

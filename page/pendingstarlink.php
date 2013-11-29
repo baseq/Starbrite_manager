@@ -133,7 +133,11 @@ class page_pendingstarlink extends page_base
 
         if ($formDetails->isSubmitted()) {
             $formDetails->update();
+
             if ($formDetails->get('approved') == 1) {
+
+                $comprof = $this->add('Model_Retailer');
+
                 $joomlausers = $this->add('Model_JoomlaUsers');
                 if ($formDetails->model->get('approved') == 1) {
                     $joomlausers->addCondition('username', $formDetails->model->get('username'));
@@ -146,6 +150,51 @@ class page_pendingstarlink extends page_base
                 $joomlausers->set('registerDate', date('Y-m-d h:i'));
                 $joomlausers->set('params', '{}');
                 $joomlausers->save();
+                $user_id = $joomlausers->get('id');
+
+                $isApproved = false;
+                if ($formDetails->model->get('approved') == 1) {
+                    $comprof->addCondition('cb_dealno', $formDetails->model->get('cb_dealno'));
+                    $comprof->tryLoadAny();
+                    $isApproved = true;
+                }
+                $comprof->set('approved', $formDetails->model->get('approved'));
+                $comprof->set('cb_goldstore', $formDetails->model->get('cb_goldstore'));
+                $comprof->set('cb_expiredate', $formDetails->model->get('cb_expiredate'));
+                $comprof->set('cb_dealno', $formDetails->model->get('cb_dealno'));
+                $comprof->set('firstname', $formDetails->model->get('firstname'));
+                $comprof->set('lastname', $formDetails->model->get('lastname'));
+                $comprof->set('cb_email', $formDetails->model->get('cb_email'));
+                $comprof->set('cb_storeno', $formDetails->model->get('cb_storeno'));
+                $comprof->set('cb_phone1', $formDetails->model->get('cb_phone1'));
+                $comprof->set('cb_phone2', $formDetails->model->get('cb_phone2'));
+                $comprof->set('website', $formDetails->model->get('website'));
+                $comprof->set('cb_type', $formDetails->model->get('cb_type'));
+                $comprof->set('cb_notes', $formDetails->model->get('cb_notes'));
+                $comprof->set('cb_fax', $formDetails->model->get('cb_fax'));
+                $comprof->set('cb_onlinesell', $formDetails->model->get('cb_onlinesell'));
+                $comprof->set('cb_dist1', $formDetails->model->get('cb_dist1'));
+                $comprof->set('cb_dist2', $formDetails->model->get('cb_dist2'));
+                $comprof->set('cb_dist1sale', $formDetails->model->get('cb_dist1sale'));
+                $comprof->set('cb_dist2sale', $formDetails->model->get('cb_dist2sale'));
+                $comprof->set('cb_code', $formDetails->model->get('cb_code'));
+                $comprof->set('cb_trade', $formDetails->model->get('cb_trade'));
+                $comprof->set('cb_storenumber', $formDetails->model->get('cb_storenumber'));
+                $comprof->set('cb_itemnumber', $formDetails->model->get('cb_itemnumber'));
+                $comprof->set('cb_address1', $formDetails->model->get('cb_address1'));
+                $comprof->set('cb_address2', $formDetails->model->get('cb_address2'));
+                $comprof->set('cb_city', $formDetails->model->get('cb_city'));
+                $comprof->set('cb_state', $formDetails->model->get('cb_state'));
+                $comprof->set('cb_country', $formDetails->model->get('cb_country'));
+                $comprof->set('cb_zip', $formDetails->model->get('cb_zip'));
+                $comprof->set('cb_fieldsetname', $formDetails->model->get('cb_fieldsetname'));
+                $comprof->set('registeripaddr', '98.249.236.206');
+                if (!$isApproved) {
+                    $comprof->set('id', $user_id);
+                    $comprof->set('user_id', $user_id);
+                }
+                $this->js()->univ()->alert($user_id)->execute();
+                $comprof->save();
             }
             //update cb_fieldsetname for stores with missing phone and missing notes
             $sql1 = "UPDATE starbr_store_registration

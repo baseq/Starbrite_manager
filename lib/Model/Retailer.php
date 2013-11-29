@@ -41,7 +41,7 @@ class Model_Retailer extends Model_Table {
 		$this->addField("cb_code")->visible(false)->caption("Code");
 		$this->addField("cb_trade")->visible(false)->caption("Trade");
 		$this->addField("cb_storenumber")->visible(false)->caption("Store Number");
-		$this->addField("cb_itemnumber")->type('text')->visible(false)->editable(false);
+		$this->addField("cb_itemnumber")->type('text')->system(true);
 		$this->addField("cb_address1")->caption('Address 1');
 		$this->addField("cb_address2")->caption('Address 2');
 		$this->addField("cb_city")->caption('City');
@@ -50,6 +50,7 @@ class Model_Retailer extends Model_Table {
 		$this->addField("cb_zip")->caption('Zip Code');
 		$this->addField('address')->calculated($this->duplicateExpression)->visible(false);
         $this->addField('cb_fieldsetname')->system(true);
+        $this->addField('registeripaddr')->system(true);
 		$this->join('starbr_users', 'user_id');
 
 	}
