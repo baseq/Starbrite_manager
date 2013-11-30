@@ -56,6 +56,7 @@ class page_retailers extends page_base
         $formDetails->getElement('firstname')->setProperty('size', 40);
         $formDetails->getElement('lastname')->setProperty('size', 40);
         $formDetails->getElement('cb_email')->setProperty('size', 40);
+        $formDetails->getElement('cb_dealno')->js(true)->parent()->parent()->hide();
         $formDetails->getElement('cb_storeno')->setProperty('size', 40);
         $formDetails->getElement('cb_phone1')->setProperty('size', 40);
         $formDetails->getElement('cb_phone2')->setProperty('size', 40);
@@ -87,6 +88,10 @@ class page_retailers extends page_base
         if ($crud->grid) {
             //$crud->grid->addButton('Add Store')->js('click')->univ()->frameURL('Register New Retailer',$this->api->getDestinationURL('register'));
             $crud->grid->addPaginator(5);
+            $crud->grid->removeColumn('user_id');
+            $crud->grid->removeColumn('email');
+
+            //$crud->grid->getColumn('cb_dealno')->makeSortable();
             $quick_search = $crud->grid->addQuickSearch(array('name', 'cb_phone1', 'cb_phone2', 'email'))->addClass('small-form-search');
             $quick_search->search_field->setAttr('placeholder', 'Name, Email, Phone');
 
@@ -107,6 +112,7 @@ class page_retailers extends page_base
 
 
         if ($formDetails->isSubmitted()) {
+
             //update cb_fieldsetname for stores with missing phone and missing notes
             $sql1 = "UPDATE starbr_comprofiler
                         SET    cb_fieldsetname = CASE
@@ -151,6 +157,13 @@ class page_retailers extends page_base
 //</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px>
             try {
                 $formDetails->update();
+                $joomlausers = $this->add('Model_JoomlaUsers');
+                $joomlausers->load($formDetails->model->get('user_id'));
+                $joomlausers->set('name', $formDetails->model->get('firstname').$formDetails->model->get('lastname'));
+                if($formDetails->model->get('cb_email')) {
+                    $joomlausers->set('email', $formDetails->model->get('cb_email'));
+                }
+                $joomlausers->save();
                 $q = $this->api->db->query($sql1);
                 $q = $this->api->db->query($sql2);
                 $q = $this->api->db->query($sql3);

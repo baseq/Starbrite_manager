@@ -101,7 +101,7 @@ class page_newstoreregister extends Page
                 $comprof->set('approved', $f->model->get('approved'));
                 $comprof->set('cb_goldstore', $f->model->get('cb_goldstore'));
                 $comprof->set('cb_expiredate', $f->model->get('cb_expiredate'));
-                $comprof->set('cb_dealno', $f->model->get('cb_dealno'));
+                $comprof->set('cb_dealno', $cbdealno);
                 $comprof->set('firstname', $f->model->get('firstname'));
                 $comprof->set('lastname', $f->model->get('lastname'));
                 $comprof->set('cb_email', $f->model->get('cb_email'));

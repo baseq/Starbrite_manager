@@ -16,16 +16,16 @@ class Model_Retailer extends Model_Table {
 		parent::init();
 
 
-        $this->addField('approved')->visible(false)->editable(true)->datatype('boolean')->caption('Approved');
+        //$this->addField('approved')->visible(false)->editable(false)->datatype('boolean')->caption('Approved');
         $this->addField('cb_goldstore')->visible(false)->editable(true)->datatype('boolean')->caption('Gold Star');
         $this->addField('cb_expiredate')->visible(false)->editable(true)->datatype('date')->caption('Expire Date');
-        $this->addField("user_id")->visible(false)->editable(true);
-		$this->addField("cb_dealno")->editable(false)->caption("Deal No");
+        $this->addField("user_id")->visible(true)->editable(true);
+		$this->addField("cb_dealno")->caption("Deal No");
 		$this->addField("firstname")->visible(false);
 		$this->addField("lastname")->visible(false);
-		$this->addExpression("name", "firstname" + "lastname")->editable(false)->caption("Name");
+		$this->addExpression("name", "CONCAT(firstname, lastname)")->editable(false)->caption("Name");
 		$this->addField("cb_email")->caption("Contact Email");
-		$this->addExpression("email", "cb_dealno" + "@invalid.com")->caption("Email");
+		$this->addExpression("email", "CONCAT(cb_dealno, '@invalid.com')")->caption("Email");
 		$this->addField("cb_storeno")->caption("Store Name");
 		$this->addField("cb_phone1")->caption("Phone1")->defaultValue('');
 		$this->addField("cb_phone2")->caption("Phone2")->defaultValue('');
@@ -51,8 +51,8 @@ class Model_Retailer extends Model_Table {
 		$this->addField('address')->calculated($this->duplicateExpression)->visible(false);
         $this->addField('cb_fieldsetname')->system(true);
         $this->addField('registeripaddr')->system(true);
-		$this->join('starbr_users', 'user_id');
-
+		//$this->join('starbr_users', 'user_id');
+        //$this->join('starbr_users', 'id');
 	}
 	
 	function getDuplicatesValueList() {
@@ -75,5 +75,13 @@ class Model_Retailer extends Model_Table {
         	$value = "";
         }
         return $value;
+    }
+    function delete($id=null){
+        if(!is_null($id))$this->load($id);
+        if(!$this->loaded())throw $this->exception('Unable to determine which record to delete');
+
+        $users = $this->add('Model_JoomlaUsers');
+        $users->delete($this->get('user_id'));
+        parent::delete();
     }
 }

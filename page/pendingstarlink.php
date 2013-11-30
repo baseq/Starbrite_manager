@@ -130,6 +130,9 @@ class page_pendingstarlink extends page_base
         }
         $export = $crud->add("StarlinkExport");
         $this->js("reload", $this->js()->reload())->_selector("body");
+        /*if ($formDetails->model->get('approved') == 1) {
+            $formDetails->getElement('approved')->disable();
+        }*/
 
         if ($formDetails->isSubmitted()) {
             $formDetails->update();
@@ -142,10 +145,17 @@ class page_pendingstarlink extends page_base
                 if ($formDetails->model->get('approved') == 1) {
                     $joomlausers->addCondition('username', $formDetails->model->get('username'));
                     $joomlausers->tryLoadAny();
+                    //$joomlausers->load($formDetails->model->get('user_id'));
+                    if($formDetails->model->get('cb_email')) {
+                        $joomlausers->set('email', $formDetails->model->get('cb_email'));
+                    }
+                    else {
+                        $joomlausers->set('email', $formDetails->model->get('email'));
+                        $joomlausers->set('email', $formDetails->model->get('email'));
+                    }
                 }
                 $joomlausers->set('name', $formDetails->model->get('firstname').$formDetails->model->get('lastname'));
                 $joomlausers->set('username', $formDetails->model->get('username'));
-                $joomlausers->set('email', $formDetails->model->get('email'));
                 $joomlausers->set('password', $formDetails->model->get('password'));
                 $joomlausers->set('registerDate', date('Y-m-d h:i'));
                 $joomlausers->set('params', '{}');
@@ -189,11 +199,11 @@ class page_pendingstarlink extends page_base
                 $comprof->set('cb_zip', $formDetails->model->get('cb_zip'));
                 $comprof->set('cb_fieldsetname', $formDetails->model->get('cb_fieldsetname'));
                 $comprof->set('registeripaddr', '98.249.236.206');
-                if (!$isApproved) {
+                if (!$comprof->loaded()) {
                     $comprof->set('id', $user_id);
                     $comprof->set('user_id', $user_id);
                 }
-                $this->js()->univ()->alert($user_id)->execute();
+
                 $comprof->save();
             }
             //update cb_fieldsetname for stores with missing phone and missing notes
@@ -236,12 +246,54 @@ class page_pendingstarlink extends page_base
                                                  END
                         WHERE  ( cb_notes IS NOT NULL AND cb_notes <> '' ) AND ( cb_phone1 IS NOT NULL AND cb_phone1 <> '' )
               ";
+            $sql5 = "UPDATE starbr_comprofiler
+                        SET    cb_fieldsetname = CASE
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) >= CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>')
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) < CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>')
+                                                   WHEN cb_goldstore = 0 THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>')
+                                                 END
+                                where (cb_phone1 is null or cb_phone1 = '') and (cb_notes is null or cb_notes = '')
+              ";
 
+            //update cb_fieldsetname for stores with missing phone, but with notes
+            //
+            $sql6 = "UPDATE starbr_comprofiler
+                        SET    cb_fieldsetname = CASE
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) >= CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_notes, '</td></tr>')
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) < CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_notes, '</td></tr>')
+                                                   WHEN cb_goldstore = 0 THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_notes, '</td></tr>')
+                                                 END
+                                where (cb_phone1 is null or cb_phone1 = '') and (cb_notes is not null and cb_notes <> '')
+              ";
+
+            //update cb_fieldsetname for stores with missing notes, but with phone
+            $sql7 = "UPDATE starbr_comprofiler
+                        SET    cb_fieldsetname = CASE
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) >= CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_phone1, '</td></tr>')
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) < CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_phone1, '</td></tr>')
+                                                   WHEN cb_goldstore = 0 THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_phone1, '</td></tr>')
+                                                 END
+                                where (cb_notes is null or cb_notes = '') and (cb_phone1 is not null and cb_phone1 <> '')
+              ";
+
+            //update cb_fieldsetname for stores with notes and with phone
+            $sql8 = "UPDATE starbr_comprofiler
+                        SET    cb_fieldsetname = CASE
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) >= CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_phone1, '</td></tr>','<tr><td>', cb_notes, '</td></tr>')
+                                                   WHEN cb_goldstore = 1 AND DATE(cb_expiredate) < CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_phone1, '</td></tr>','<tr><td>', cb_notes, '</td></tr>')
+                                                   WHEN cb_goldstore = 0 THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_phone1, '</td></tr>','<tr><td>', cb_notes, '</td></tr>')
+                                                 END
+                        WHERE  ( cb_notes IS NOT NULL AND cb_notes <> '' ) AND ( cb_phone1 IS NOT NULL AND cb_phone1 <> '' )
+              ";
             try {
                 $q = $this->api->db->query($sql1);
                 $q = $this->api->db->query($sql2);
                 $q = $this->api->db->query($sql3);
                 $q = $this->api->db->query($sql4);
+                $q = $this->api->db->query($sql5);
+                $q = $this->api->db->query($sql6);
+                $q = $this->api->db->query($sql7);
+                $q = $this->api->db->query($sql8);
                 $formDetails->js()->univ()->successMessage("Saved.")->execute();
             }
             catch(Exeption $e) {
