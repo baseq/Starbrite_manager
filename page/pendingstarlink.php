@@ -130,9 +130,9 @@ class page_pendingstarlink extends page_base
         }
         $export = $crud->add("StarlinkExport");
         $this->js("reload", $this->js()->reload())->_selector("body");
-        /*if ($formDetails->model->get('approved') == 1) {
+        if ($formDetails->model->get('approved') == 1) {
             $formDetails->getElement('approved')->disable();
-        }*/
+        }
 
         if ($formDetails->isSubmitted()) {
             $formDetails->update();
