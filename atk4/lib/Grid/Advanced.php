@@ -469,6 +469,18 @@ class Grid_Advanced extends Grid_Basic {
         }
         return $i;
     }
+    function addSelectable($field){
+        $this->js_widget=null;
+        $this->js(true)
+            ->_load('ui.atk4_checkboxes')
+            ->atk4_checkboxes(array('dst_field'=>$field));
+        $this->addColumn('checkbox','selected');
+
+        $this->addOrder()
+            ->useArray($this->columns)
+            ->move('selected','first')
+            ->now();
+    }
     function setTemplate($template){
         // This allows you to use Template
         $this->columns[$this->last_column]['template']=$this->add('SMlite')
@@ -616,18 +628,6 @@ class Grid_Advanced extends Grid_Basic {
      * @field - should be Form_Field object or jQuery selector of 1 field
      * When passing it as jQuery selector don't forget hash sign like "#myfield"
      */
-    function addSelectable($field){
-        $this->js_widget=null;
-        $this->js(true)
-            ->_load('ui.atk4_checkboxes')
-            ->atk4_checkboxes(array('dst_field'=>$field));
-        $this->addColumn('checkbox','selected');
-
-        $this->addOrder()
-            ->useArray($this->columns)
-            ->move('selected','first')
-            ->now();
-    }
     /* to reuse td params */
     function getAllTDParams(){
         return $this->tdparam;

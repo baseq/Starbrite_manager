@@ -15,4 +15,18 @@
 
    See LICENSE or LICENSE_COM for more information
 =====================================================ATK4=*/
-class Grid extends Grid_Advanced {}
+class Grid extends Grid_Advanced {
+
+    function addSelectable($field){
+        $this->js_widget=null;
+        $this->js(true)
+            ->_load('ui.atk4_checkboxes')
+            ->atk4_checkboxes(array('dst_field'=>$field));
+        $this->addColumn('checkbox','selected');
+
+        $this->addOrder()
+            ->useArray($this->columns)
+            ->move('selected','first')
+            ->now();
+    }
+}
