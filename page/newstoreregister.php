@@ -15,6 +15,12 @@ class page_newstoreregister extends Page
         $f->setModel($model);
         $f->setClass('template-master-details-grid template-master-details-grid-rows atk-row');
 
+        if($this->api->recall('new_flag')){
+            $f->getElement('cb_itemnumber')->set($this->api->recall('new_selected_record'));
+            $this->api->forget('new_flag');
+        } else {
+            $this->api->memorize('new_selected_record', $f->get('cb_itemnumber'));
+        }
         $selectBtn = $f->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
         $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->url('selectProducts2'));
 
@@ -55,9 +61,9 @@ class page_newstoreregister extends Page
 //        $f->getElement('cb_itemnumber')
 //            ->setProperty('style', 'width:210px')->setProperty('readonly', 'true');
         $f->getElement('cb_expiredate')->setProperty('size', 34);
-        if($this->api->recall('selected_record')){
-            $f->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
-            $this->api->forget('selected_record');
+        if($this->api->recall('selected_record2')){
+            $f->getElement('cb_itemnumber')->set($this->api->recall('selected_record2'));
+            //$this->api->forget('selected_record');
         }
         $f->addSubmit('Submit');
 

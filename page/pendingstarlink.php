@@ -33,7 +33,6 @@ class page_pendingstarlink extends page_base
 
 
         $this->memorize('selected-id', $id);
-        //$crud = $this->add('View_RetailerCRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => true));
         $crud = $this->add('CRUD', array('grid_class' => 'Grid_Page_Wizard_MasterDetails', 'allow_edit' => false, 'allow_add' => false));
         $crud->setClass('template-master-details-grid template-master-details-grid-rows');
         $crud->setModel('Pendingstarlink');
@@ -81,32 +80,22 @@ class page_pendingstarlink extends page_base
         $formDetails->getElement('cb_state')->setProperty('size', 40);
         $formDetails->getElement('cb_country')->setProperty('size', 40);
         $formDetails->getElement('cb_zip')->setProperty('size', 40);
-        $formDetails->getElement('cb_itemnumber')->setProperty('size', 40)->setProperty('readonly', 'true');;
+        $formDetails->getElement('cb_itemnumber')->setProperty('size', 40)->setProperty('readonly', 'true');
         $formDetails->getElement('cb_expiredate')->setProperty('size', 34);
+        if($this->api->recall('flag')){
+            $formDetails->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
+            $this->api->forget('flag');
+        } else {
+            $this->api->memorize('selected_record', $formDetails->get('cb_itemnumber'));
+        }
+
         $selectBtn = $formDetails->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
-        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->url('selectProducts'));
+        $selectBtn->js('click')->univ()->frameURL('Select Products', $this->api->url('selectProducts'));
         $formDetails->getElement('approved')->empty_text = null;
         $formDetails->template->trySet('fieldset','span4');
         $sep1 = $formDetails->addSeparator('span4');
-        //$sep2 = $f->addSeparator('span4');
         $formDetails->add('Order')->move($selectBtn, 'after', 'cb_itemnumber')->now();
 
-
-        //$selectBtn->grid->add('Button', 'press');
-
-        //$this->js('addSelectedText', $f->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
-
-        if($this->api->recall('selected_record')){
-            $formDetails->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
-            $this->api->forget('selected_record');
-        }
-
-        //$formDetails->addField('email');
-/*        $tabProducts = $tabs->addTab('Products');
-        $productGrid = $tabProducts->add('Grid');
-        $productGrid->addPaginator(5);
-        $productModel = $productGrid->setModel('Product');
-        $productModel->addProductKeyFilter($rootModel->get('cb_itemnumber'));*/
 
         if ($crud->grid) {
             $crud->grid->addButton('Add Store')->js('click')->univ()->frameURL('Register New Store',$this->api->getDestinationURL('newstoreregister'));
