@@ -55,8 +55,26 @@ class page_register extends Page
         $f->getElement('cb_address1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_address2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_city')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');
+
+        //TO DO: make this happen
+/*        $country_list=array('','United States','Ireland','Latvia');
+        $region_list=array('State1', 'State2');*/
+
+        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');//->setValueList(explode(',', $country_list));
+        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');//->setValueList(explode(',', $region_list));
+
+/*        $region_list=$region_list[$_GET['region']]?:array();
+
+        $country = $f->getElement('cb_country');
+        $region = $f->getElement('cb_state');*/
+
+/*        if($region_list){
+            $region->js(true)->closest('dl')->show();
+        }else{
+            $region->js(true)->closest('dl')->hide();
+        }*/
+/*        $country->js('change',$f->js()->atk4_form('reloadField','region',
+            array($this->api->getDestinationURL(),'region'=>$country->js()->val())));*/
 
         $f->getElement('cb_zip')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_itemnumber')->setProperty('size', 40);

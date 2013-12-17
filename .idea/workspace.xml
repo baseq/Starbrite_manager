@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/countries.txt" />
+    <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="Some fixes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/page/selectProductsRetailers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Product.php" afterPath="$PROJECT_DIR$/lib/Model/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Retailer.php" afterPath="$PROJECT_DIR$/lib/Model/Retailer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/register.php" afterPath="$PROJECT_DIR$/page/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/retailers.php" afterPath="$PROJECT_DIR$/page/retailers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/selectProducts.php" afterPath="$PROJECT_DIR$/page/selectProducts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/selectProducts2.php" afterPath="$PROJECT_DIR$/page/selectProducts2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387262915281" ignored="false" />
+    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387300480196" ignored="false" />
     <file path="/StarlinkExport.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1385975342215" ignored="false" />
-    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387219408541" ignored="false" />
+    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387299714865" ignored="false" />
     <file path="/Grid.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1386914903689" ignored="false" />
     <file path="$PROJECT_DIR$/../prosaris/lib/Grid.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1386930646925" ignored="false" />
     <file path="/selectProducts.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1386917879099" ignored="false" />
@@ -32,9 +35,14 @@
     <file path="$PROJECT_DIR$/../prosaris/atk4/templates/js/ui.atk4_checkboxes.js" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1386930573107" ignored="false" />
     <file path="$PROJECT_DIR$/../prosaris/page/prosaris/SelectFacilities.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1386931422524" ignored="false" />
     <file path="$PROJECT_DIR$/../prosaris/atk4/lib/Grid.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1386931452123" ignored="false" />
-    <file path="/newstoreregister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387211012791" ignored="false" />
-    <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387216858127" ignored="false" />
+    <file path="/newstoreregister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387292431627" ignored="false" />
+    <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387294921836" ignored="false" />
     <file path="/Product.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387219419197" ignored="false" />
+    <file path="/AbstractView.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387289428701" ignored="false" />
+    <file path="/selectProducts2.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387291902577" ignored="false" />
+    <file path="/Retailer.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387299558601" ignored="false" />
+    <file path="/selectProducts_retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387299705658" ignored="false" />
+    <file path="/retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1387299388499" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +65,13 @@
       <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="50" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="25" column="146" selection-start="982" selection-end="1026" vertical-scroll-proportion="84.46154">
+              <folding>
+                <marker date="1387299269610" expanded="true" signature="6615:6633" placeholder="..." />
+                <marker date="1387299269610" expanded="true" signature="8272:8290" placeholder="..." />
+                <marker date="1387299269610" expanded="true" signature="10095:10113" placeholder="..." />
+                <marker date="1387299269610" expanded="true" signature="11914:11932" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,22 +79,13 @@
       <file leaf-file-name="retailers.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/retailers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="64" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0">
+            <state line="54" column="39" selection-start="2034" selection-end="2034" vertical-scroll-proportion="-4.730769">
               <folding>
-                <marker date="1385973326620" expanded="false" signature="6278:6296" placeholder="..." />
-                <marker date="1385973326620" expanded="false" signature="7494:7512" placeholder="..." />
-                <marker date="1385973326620" expanded="false" signature="8806:8824" placeholder="..." />
-                <marker date="1385973326620" expanded="false" signature="10112:10130" placeholder="..." />
+                <marker date="1387299883410" expanded="false" signature="7084:7102" placeholder="..." />
+                <marker date="1387299883410" expanded="false" signature="8300:8318" placeholder="..." />
+                <marker date="1387299883410" expanded="false" signature="9612:9630" placeholder="..." />
+                <marker date="1387299883410" expanded="false" signature="10918:10936" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/products.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -89,31 +93,35 @@
       <file leaf-file-name="pendingstarlink.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="40" selection-start="11607" selection-end="11607" vertical-scroll-proportion="0.0">
+            <state line="114" column="28" selection-start="6186" selection-end="6197" vertical-scroll-proportion="105.11539">
               <folding>
-                <marker date="1385973406539" expanded="false" signature="12387:12405" placeholder="..." />
-                <marker date="1385973406539" expanded="false" signature="13610:13628" placeholder="..." />
-                <marker date="1385973406539" expanded="false" signature="14929:14947" placeholder="..." />
-                <marker date="1385973406539" expanded="false" signature="16242:16260" placeholder="..." />
-                <marker date="1385973406539" expanded="false" signature="17581:17599" placeholder="..." />
-                <marker date="1385973406539" expanded="false" signature="18797:18815" placeholder="..." />
-                <marker date="1385973406539" expanded="false" signature="20109:20127" placeholder="..." />
-                <marker date="1385973406539" expanded="false" signature="21415:21433" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="11784:11802" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="13007:13025" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="14326:14344" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="15639:15657" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="16978:16996" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="18194:18212" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="19506:19524" placeholder="..." />
+                <marker date="1387288802957" expanded="false" signature="20812:20830" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newstoreregister.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
+      <file leaf-file-name="Form.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atk4/lib/Form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="39" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1387211081463" expanded="false" signature="7729:7747" placeholder="..." />
-                <marker date="1387211081463" expanded="false" signature="8952:8970" placeholder="..." />
-                <marker date="1387211081463" expanded="false" signature="10271:10289" placeholder="..." />
-                <marker date="1387211081463" expanded="false" signature="11584:11602" placeholder="..." />
-              </folding>
+            <state line="17" column="24" selection-start="530" selection-end="530" vertical-scroll-proportion="-11.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Basic.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atk4/lib/Form/Basic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="187" column="34" selection-start="7873" selection-end="7873" vertical-scroll-proportion="-5.576923">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,16 +129,7 @@
       <file leaf-file-name="selectProducts2.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/selectProducts2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectProducts.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/selectProducts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+            <state line="43" column="33" selection-start="1456" selection-end="1456" vertical-scroll-proportion="-24.192308">
               <folding />
             </state>
           </provider>
@@ -139,7 +138,16 @@
       <file leaf-file-name="Pendingstarlink.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="48" column="62" selection-start="2372" selection-end="2394" vertical-scroll-proportion="7.8461537">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreRegister.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.5769231">
               <folding />
             </state>
           </provider>
@@ -148,16 +156,16 @@
       <file leaf-file-name="Retailer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+            <state line="43" column="94" selection-start="2202" selection-end="2202" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/Model/Product.php">
+      <file leaf-file-name="selectProductsRetailers.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page/selectProductsRetailers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.01983664">
+            <state line="46" column="9" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.4631579">
               <folding />
             </state>
           </provider>
@@ -186,22 +194,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
-        <option value="$PROJECT_DIR$/page/rebates.php" />
-        <option value="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
-        <option value="$PROJECT_DIR$/page/retailers.php" />
-        <option value="$PROJECT_DIR$/lib/Model/Retailer.php" />
         <option value="$PROJECT_DIR$/page/pendingstarlink.php" />
         <option value="$PROJECT_DIR$/lib/StarlinkExport.php" />
         <option value="$PROJECT_DIR$/atk4/templates/js/ui.atk4_checkboxes.js" />
         <option value="$PROJECT_DIR$/atk4/lib/Grid/Advanced.php" />
         <option value="$PROJECT_DIR$/atk4/lib/Grid.php" />
+        <option value="$PROJECT_DIR$/lib/Model/Product.php" />
+        <option value="$PROJECT_DIR$/atk4/lib/AbstractView.php" />
         <option value="$PROJECT_DIR$/page/selectProducts.php" />
-        <option value="$PROJECT_DIR$/page/selectProducts2.php" />
         <option value="$PROJECT_DIR$/page/newstoreregister.php" />
+        <option value="$PROJECT_DIR$/page/selectProducts2.php" />
         <option value="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" />
         <option value="$PROJECT_DIR$/page/register.php" />
-        <option value="$PROJECT_DIR$/lib/Model/Product.php" />
+        <option value="$PROJECT_DIR$/lib/Model/Retailer.php" />
+        <option value="$PROJECT_DIR$/page/selectProducts_retailers.php" />
+        <option value="$PROJECT_DIR$/page/retailers.php" />
+        <option value="$PROJECT_DIR$/page/selectProductsRetailers.php" />
       </list>
     </option>
   </component>
@@ -309,6 +317,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -375,21 +384,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="115" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="132" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="136" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="C:/php" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="139" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="818" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="811" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="818" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="132" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="125" />
@@ -409,17 +417,134 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\starbrite\manager\page" />
       <recent name="C:\xampp\htdocs\Starbrite_manager\page" />
       <recent name="C:\xampp\htdocs\starbrite\manager\lib" />
       <recent name="C:\xampp\htdocs\starbrite\manager\atk4-addons\misc\lib" />
       <recent name="C:\xampp\htdocs\starbrite\manager\atk4-addons\misc\lib\Export" />
-      <recent name="C:\xampp\htdocs\starbrite\manager\lib\View" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\starbrite\manager\page" />
       <recent name="C:\xampp\htdocs\starbrite\manager\page\rebates" />
       <recent name="C:\xampp\htdocs\starbrite\manager\lib" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/atk4/templates/js/ui.atk4_checkboxes.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/Model/NewStoreRegister.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/page/newstoreregister.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/page/pendingstarlink.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/page/selectProducts.php</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/page/selectProducts2.php</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="PHP Web Application.Unnamed">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -429,10 +554,10 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
       <method />
     </configuration>
-    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="LOCALHOST">
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
-    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="LOCALHOST">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -556,7 +681,11 @@
       <created>1386918277320</created>
       <updated>1386918277320</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Some fixes">
+      <created>1387262991822</created>
+      <updated>1387262991822</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -581,23 +710,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40683573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2470651" sideWeight="0.5929593" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24866596" sideWeight="0.5929593" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2470651" sideWeight="0.59316427" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25133404" sideWeight="0.59316427" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32865497" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40704072" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -646,7 +775,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make multi-select with pagination work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some fixes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -670,6 +799,7 @@
     <MESSAGE value="database" />
     <MESSAGE value="Export CSV, Register" />
     <MESSAGE value="Make multi-select with pagination work" />
+    <MESSAGE value="Some fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -677,121 +807,138 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/atk4-addons/misc/lib/StrengthChecker.php">
+    <entry file="file://$PROJECT_DIR$/atk4-addons/billing/lib/billing/page/UserPayments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="582" selection-end="582" vertical-scroll-proportion="0.35112935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/NewStoreRegister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="53" selection-start="1919" selection-end="1919" vertical-scroll-proportion="-17.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atk4/templates/js/ui.atk4_form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="17" selection-start="4190" selection-end="4203" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/rebates.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="35.03846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/thankyou.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/selectProducts2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="44" column="35" selection-start="1067" selection-end="1067" vertical-scroll-proportion="-6.230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/products.php">
+    <entry file="file://$PROJECT_DIR$/atk4-addons/form/js/crop_univ.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="50" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+        <state line="17" column="8" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/selectProducts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+        <state line="62" column="68" selection-start="2169" selection-end="2169" vertical-scroll-proportion="-36.615383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="32" selection-start="3300" selection-end="3300" vertical-scroll-proportion="-9.961538">
+          <folding>
+            <marker date="1387292450844" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1387292450844" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1387292450844" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1387292450844" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4-addons/GridExt/lib/Grid/ExtendedSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="10" selection-start="2361" selection-end="2363" vertical-scroll-proportion="-6.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Model/NewStoreRegister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="2130" selection-end="2130" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/selectProducts2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="33" selection-start="1456" selection-end="1456" vertical-scroll-proportion="-24.192308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="530" selection-end="530" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Form/Basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="34" selection-start="7873" selection-end="7873" vertical-scroll-proportion="-5.576923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="48" column="62" selection-start="2372" selection-end="2394" vertical-scroll-proportion="7.8461537">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/retailers.php">
+    <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="64" selection-start="6706" selection-end="6706" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1385973326620" expanded="false" signature="6278:6296" placeholder="..." />
-            <marker date="1385973326620" expanded="false" signature="7494:7512" placeholder="..." />
-            <marker date="1385973326620" expanded="false" signature="8806:8824" placeholder="..." />
-            <marker date="1385973326620" expanded="false" signature="10112:10130" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="40" selection-start="11607" selection-end="11607" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1385973406539" expanded="false" signature="12387:12405" placeholder="..." />
-            <marker date="1385973406539" expanded="false" signature="13610:13628" placeholder="..." />
-            <marker date="1385973406539" expanded="false" signature="14929:14947" placeholder="..." />
-            <marker date="1385973406539" expanded="false" signature="16242:16260" placeholder="..." />
-            <marker date="1385973406539" expanded="false" signature="17581:17599" placeholder="..." />
-            <marker date="1385973406539" expanded="false" signature="18797:18815" placeholder="..." />
-            <marker date="1385973406539" expanded="false" signature="20109:20127" placeholder="..." />
-            <marker date="1385973406539" expanded="false" signature="21415:21433" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="39" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1387211081463" expanded="false" signature="7729:7747" placeholder="..." />
-            <marker date="1387211081463" expanded="false" signature="8952:8970" placeholder="..." />
-            <marker date="1387211081463" expanded="false" signature="10271:10289" placeholder="..." />
-            <marker date="1387211081463" expanded="false" signature="11584:11602" placeholder="..." />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.5769231">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+        <state line="43" column="94" selection-start="2202" selection-end="2202" vertical-scroll-proportion="-2.6153846">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/Product.php">
+    <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.01983664">
+        <state line="114" column="28" selection-start="6186" selection-end="6197" vertical-scroll-proportion="105.11539">
+          <folding>
+            <marker date="1387288802957" expanded="false" signature="11784:11802" placeholder="..." />
+            <marker date="1387288802957" expanded="false" signature="13007:13025" placeholder="..." />
+            <marker date="1387288802957" expanded="false" signature="14326:14344" placeholder="..." />
+            <marker date="1387288802957" expanded="false" signature="15639:15657" placeholder="..." />
+            <marker date="1387288802957" expanded="false" signature="16978:16996" placeholder="..." />
+            <marker date="1387288802957" expanded="false" signature="18194:18212" placeholder="..." />
+            <marker date="1387288802957" expanded="false" signature="19506:19524" placeholder="..." />
+            <marker date="1387288802957" expanded="false" signature="20812:20830" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="146" selection-start="982" selection-end="1026" vertical-scroll-proportion="84.46154">
+          <folding>
+            <marker date="1387299269610" expanded="true" signature="6615:6633" placeholder="..." />
+            <marker date="1387299269610" expanded="true" signature="8272:8290" placeholder="..." />
+            <marker date="1387299269610" expanded="true" signature="10095:10113" placeholder="..." />
+            <marker date="1387299269610" expanded="true" signature="11914:11932" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/retailers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="39" selection-start="2034" selection-end="2034" vertical-scroll-proportion="-4.730769">
+          <folding>
+            <marker date="1387299883410" expanded="false" signature="7084:7102" placeholder="..." />
+            <marker date="1387299883410" expanded="false" signature="8300:8318" placeholder="..." />
+            <marker date="1387299883410" expanded="false" signature="9612:9630" placeholder="..." />
+            <marker date="1387299883410" expanded="false" signature="10918:10936" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/selectProductsRetailers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="9" selection-start="1680" selection-end="1680" vertical-scroll-proportion="0.4631579">
           <folding />
         </state>
       </provider>

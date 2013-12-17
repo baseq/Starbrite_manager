@@ -1,7 +1,7 @@
 <?php
 class page_retailers extends page_base
 {
-
+    private $form;
     function init()
     {
         parent::init();
@@ -41,6 +41,7 @@ class page_retailers extends page_base
 
 
         $formDetails = $tabDetails->add('Form');
+        $this->form = $formDetails;
         $formDetails->addSubmit("Save");
         $formDetails->setModel($rootModel);
         $formDetails->setClass('ignore_changes template-master-details-grid template-master-details-grid-rows atk-row');
@@ -48,8 +49,20 @@ class page_retailers extends page_base
         $formDetails->template->trySet('fieldset', 'span4');
         $sep1 = $formDetails->addSeparator('span4');
         $sep2 = $formDetails->addSeparator('span4');
+
+        if($this->api->recall('flag')){
+            $formDetails->getElement('cb_itemnumber')->set($this->api->recall('retailers_selected_record'));
+            $this->api->forget('flag');
+        } else {
+            $this->api->memorize('retailers_selected_record', $formDetails->get('cb_itemnumber'));
+        }
+
+        $selectBtn = $formDetails->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
+        $selectBtn->js('click')->univ()->frameURL('Select Products', $this->api->url('selectProductsRetailers'));
+
         $formDetails->add('Order')->move($sep1, 'before', 'cb_notes')
             ->move($sep2, 'before', 'cb_address1')
+            ->move($selectBtn, 'after', 'cb_itemnumber')
             ->now();
 
         //field size
@@ -78,6 +91,8 @@ class page_retailers extends page_base
         $formDetails->getElement('cb_state')->setProperty('size', 40);
         $formDetails->getElement('cb_country')->setProperty('size', 40);
         $formDetails->getElement('cb_zip')->setProperty('size', 40);
+        $formDetails->getElement('cb_itemnumber')->setProperty('size', 40)->setProperty('readonly', 'true');
+
 
         $tabProducts = $tabs->addTab('Products');
         $productGrid = $tabProducts->add('Grid');
@@ -174,5 +189,12 @@ class page_retailers extends page_base
                 $formDetails->js()->univ()->alert("Failed to save.")->execute();
             }
         }
+    }
+    function render()
+    {
+        parent::render();
+
+        $this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+
     }
 }
