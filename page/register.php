@@ -36,31 +36,31 @@ class page_register extends Page
         }
         
         //$f->getElement('cb_dealno')->setProperty('size', 40);
-        $f->getElement('cb_email')->setProperty('size', 40);
-        $f->getElement('cb_storeno')->setProperty('size', 40);
-        $f->getElement('cb_phone1')->setProperty('size', 40);
-        $f->getElement('cb_phone2')->setProperty('size', 40);
-        $f->getElement('website')->setProperty('size', 40);
-        $f->getElement('cb_type')->setProperty('size', 40);
-        $f->getElement('cb_notes')->setProperty('size', 40);
-        $f->getElement('cb_fax')->setProperty('size', 40);
-        $f->getElement('cb_onlinesell')->setProperty('size', 40);
-        $f->getElement('cb_dist1')->setProperty('size', 40);
-        $f->getElement('cb_dist2')->setProperty('size', 40);
-        $f->getElement('cb_dist1sale')->setProperty('size', 40);
-        $f->getElement('cb_dist2sale')->setProperty('size', 40);
-        $f->getElement('cb_code')->setProperty('size', 40);
-        $f->getElement('cb_trade')->setProperty('size', 40);
-        $f->getElement('cb_storenumber')->setProperty('size', 40);
-        $f->getElement('cb_address1')->setProperty('size', 40);
-        $f->getElement('cb_address2')->setProperty('size', 40);
-        $f->getElement('cb_city')->setProperty('size', 40);
-        $f->getElement('cb_state')->setProperty('size', 40);
-        $f->getElement('cb_country')->setProperty('size', 40);
-        $f->getElement('cb_zip')->setProperty('size', 40);
+        $f->getElement('cb_email')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_storeno')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_phone1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_phone2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('website')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_type')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_notes')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_fax')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_onlinesell')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_dist1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_dist2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_dist1sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_dist2sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_code')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_trade')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_storenumber')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_address1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_address2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_city')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');
+
+        $f->getElement('cb_zip')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_itemnumber')->setProperty('size', 40);
-        $f->getElement('cb_itemnumber')
-            ->setProperty('style', 'width:210px')->setProperty('readonly', 'true');
+        $f->getElement('cb_itemnumber')->setProperty('style', 'width:210px')->setProperty('readonly', 'true');
         $f->addSubmit('Submit');
 
         if($f->isSubmitted()) {

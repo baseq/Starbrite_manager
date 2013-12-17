@@ -11,7 +11,7 @@ class Model_Product extends Model_Table {
 	function init() {
 		parent::init();
 		$this->addField("name");
-		$this->addField("elements")->readonly();
+		$this->addField("elements")->caption("Product Family")->readonly();
 		//$this->addExpression('product_key', array($this, 'getProductKey'));
 		//$this->addCondition($field)
 	}
