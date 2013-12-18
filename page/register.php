@@ -57,24 +57,25 @@ class page_register extends Page
         $f->getElement('cb_city')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
 
         //TO DO: make this happen
-/*        $country_list=array('','United States','Ireland','Latvia');
-        $region_list=array('State1', 'State2');*/
+        $country_list=array(1=>'United States',2=>'Ireland',3=>'Latvia');
+        $region_list=array(1=>array('State1', 'State2'));
+        $region_list=$region_list[$_GET['region']]?:array();
 
-        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');//->setValueList(explode(',', $country_list));
-        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;');//->setValueList(explode(',', $region_list));
-
-/*        $region_list=$region_list[$_GET['region']]?:array();
+        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')
+            ->setValueList($country_list);
+        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')
+            ->setValueList($region_list);
 
         $country = $f->getElement('cb_country');
-        $region = $f->getElement('cb_state');*/
+        $region = $f->getElement('cb_state');
 
-/*        if($region_list){
+        if($region_list) {
             $region->js(true)->closest('dl')->show();
-        }else{
+        } else {
             $region->js(true)->closest('dl')->hide();
-        }*/
-/*        $country->js('change',$f->js()->atk4_form('reloadField','region',
-            array($this->api->getDestinationURL(),'region'=>$country->js()->val())));*/
+        }
+        $country->js('change',$f->js()->atk4_form('reloadField','cb_state',
+            array($this->api->getDestinationURL(),'region'=>$country->js()->val())));
 
         $f->getElement('cb_zip')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_itemnumber')->setProperty('size', 40);
