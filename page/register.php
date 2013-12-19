@@ -135,9 +135,14 @@ class page_register extends Page
         if($f->isSubmitted()) {
             $fields = array('cb_email', 'cb_storeno', 'cb_phone1', 'cb_phone2', 'website', 'cb_type', 'cb_notes', 'cb_fax',
                 'cb_dist1', 'cb_dist2', 'cb_dist1sale', 'cb_dist2sale', 'cb_code', 'cb_trade', 'cb_storenumber', 'cb_address1',
-                'cb_address2', 'cb_city', 'cb_country', 'cb_state');
+                'cb_address2', 'cb_city');
             foreach ($fields as $value){
                 $f->set($value, strtoupper($f->get($value)));
+            }
+            $fields = array('cb_country', 'cb_state');
+            foreach ($fields as $value){
+                if($value == 'cb_country') $f->set($value, $country_list[$f->get($value)]);
+                if($value == 'cb_state') $f->set($value, $region_list[236][$f->get($value)]);
             }
             $pass = base64_encode(pack("H*", sha1('gicule')));
             $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(id) FROM starbr_comprofiler');
