@@ -11,9 +11,10 @@ class Model_Product extends Model_Table {
 	function init() {
 		parent::init();
 		$this->addField("name");
+		$this->addField("type")->system(true);
 		$this->addField("elements")->caption("Product Family")->readonly();
 		//$this->addExpression('product_key', array($this, 'getProductKey'));
-		//$this->addCondition($field)
+		$this->addCondition('type', 'product');
 	}
 
 	function getZooElementData($item_id, $element_identifier, $element_child) {
@@ -34,7 +35,7 @@ class Model_Product extends Model_Table {
 		if (is_array($products)) {
 			$this->products = $products;
 		} else {
-			$this->products = split(',', $products);
+			$this->products = explode(',', $products);
 		}
 	}
 	

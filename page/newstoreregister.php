@@ -19,7 +19,11 @@ class page_newstoreregister extends Page
             $f->getElement('cb_itemnumber')->set($this->api->recall('new_selected_record'));
             $this->api->forget('new_flag');
         } else {
-            $this->api->memorize('new_selected_record', $f->get('cb_itemnumber'));
+            if ($f->get('cb_itemnumber')) {
+                $this->api->memorize('new_selected_record', $f->get('cb_itemnumber'));
+            } else {
+                $this->api->forget('new_selected_record');
+            }
         }
         $selectBtn = $f->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
         $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->url('selectProducts2'));

@@ -54,9 +54,12 @@ class page_register extends Page
             $f->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
             $this->api->forget('flag');
         } else {
-            $this->api->memorize('selected_record', $f->get('cb_itemnumber'));
-        }
-        //TO DO: make this happen
+            if ($f->get('cb_itemnumber')) {
+                $this->api->memorize('selected_record', $f->get('cb_itemnumber'));
+            } else {
+                $this->api->forget('selected_record');
+            }
+        }        //TO DO: make this happen
         $country_list=array(1=>'AFGHANISTAN',2=>'ÅLAND ISLANDS',3=>'ALBANIA',4=>'ALGERIA',5=>'AMERICAN SAMOA',
             6=>'ANDORRA',7=>'ANGOLA',8=>'ANGUILLA',9=>'ANTARCTICA',10=>'ANTIGUA AND BARBUDA',11=>'ARGENTINA',
             12=>'ARMENIA',13=>'ARUBA',14=>'AUSTRALIA',15=>'AUSTRIA',16=>'AZERBAIJAN',17=>'BAHAMAS',18=>'BAHRAIN',
@@ -98,34 +101,48 @@ class page_register extends Page
             220=>'TANZANIA, UNITED REPUBLIC OF',221=>'THAILAND',222=>'TIMOR-LESTE',223=>'TOGO',224=>'TOKELAU',225=>'TONGA',
             226=>'TRINIDAD AND TOBAGO',227=>'TUNISIA',228=>'TURKEY',229=>'TURKMENISTAN',230=>'TURKS AND CAICOS ISLANDS',
             231=>'TUVALU',232=>'UGANDA',233=>'UKRAINE',234=>'UNITED ARAB EMIRATES',235=>'UNITED KINGDOM',
-            236=>'UNITED STATES',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
+            'UNITED STATES'=>'UNITED STATES',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
             241=>'VENEZUELA, BOLIVARIAN REPUBLIC OF',242=>'VIET NAM',243=>'VIRGIN ISLANDS, BRITISH',244=>'VIRGIN ISLANDS, U.S.',
             245=>'WALLIS AND FUTUNA',246=>'WESTERN SAHARA',247=>'YEMEN',248=>'ZAMBIA',249=>'ZIMBABWE');
-        $region_list=array(236=>array('ALABAMA','ALASKA','AMERICAN SAMOA','ARIZONA','ARKANSAS','CALIFORNIA','COLORADO',
+        $region_list=array('ALABAMA','ALASKA','AMERICAN SAMOA','ARIZONA','ARKANSAS','CALIFORNIA','COLORADO',
             'CONNECTICUT','DELAWARE','DISTRICT OF COLUMBIA','FLORIDA','GEORGIA','GUAM','HAWAII','IDAHO','ILLINOIS','INDIANA',
             'IOWA','KANSAS','KENTUCKY','LOUISIANA','MAINE','MARYLAND','MASSACHUSETTS','MICHIGAN','MINNESOTA','MISSISSIPPI','MISSOURI',
             'MONTANA','NEBRASKA','NEVADA','NEW HAMPSHIRE','NEW JERSEY','NEW MEXICO','NEW YORK','NORTH CAROLINA','NORTH DAKOTA',
             'NORTHERN MARIANA ISLANDS','OHIO','OKLAHOMA','OREGON','PENNSYLVANIA','PUERTO RICO','RHODE ISLAND',
-            'SOUTH CAROLINA','SOUTH DAKOTA','TENNESSEE','TEXAS','UTAH','VERMONT','VIRGIN ISLANDS','VIRGINIA','WASHINGTON','WEST VIRGINIA','WISCONSIN','WYOMING'));
-        $region_list=$region_list[$_GET['region']]?:array();
-
+            'SOUTH CAROLINA','SOUTH DAKOTA','TENNESSEE','TEXAS','UTAH','VERMONT','VIRGIN ISLANDS','VIRGINIA','WASHINGTON',
+            'WEST VIRGINIA','WISCONSIN','WYOMING');
+        //$region_list=$region_list[$_GET['region']]?:array();
+        $country_list2 = array();
+        foreach($country_list as $k=>$v) {
+            $country_list2[$v] = $v;
+        }
+        $country_list = $country_list2;
+        $region_list2 = array();
+        foreach ($region_list as $r) {
+            $region_list2[$r] = $r;
+        }
+        $region_list = $region_list2;
         $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')
             ->setValueList($country_list);
         $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')
             ->setValueList($region_list);
-
+        if ($_GET['country']) {
+            $f->set('cb_country', $_GET['country']);
+        } else {
+            $f->set('cb_country', 'UNITED STATES');
+        }
         $country = $f->getElement('cb_country');
         $region = $f->getElement('cb_state');
 
-        if($region_list) {
-            $region->js(true)->closest('div')->show();
-            $region->js(true)->closest('div')->siblings(array(0=>'label'))->show();
+        if(strcmp($f->get('cb_country'), 'UNITED STATES') == 0) {
+            $region->js(true)->parent()->parent()->show();
+            //$region->js(true)->closest('div')->siblings(array(0=>'label'))->show();
         } else {
-            $region->js(true)->closest('div')->hide();
-            $region->js(true)->closest('div')->siblings(array(0=>'label'))->hide();
+            echo ('cucubau');
+            $region->js(true)->parent()->parent()->hide();
         }
         $country->js('change',$f->js()->atk4_form('reloadField','cb_state',
-            array($this->api->getDestinationURL(),'region'=>$country->js()->val())));
+            array($this->api->getDestinationURL(),'country'=>$country->js()->val())));
 
         $f->getElement('cb_zip')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_itemnumber')->setProperty('size', 40);
@@ -138,11 +155,6 @@ class page_register extends Page
                 'cb_address2', 'cb_city');
             foreach ($fields as $value){
                 $f->set($value, strtoupper($f->get($value)));
-            }
-            $fields = array('cb_country', 'cb_state');
-            foreach ($fields as $value){
-                if($value == 'cb_country') $f->set($value, $country_list[$f->get($value)]);
-                if($value == 'cb_state') $f->set($value, $region_list[236][$f->get($value)]);
             }
             $pass = base64_encode(pack("H*", sha1('gicule')));
             $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(id) FROM starbr_comprofiler');
