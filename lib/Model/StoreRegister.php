@@ -25,7 +25,7 @@ class Model_StoreRegister extends Model_Table
         $this->addField("cb_type")->caption("Type");
         $this->addField("cb_notes")->caption("Notes");
         $this->addField("cb_fax")->caption("Fax");
-        $this->addField("cb_onlinesell")->caption("Online Sell");
+        $this->addField("cb_onlinesell")->caption("Do you sell online?")->datatype('boolean');
         $this->addField("cb_dist1")->caption("Dist 1");
         $this->addField("cb_dist2")->caption("Dist 2");
         $this->addField("cb_dist1sale")->caption("Dist 1 Sale");

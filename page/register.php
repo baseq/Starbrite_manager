@@ -23,7 +23,7 @@ class page_register extends Page
         $f->template->trySet('fieldset','span4');
         $sep1 = $f->addSeparator('span4');
         $sep2 = $f->addSeparator('span4');
-        $f->add('Order')->move($sep1, 'before', 'cb_onlinesell')->move($sep2, 'before', 'cb_address1')->move($selectBtn, 'after', 'cb_itemnumber')->now();
+        $f->add('Order')->move($sep1, 'before', 'cb_dist1')->move($sep2, 'before', 'cb_address1')->move($selectBtn, 'after', 'cb_itemnumber')->now();
         
         
         //$selectBtn->grid->add('Button', 'press');
@@ -36,7 +36,7 @@ class page_register extends Page
         $f->getElement('cb_phone1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_phone2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('website')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_type')->setProperty('size', 40)->js()->closest('div')->setProperty('width','120px;');
+        $f->getElement('cb_type')->setProperty('size', 40)->setProperty('style','width:218px;');
         $f->getElement('cb_notes')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_fax')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_onlinesell');//->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
@@ -45,7 +45,7 @@ class page_register extends Page
         $f->getElement('cb_dist1sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist2sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_code')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_trade')->setProperty('size', 40);//->setProperty('style','text-transform:uppercase;');
+        $f->getElement('cb_trade')->setProperty('size', 40)->setProperty('style','width:218px;');
         $f->getElement('cb_storenumber')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_address1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_address2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
@@ -101,7 +101,7 @@ class page_register extends Page
             220=>'TANZANIA, UNITED REPUBLIC OF',221=>'THAILAND',222=>'TIMOR-LESTE',223=>'TOGO',224=>'TOKELAU',225=>'TONGA',
             226=>'TRINIDAD AND TOBAGO',227=>'TUNISIA',228=>'TURKEY',229=>'TURKMENISTAN',230=>'TURKS AND CAICOS ISLANDS',
             231=>'TUVALU',232=>'UGANDA',233=>'UKRAINE',234=>'UNITED ARAB EMIRATES',235=>'UNITED KINGDOM',
-            'UNITED STATES'=>'UNITED STATES',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
+            'UNITED STATES OF AMERICA'=>'UNITED STATES OF AMERICA',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
             241=>'VENEZUELA, BOLIVARIAN REPUBLIC OF',242=>'VIET NAM',243=>'VIRGIN ISLANDS, BRITISH',244=>'VIRGIN ISLANDS, U.S.',
             245=>'WALLIS AND FUTUNA',246=>'WESTERN SAHARA',247=>'YEMEN',248=>'ZAMBIA',249=>'ZIMBABWE');
         $region_list=array('ALABAMA','ALASKA','AMERICAN SAMOA','ARIZONA','ARKANSAS','CALIFORNIA','COLORADO',
@@ -122,19 +122,19 @@ class page_register extends Page
             $region_list2[$r] = $r;
         }
         $region_list = $region_list2;
-        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')
+        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')->setProperty('style','width:218px;')
             ->setValueList($country_list);
-        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')
+        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')->setProperty('style','width:218px;')
             ->setValueList($region_list);
         if ($_GET['country']) {
             $f->set('cb_country', $_GET['country']);
         } else {
-            $f->set('cb_country', 'UNITED STATES');
+            $f->set('cb_country', 'UNITED STATES OF AMERICA');
         }
         $country = $f->getElement('cb_country');
         $region = $f->getElement('cb_state');
 
-        if(strcmp($f->get('cb_country'), 'UNITED STATES') == 0) {
+        if(strcmp($f->get('cb_country'), 'UNITED STATES OF AMERICA') == 0) {
             $region->js(true)->parent()->parent()->show();
             //$region->js(true)->closest('div')->siblings(array(0=>'label'))->show();
         } else {
@@ -156,6 +156,7 @@ class page_register extends Page
             foreach ($fields as $value){
                 $f->set($value, strtoupper($f->get($value)));
             }
+
             $pass = base64_encode(pack("H*", sha1('gicule')));
             $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(id) FROM starbr_comprofiler');
             $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(id) FROM starbr_store_registration');

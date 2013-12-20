@@ -25,7 +25,7 @@ class Model_NewStoreRegister extends Model_Table
         $this->addField("cb_type")->caption("Type")->type('list')->setValueList($this->getDistinctTypes());
         $this->addField("cb_notes")->caption("Notes");
         $this->addField("cb_fax")->caption("Fax");
-        $this->addField("cb_onlinesell")->caption("Do you sell online?")->type('boolean');
+        $this->addField("cb_onlinesell")->caption("Do you sell online?")->datatype('boolean');
         $this->addField("cb_dist1")->caption("Primary Distributor");
         $this->addField("cb_dist2")->caption("Secondary Distributor");
         $this->addField("cb_dist1sale")->caption("Primary Distributor Salesman");
