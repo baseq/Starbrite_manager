@@ -39,7 +39,7 @@ class page_register extends Page
         $f->getElement('cb_type')->setProperty('size', 40)->setProperty('style','width:218px;');
         $f->getElement('cb_notes')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_fax')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_onlinesell');//->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        //$f->getElement('cb_onlinesell')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist1sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
@@ -138,7 +138,6 @@ class page_register extends Page
             $region->js(true)->parent()->parent()->show();
             //$region->js(true)->closest('div')->siblings(array(0=>'label'))->show();
         } else {
-            echo ('cucubau');
             $region->js(true)->parent()->parent()->hide();
         }
         $country->js('change',$f->js()->atk4_form('reloadField','cb_state',

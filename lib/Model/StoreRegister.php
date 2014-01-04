@@ -25,7 +25,7 @@ class Model_StoreRegister extends Model_Table
         $this->addField("cb_type")->caption("Type");
         $this->addField("cb_notes")->caption("Notes");
         $this->addField("cb_fax")->caption("Fax");
-        $this->addField("cb_onlinesell")->caption("Do you sell online?")->datatype('boolean');
+        $this->addField("cb_onlinesell")->caption('Do you sell online?')->datatype('boolean')->enum(array('Y', 'N'));
         $this->addField("cb_dist1")->caption("Dist 1");
         $this->addField("cb_dist2")->caption("Dist 2");
         $this->addField("cb_dist1sale")->caption("Dist 1 Sale");
@@ -37,8 +37,8 @@ class Model_StoreRegister extends Model_Table
         $this->addField("cb_address1")->caption('Address 1');
         $this->addField("cb_address2")->caption('Address 2');
         $this->addField("cb_city")->caption('City');
-        $this->addField("cb_state")->caption('State');
-        $this->addField("cb_country")->caption('Country');
+        $this->addField("cb_country")->caption('Country')->type('list');;
+        $this->addField("cb_state")->caption('State')->type('list');;
         $this->addField("cb_zip")->caption('Zip Code');
         $this->addField("cb_fieldsetname")->system(true);
         $this->addField('approved')->system(true);
