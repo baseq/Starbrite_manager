@@ -104,13 +104,13 @@ class page_register extends Page
             'UNITED STATES OF AMERICA'=>'UNITED STATES OF AMERICA',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
             241=>'VENEZUELA, BOLIVARIAN REPUBLIC OF',242=>'VIET NAM',243=>'VIRGIN ISLANDS, BRITISH',244=>'VIRGIN ISLANDS, U.S.',
             245=>'WALLIS AND FUTUNA',246=>'WESTERN SAHARA',247=>'YEMEN',248=>'ZAMBIA',249=>'ZIMBABWE');
-        $region_list=array('ALABAMA','ALASKA','AMERICAN SAMOA','ARIZONA','ARKANSAS','CALIFORNIA','COLORADO',
-            'CONNECTICUT','DELAWARE','DISTRICT OF COLUMBIA','FLORIDA','GEORGIA','GUAM','HAWAII','IDAHO','ILLINOIS','INDIANA',
-            'IOWA','KANSAS','KENTUCKY','LOUISIANA','MAINE','MARYLAND','MASSACHUSETTS','MICHIGAN','MINNESOTA','MISSISSIPPI','MISSOURI',
-            'MONTANA','NEBRASKA','NEVADA','NEW HAMPSHIRE','NEW JERSEY','NEW MEXICO','NEW YORK','NORTH CAROLINA','NORTH DAKOTA',
-            'NORTHERN MARIANA ISLANDS','OHIO','OKLAHOMA','OREGON','PENNSYLVANIA','PUERTO RICO','RHODE ISLAND',
-            'SOUTH CAROLINA','SOUTH DAKOTA','TENNESSEE','TEXAS','UTAH','VERMONT','VIRGIN ISLANDS','VIRGINIA','WASHINGTON',
-            'WEST VIRGINIA','WISCONSIN','WYOMING');
+        $region_list=array('AL','AK','AS','AZ','AR','CA','CO',
+            'CT','DE','DC','FL','GA','GU','HI','ID','IL','IN',
+            'IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO',
+            'MT','NE','NV','NH','NJ','NM','NY','NC','ND',
+            'MP','OH','OK','OR','PA','PR','RI',
+            'SC','SD','TN','TX','UT','VT','VI','VA','WA',
+            'WV','WI','WY');
         //$region_list=$region_list[$_GET['region']]?:array();
         $country_list2 = array();
         foreach($country_list as $k=>$v) {

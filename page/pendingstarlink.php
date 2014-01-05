@@ -63,7 +63,7 @@ class page_pendingstarlink extends page_base
         $formDetails->getElement('cb_phone1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_phone2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('website')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $formDetails->getElement('cb_type')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $formDetails->getElement('cb_type')->setProperty('size', 40)->setProperty('style','width:218px;');
         $formDetails->getElement('cb_notes')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_fax')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         //echo ($formDetails->model->get('cb_onlinesell'));
@@ -72,11 +72,13 @@ class page_pendingstarlink extends page_base
         $formDetails->getElement('cb_dist1sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_dist2sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_code')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $formDetails->getElement('cb_trade')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $formDetails->getElement('cb_trade')->setProperty('size', 40)->setProperty('style','width:218px;');
         $formDetails->getElement('cb_storenumber')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_address1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_address2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_city')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        $formDetails->getElement('approved')->setProperty('size', 40)->setProperty('style','width:218px;');
+
 
         $country_list=array(1=>'AFGHANISTAN',2=>'ÅLAND ISLANDS',3=>'ALBANIA',4=>'ALGERIA',5=>'AMERICAN SAMOA',
             6=>'ANDORRA',7=>'ANGOLA',8=>'ANGUILLA',9=>'ANTARCTICA',10=>'ANTIGUA AND BARBUDA',11=>'ARGENTINA',
@@ -122,13 +124,13 @@ class page_pendingstarlink extends page_base
             'UNITED STATES OF AMERICA'=>'UNITED STATES OF AMERICA',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
             241=>'VENEZUELA, BOLIVARIAN REPUBLIC OF',242=>'VIET NAM',243=>'VIRGIN ISLANDS, BRITISH',244=>'VIRGIN ISLANDS, U.S.',
             245=>'WALLIS AND FUTUNA',246=>'WESTERN SAHARA',247=>'YEMEN',248=>'ZAMBIA',249=>'ZIMBABWE');
-        $region_list=array('ALABAMA','ALASKA','AMERICAN SAMOA','ARIZONA','ARKANSAS','CALIFORNIA','COLORADO',
-            'CONNECTICUT','DELAWARE','DISTRICT OF COLUMBIA','FLORIDA','GEORGIA','GUAM','HAWAII','IDAHO','ILLINOIS','INDIANA',
-            'IOWA','KANSAS','KENTUCKY','LOUISIANA','MAINE','MARYLAND','MASSACHUSETTS','MICHIGAN','MINNESOTA','MISSISSIPPI','MISSOURI',
-            'MONTANA','NEBRASKA','NEVADA','NEW HAMPSHIRE','NEW JERSEY','NEW MEXICO','NEW YORK','NORTH CAROLINA','NORTH DAKOTA',
-            'NORTHERN MARIANA ISLANDS','OHIO','OKLAHOMA','OREGON','PENNSYLVANIA','PUERTO RICO','RHODE ISLAND',
-            'SOUTH CAROLINA','SOUTH DAKOTA','TENNESSEE','TEXAS','UTAH','VERMONT','VIRGIN ISLANDS','VIRGINIA','WASHINGTON',
-            'WEST VIRGINIA','WISCONSIN','WYOMING');
+        $region_list=array('AL','AK','AS','AZ','AR','CA','CO',
+            'CT','DE','DC','FL','GA','GU','HI','ID','IL','IN',
+            'IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO',
+            'MT','NE','NV','NH','NJ','NM','NY','NC','ND',
+            'MP','OH','OK','OR','PA','PR','RI',
+            'SC','SD','TN','TX','UT','VT','VI','VA','WA',
+            'WV','WI','WY');
         //$region_list=$region_list[$_GET['region']]?:array();
         $country_list2 = array();
         foreach($country_list as $k=>$v) {
@@ -240,12 +242,13 @@ class page_pendingstarlink extends page_base
                 $joomlausers->save();
                 $user_id = $joomlausers->get('id');
 
-                $isApproved = false;
+/*                $isApproved = false;
                 if ($formDetails->model->get('approved') == 1) {
                     $comprof->addCondition('cb_dealno', $formDetails->model->get('cb_dealno'));
                     $comprof->tryLoadAny();
                     $isApproved = true;
-                }
+                }*/
+
                 $comprof->set('approved', $formDetails->model->get('approved'));
                 $comprof->set('cb_goldstore', $formDetails->model->get('cb_goldstore'));
                 $comprof->set('cb_expiredate', $formDetails->model->get('cb_expiredate'));
@@ -277,13 +280,27 @@ class page_pendingstarlink extends page_base
                 $comprof->set('cb_zip', $formDetails->model->get('cb_zip'));
                 $comprof->set('cb_fieldsetname', $formDetails->model->get('cb_fieldsetname'));
                 $comprof->set('registeripaddr', '98.249.236.206');
+                $id_comprof = $this->api->db->getOne('SELECT MAX(id)+1 FROM starbr_comprofiler');
                 if (!$comprof->loaded()) {
-                    $comprof->set('id', $user_id);
+                    $comprof->set('id', intval($id_comprof));
                     $comprof->set('user_id', $user_id);
                 }
-
                 $comprof->save();
-            }
+                //if ($isApproved) {
+                //delete record from the temporary stores table after approved (and moved to the approved stores table)
+                $cbdealno = $formDetails->model->get('cb_dealno');
+                $sql10 = "DELETE FROM starbr_store_registration WHERE cb_dealno = '" . $cbdealno ."'";
+                try {
+                    $q = $this->api->db->query($sql10);
+                }
+                catch(Exeption $e) {
+                    $f->js()->univ()->alert("Failed to save.")->execute();
+                }
+                $this->js(null, $this->api->js()->_selector('body')
+                    ->trigger('reload'))->univ()->execute();
+                //}
+            } else {
+
             //update cb_fieldsetname for stores with missing phone and missing notes
             $sql1 = "UPDATE starbr_store_registration
                         SET    cb_fieldsetname = CASE
@@ -328,6 +345,18 @@ class page_pendingstarlink extends page_base
                                                  END
                         WHERE  ( cb_notes IS NOT NULL AND cb_notes <> '' ) AND ( cb_phone1 IS NOT NULL AND cb_phone1 <> '' )
               ";
+                try {
+                    $q = $this->api->db->query($sql1);
+                    $q = $this->api->db->query($sql2);
+                    $q = $this->api->db->query($sql3);
+                    $q = $this->api->db->query($sql4);
+                    $formDetails->js()->univ()->successMessage("Saved.")->execute();
+                }
+                catch(Exeption $e) {
+                    $formDetails->js()->univ()->alert("Failed to save.")->execute();
+                }
+            }
+
             $sql5 = "UPDATE starbr_comprofiler
                         SET    cb_fieldsetname = CASE
                                                    WHEN cb_goldstore = 1 AND cb_expiredate IS NULL THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>')
@@ -372,10 +401,6 @@ class page_pendingstarlink extends page_base
                         WHERE  ( cb_notes IS NOT NULL AND cb_notes <> '' ) AND ( cb_phone1 IS NOT NULL AND cb_phone1 <> '' )
               ";
             try {
-                $q = $this->api->db->query($sql1);
-                $q = $this->api->db->query($sql2);
-                $q = $this->api->db->query($sql3);
-                $q = $this->api->db->query($sql4);
                 $q = $this->api->db->query($sql5);
                 $q = $this->api->db->query($sql6);
                 $q = $this->api->db->query($sql7);

@@ -103,13 +103,13 @@ class page_newstoreregister extends Page
             'UNITED STATES OF AMERICA'=>'UNITED STATES OF AMERICA',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
             241=>'VENEZUELA, BOLIVARIAN REPUBLIC OF',242=>'VIET NAM',243=>'VIRGIN ISLANDS, BRITISH',244=>'VIRGIN ISLANDS, U.S.',
             245=>'WALLIS AND FUTUNA',246=>'WESTERN SAHARA',247=>'YEMEN',248=>'ZAMBIA',249=>'ZIMBABWE');
-        $region_list=array('ALABAMA','ALASKA','AMERICAN SAMOA','ARIZONA','ARKANSAS','CALIFORNIA','COLORADO',
-            'CONNECTICUT','DELAWARE','DISTRICT OF COLUMBIA','FLORIDA','GEORGIA','GUAM','HAWAII','IDAHO','ILLINOIS','INDIANA',
-            'IOWA','KANSAS','KENTUCKY','LOUISIANA','MAINE','MARYLAND','MASSACHUSETTS','MICHIGAN','MINNESOTA','MISSISSIPPI','MISSOURI',
-            'MONTANA','NEBRASKA','NEVADA','NEW HAMPSHIRE','NEW JERSEY','NEW MEXICO','NEW YORK','NORTH CAROLINA','NORTH DAKOTA',
-            'NORTHERN MARIANA ISLANDS','OHIO','OKLAHOMA','OREGON','PENNSYLVANIA','PUERTO RICO','RHODE ISLAND',
-            'SOUTH CAROLINA','SOUTH DAKOTA','TENNESSEE','TEXAS','UTAH','VERMONT','VIRGIN ISLANDS','VIRGINIA','WASHINGTON',
-            'WEST VIRGINIA','WISCONSIN','WYOMING');
+        $region_list=array('AL','AK','AS','AZ','AR','CA','CO',
+            'CT','DE','DC','FL','GA','GU','HI','ID','IL','IN',
+            'IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO',
+            'MT','NE','NV','NH','NJ','NM','NY','NC','ND',
+            'MP','OH','OK','OR','PA','PR','RI',
+            'SC','SD','TN','TX','UT','VT','VI','VA','WA',
+            'WV','WI','WY');
         //$region_list=$region_list[$_GET['region']]?:array();
         $country_list2 = array();
         foreach($country_list as $k=>$v) {
@@ -161,6 +161,7 @@ class page_newstoreregister extends Page
                 $f->set($value, strtoupper($f->get($value)));
             }
             $pass = base64_encode(pack("H*", sha1('gicule')));
+            $id_comprof = $this->api->db->getOne('SELECT MAX(id) + 1 FROM starbr_comprofiler');
             $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(cb_dealno) FROM starbr_comprofiler where cb_dealno like \'A%\'');
             $cbdealno_comprof = str_replace('A', '', $cbdealno_comprof);
             $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(cb_dealno) FROM starbr_store_registration where cb_dealno like \'A%\'');
@@ -229,13 +230,13 @@ class page_newstoreregister extends Page
                 $comprof->set('cb_zip', $f->model->get('cb_zip'));
                 $comprof->set('cb_fieldsetname', $f->model->get('cb_fieldsetname'));
                 $comprof->set('registeripaddr', '98.249.236.206');
-                $comprof->set('id', intval($cbdealno_comprof) + 1);
+                $comprof->set('id', intval($id_comprof));
                 $comprof->set('user_id', intval($joomlausers_id));
                 $comprof->update();
             }
 
 
-            $sql1 = "UPDATE starbr_store_registration
+            /*$sql1 = "UPDATE starbr_store_registration
                         SET    cb_fieldsetname = CASE
                                                    WHEN cb_goldstore = 1 AND cb_expiredate IS NULL >= CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>')
                                                    WHEN cb_goldstore = 1 AND DATE(cb_expiredate) >= CURDATE() THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong>&nbsp;&nbsp;<img src=http://www.starbrite.com/images/comprofiler/favorite.png style=margin-bottom:-3px></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>')
@@ -277,7 +278,7 @@ class page_newstoreregister extends Page
                                                    WHEN cb_goldstore = 0 THEN CONCAT('<tr><td><strong>', cb_storeno, '</strong></td></tr><tr><td>', cb_address1, ', ', cb_city, ' ', cb_state, ' ', cb_zip, '</td></tr>','<tr><td>', cb_phone1, '</td></tr>','<tr><td>', cb_notes, '</td></tr>')
                                                  END
                         WHERE  ( cb_notes IS NOT NULL AND cb_notes <> '' ) AND ( cb_phone1 IS NOT NULL AND cb_phone1 <> '' )
-              ";
+              ";*/
 
             $sql5 = "UPDATE starbr_comprofiler
                         SET    cb_fieldsetname = CASE
@@ -322,15 +323,19 @@ class page_newstoreregister extends Page
                                                  END
                         WHERE  ( cb_notes IS NOT NULL AND cb_notes <> '' ) AND ( cb_phone1 IS NOT NULL AND cb_phone1 <> '' )
               ";
+            //delete record from the temporary stores table after approved (and moved to the approved stores table)
+            $sql9 = "DELETE FROM starbr_store_registration WHERE cb_dealno = '" . $cbdealno ."'";
+
             try {
-                $q = $this->api->db->query($sql1);
+/*                $q = $this->api->db->query($sql1);
                 $q = $this->api->db->query($sql2);
                 $q = $this->api->db->query($sql3);
-                $q = $this->api->db->query($sql4);
+                $q = $this->api->db->query($sql4);*/
                 $q = $this->api->db->query($sql5);
                 $q = $this->api->db->query($sql6);
                 $q = $this->api->db->query($sql7);
                 $q = $this->api->db->query($sql8);
+                $q = $this->api->db->query($sql9);
             }
             catch(Exeption $e) {
                 $f->js()->univ()->alert("Failed to save.")->execute();

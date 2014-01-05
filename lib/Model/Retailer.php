@@ -30,23 +30,23 @@ class Model_Retailer extends Model_Table {
 		$this->addField("cb_phone1")->caption("Phone1")->defaultValue('');
 		$this->addField("cb_phone2")->caption("Phone2")->defaultValue('');
 		$this->addField("website")->visible(false)->caption("Website");
-		$this->addField("cb_type")->visible(false)->caption("Type");
+		$this->addField("cb_type")->visible(false)->caption("Type")->type('list')->setValueList($this->getDistinctTypes());
 		$this->addField("cb_notes")->visible(false)->caption("Notes");
 		$this->addField("cb_fax")->visible(false)->caption("Fax");
-		$this->addField("cb_onlinesell")->visible(false)->caption("Online Sell");
-		$this->addField("cb_dist1")->visible(false)->caption("Dist1");
-		$this->addField("cb_dist2")->visible(false)->caption("Dist2");
-		$this->addField("cb_dist1sale")->visible(false)->caption("Dist1 Sale");
-		$this->addField("cb_dist2sale")->visible(false)->caption("Dist2 Sale");
+		$this->addField("cb_onlinesell")->visible(false)->caption("Do you sell online?")->datatype('boolean')->enum(array('Y', 'N'));
+		$this->addField("cb_dist1")->visible(false)->caption("Primary Distributor");
+		$this->addField("cb_dist2")->visible(false)->caption("Secondary Distributor");
+		$this->addField("cb_dist1sale")->visible(false)->caption("Primary Distributor Salesman");
+		$this->addField("cb_dist2sale")->visible(false)->caption("Secondary Distributor Salesman");
 		$this->addField("cb_code")->visible(false)->caption("Code");
-		$this->addField("cb_trade")->visible(false)->caption("Trade");
+		$this->addField("cb_trade")->visible(false)->caption("Type of Trade")->type('list')->setValueList($this->getDistinctTrade());
 		$this->addField("cb_storenumber")->visible(false)->caption("Store Number");
 		$this->addField("cb_itemnumber")->caption("Products")->visible(false)->editable(true);
 		$this->addField("cb_address1")->caption('Address 1');
 		$this->addField("cb_address2")->caption('Address 2');
 		$this->addField("cb_city")->caption('City');
-		$this->addField("cb_state")->caption('State');
-		$this->addField("cb_country")->caption('Country');
+		$this->addField("cb_country")->caption('Country')->type('list');
+        $this->addField("cb_state")->caption('State')->type('list');
 		$this->addField("cb_zip")->caption('Zip Code');
 		$this->addField('address')->calculated($this->duplicateExpression)->visible(false);
         $this->addField('cb_fieldsetname')->system(true);
@@ -83,5 +83,26 @@ class Model_Retailer extends Model_Table {
         $users = $this->add('Model_JoomlaUsers');
         $users->delete($this->get('user_id'));
         parent::delete();
+    }
+
+    function getDistinctTypes() {
+        $valueList = array();
+        $q = $this->dsql();
+        $expr = ('SELECT DISTINCT(cb_type) FROM starbr_comprofiler');
+        $q->useExpr($expr);
+        foreach ($q as $row) {
+            $valueList[$row['cb_type']] = $row['cb_type'];
+        }
+        return $valueList;
+    }
+    function getDistinctTrade() {
+        $valueList = array();
+        $q = $this->dsql();
+        $expr = ('SELECT DISTINCT(cb_trade) FROM starbr_comprofiler');
+        $q->useExpr($expr);
+        foreach ($q as $row) {
+            $valueList[$row['cb_trade']] = $row['cb_trade'];
+        }
+        return $valueList;
     }
 }
