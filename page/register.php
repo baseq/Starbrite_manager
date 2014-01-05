@@ -157,11 +157,13 @@ class page_register extends Page
             }
 
             $pass = base64_encode(pack("H*", sha1('gicule')));
-            $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(id) FROM starbr_comprofiler');
-            $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(id) FROM starbr_store_registration');
+            $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(cb_dealno) FROM starbr_comprofiler where cb_dealno like \'A%\'');
+            $cbdealno_comprof = str_replace('A', '', $cbdealno_comprof);
+            $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(cb_dealno) FROM starbr_store_registration where cb_dealno like \'A%\'');
+            $cbdealno_storeregister = str_replace('A', '', $cbdealno_storeregister);
 
             $cbdealno = max(intval($cbdealno_comprof), intval($cbdealno_storeregister)) + 1;
-            $cbdealno = 'A'.str_pad($cbdealno, 5, '0', STR_PAD_LEFT);
+            $cbdealno = 'A'.str_pad($cbdealno, 6, '0', STR_PAD_LEFT);
 
             $f->model->set('cb_dealno',  $cbdealno);
             $f->model->set('firstname', $f->get('cb_storeno'));

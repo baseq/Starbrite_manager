@@ -161,8 +161,10 @@ class page_newstoreregister extends Page
                 $f->set($value, strtoupper($f->get($value)));
             }
             $pass = base64_encode(pack("H*", sha1('gicule')));
-            $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(id) FROM starbr_comprofiler');
-            $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(id) FROM starbr_store_registration');
+            $cbdealno_comprof = $this->api->db->getOne('SELECT MAX(cb_dealno) FROM starbr_comprofiler where cb_dealno like \'A%\'');
+            $cbdealno_comprof = str_replace('A', '', $cbdealno_comprof);
+            $cbdealno_storeregister = $this->api->db->getOne('SELECT MAX(cb_dealno) FROM starbr_store_registration where cb_dealno like \'A%\'');
+            $cbdealno_storeregister = str_replace('A', '', $cbdealno_storeregister);
 
             $cbdealno = max(intval($cbdealno_comprof), intval($cbdealno_storeregister));
             $cbdealno = $cbdealno + 1;
@@ -192,6 +194,7 @@ class page_newstoreregister extends Page
                 $joomlausers->set('registerDate', date('Y-m-d h:i'));
                 $joomlausers->set('params', '{}');
                 $joomlausers->update();
+                $joomlausers_id = $this->api->db->getOne('SELECT MAX(id) FROM starbr_users');
 
                 //add new record in joomla com_profiler database table
                 $comprof = $this->add('Model_Retailer');
@@ -227,7 +230,7 @@ class page_newstoreregister extends Page
                 $comprof->set('cb_fieldsetname', $f->model->get('cb_fieldsetname'));
                 $comprof->set('registeripaddr', '98.249.236.206');
                 $comprof->set('id', intval($cbdealno_comprof) + 1);
-                $comprof->set('user_id', intval($cbdealno_comprof) + 1);
+                $comprof->set('user_id', intval($joomlausers_id));
                 $comprof->update();
             }
 
