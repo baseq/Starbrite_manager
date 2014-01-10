@@ -51,9 +51,20 @@ class page_pendingstarlink extends page_base
         $formDetails->setClass('ignore_changes template-master-details-grid template-master-details-grid-rows atk-row');
 
         $formDetails->template->trySet('fieldset', 'span4');
+        $label1 = $formDetails->add('HtmlElement')
+            ->setElement('h4')
+            ->set('CONTACT INFO');
+        $label2 = $formDetails->add('HtmlElement')
+            ->setElement('h4')
+            ->set('DEALER INFO');
+        $label3 = $formDetails->add('HtmlElement')
+            ->setElement('h4')
+            ->set('INTERNAL USE ONLY');
+
         $sep1 = $formDetails->addSeparator('span4');
         $sep2 = $formDetails->addSeparator('span4');
-        $formDetails->add('Order')->move($sep1, 'before', 'cb_notes')->move($sep2, 'before', 'cb_address1')->now();
+        $formDetails->add('Order')->move($label1, 'before', 'cb_storeno')->move($label2, 'before', 'cb_itemnumber')->move($label3, 'before', 'cb_goldstore')->now();
+        $formDetails->add('Order')->move($sep1, 'before', 'cb_fax')->move($sep2, 'before', 'cb_dist2')->now();
 
         //field size
         $formDetails->getElement('firstname')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
@@ -66,12 +77,11 @@ class page_pendingstarlink extends page_base
         $formDetails->getElement('cb_type')->setProperty('size', 40)->setProperty('style','width:218px;');
         $formDetails->getElement('cb_notes')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_fax')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        //echo ($formDetails->model->get('cb_onlinesell'));
         $formDetails->getElement('cb_dist1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_dist2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_dist1sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_dist2sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $formDetails->getElement('cb_code')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        //$formDetails->getElement('cb_code')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_trade')->setProperty('size', 40)->setProperty('style','width:218px;');
         $formDetails->getElement('cb_storenumber')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $formDetails->getElement('cb_address1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
@@ -165,7 +175,7 @@ class page_pendingstarlink extends page_base
 
 
         $formDetails->getElement('cb_zip')->setProperty('size', 40);
-        $formDetails->getElement('cb_itemnumber')->setProperty('size', 40)->setProperty('readonly', 'true');
+        $formDetails->getElement('cb_itemnumber')->setProperty('cols', 42);//->setProperty('readonly', 'true');
         $formDetails->getElement('cb_expiredate')->setProperty('size', 34);
         if($this->api->recall('flag')){
             $formDetails->getElement('cb_itemnumber')->set($this->api->recall('selected_record'));
@@ -174,7 +184,7 @@ class page_pendingstarlink extends page_base
             $this->api->memorize('selected_record', $formDetails->get('cb_itemnumber'));
         }
 
-        $selectBtn = $formDetails->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px', 'margin-bottom'=>'-31px'));
+        $selectBtn = $formDetails->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'350px', 'top'=>'-98px'));
         $selectBtn->js('click')->univ()->frameURL('Select Products', $this->api->url('selectProducts'));
         $formDetails->getElement('approved')->empty_text = null;
         $formDetails->template->trySet('fieldset','span4');
@@ -183,18 +193,31 @@ class page_pendingstarlink extends page_base
 
 
         if ($crud->grid) {
-            $crud->grid->addButton('Add Store')->js('click')->univ()->frameURL('Register New Store',$this->api->getDestinationURL('newstoreregister'));
+            //$crud->grid->addButton('Add Store')->js('click')->univ()->frameURL('Register New Store',$this->api->getDestinationURL('newstoreregister'));
             $crud->grid->addPaginator(5);
-            $quick_search = $crud->grid->addQuickSearch(array('cb_phone1', 'cb_phone2', 'email'))->addClass('small-form-search');
-            $quick_search->search_field->setAttr('placeholder', 'Email, Phone');
+            $qs1 = $crud->grid->addQuickSearch(array('cb_phone1', 'cb_phone2', 'email'))->addClass('small-form-search');
+            $qs1->search_field->setAttr('placeholder', 'Email, Phone');
 
-            $quick_search = $crud->grid->addQuickSearch(array('cb_address2', 'cb_address1', 'cb_city', 'cb_state', 'cb_zip'))->addClass('small-form-search');
-            $quick_search->search_field->setAttr('placeholder', 'Address, City, State, Zip');
+            $qs2 = $crud->grid->addQuickSearch(array('cb_address2', 'cb_address1', 'cb_city', 'cb_state', 'cb_zip'))->addClass('small-form-search');
+            $qs2->search_field->setAttr('placeholder', 'Address, City, State, Zip');
 
-            $quick_search = $crud->grid->addQuickSearch(array('cb_storeno'))->addClass('small-form-search');
-            $quick_search->search_field->setAttr('placeholder', 'Store Name');
+            $qs3 = $crud->grid->addQuickSearch(array('cb_storeno'))->addClass('small-form-search');
+            $qs3->search_field->setAttr('placeholder', 'Store Name');
 
-            $quick_filter = $crud->grid->add('DuplicatesFilter', null, 'quick_search')->useWith($crud->grid)->useFields(array('address'));
+            $qf = $crud->grid->add('DuplicatesFilter', null, 'quick_search')->useWith($crud->grid)->useFields(array('address'));
+
+            $qs = array($qs1, $qs2, $qs3, $qf);
+
+            $button = $crud->grid->addButton('Reset', 'resetbutton');
+            $button->js('click', $crud->grid->js()->reload(array('reset'=>1)));
+
+            if(isset($_GET['reset'])) {
+                foreach ($qs as $q) {
+                    $q->forget();
+                }
+                $qf->forget();
+            }
+
             $crud->grid->js('click', $this->js()->_selectorThis()->gridMasterDetails(true))->_selector('#' . $crud->grid->name . ' tr');
             $crud->grid->js('gridClick', $this->js()->reload(array(
                 'selected-id' => $this->js(null, 'arguments[arguments.length-1]'),
@@ -210,7 +233,7 @@ class page_pendingstarlink extends page_base
 
         if ($formDetails->isSubmitted()) {
             $fields = array('firstname', 'lastname', 'cb_email', 'cb_storeno', 'cb_phone1', 'cb_phone2', 'website', 'cb_type', 'cb_notes', 'cb_fax',
-                'cb_dist1', 'cb_dist2', 'cb_dist1sale', 'cb_dist2sale', 'cb_code', 'cb_trade', 'cb_storenumber', 'cb_address1',
+                'cb_dist1', 'cb_dist2', 'cb_dist1sale', 'cb_dist2sale', 'cb_trade', 'cb_storenumber', 'cb_address1',
                 'cb_address2', 'cb_city');
             foreach ($fields as $value){
                 $formDetails->set($value, strtoupper($formDetails->get($value)));
@@ -268,7 +291,7 @@ class page_pendingstarlink extends page_base
                 $comprof->set('cb_dist2', $formDetails->model->get('cb_dist2'));
                 $comprof->set('cb_dist1sale', $formDetails->model->get('cb_dist1sale'));
                 $comprof->set('cb_dist2sale', $formDetails->model->get('cb_dist2sale'));
-                $comprof->set('cb_code', $formDetails->model->get('cb_code'));
+                //$comprof->set('cb_code', $formDetails->model->get('cb_code'));
                 $comprof->set('cb_trade', $formDetails->model->get('cb_trade'));
                 $comprof->set('cb_storenumber', $formDetails->model->get('cb_storenumber'));
                 $comprof->set('cb_itemnumber', $formDetails->model->get('cb_itemnumber'));

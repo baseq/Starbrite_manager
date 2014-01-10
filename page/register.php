@@ -17,7 +17,7 @@ class page_register extends Page
         $f->setModel($model);
         $f->setClass('template-master-details-grid template-master-details-grid-rows atk-row');
 
-        $selectBtn = $f->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'320px', 'top'=>'-31px'));
+        $selectBtn = $f->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'350px', 'top'=>'-98px'));
         $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts'));
         
         $f->template->trySet('fieldset','span4');
@@ -144,8 +144,8 @@ class page_register extends Page
             array($this->api->getDestinationURL(),'country'=>$country->js()->val())));
 
         $f->getElement('cb_zip')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_itemnumber')->setProperty('size', 40);
-        $f->getElement('cb_itemnumber')->setProperty('style', 'width:210px')->setProperty('readonly', 'true');
+        $f->getElement('cb_itemnumber')->setProperty('cols', 42);
+        $f->getElement('cb_itemnumber')->setProperty('readonly', 'true');
         $f->addSubmit('Submit');
 
         if($f->isSubmitted()) {

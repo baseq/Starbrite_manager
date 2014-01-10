@@ -30,10 +30,10 @@ class Model_NewStoreRegister extends Model_Table
         $this->addField("cb_dist2")->caption("Secondary Distributor");
         $this->addField("cb_dist1sale")->caption("Primary Distributor Salesman");
         $this->addField("cb_dist2sale")->caption("Secondary Distributor Salesman");
-        $this->addField("cb_code")->caption("Code");
+        $this->addField("cb_code")->caption("Code")->editable(false);
         $this->addField("cb_trade")->caption("Type of Trade")->type('list')->setValueList($this->getDistinctTrade());
         $this->addField("cb_storenumber")->caption("Store Number");
-        $this->addField("cb_itemnumber")->mandatory('Select at least one item number')->caption("Products");
+        $this->addField("cb_itemnumber")->mandatory('Select at least one item number')->caption("Products")->type('text');
         $this->addField("cb_address1")->caption('Address 1');
         $this->addField("cb_address2")->caption('Address 2');
         $this->addField("cb_city")->caption('City');

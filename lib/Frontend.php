@@ -40,7 +40,9 @@ class Frontend extends ApiFrontend
         // If you wish to restrict access to your pages, use BasicAuth class
         $auth = $this->add('BasicAuth')
             ->allow('Starbrite', 'Star2013')->allowPage(array('register', 'thankyou', 'selectProducts'));
-            
+/*        $auth = $this->add('BasicAuth')
+            ->allow(array('Starbrite', 'Orderdept'), 'Star2013')->allowPage(array('register', 'thankyou', 'selectProducts'));*/
+
          
         // use check() and allowPage for white-list based auth checking
         //->check()

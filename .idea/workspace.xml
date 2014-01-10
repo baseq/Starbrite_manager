@@ -2,27 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db1f5bb3-92d1-478f-a87d-c241a18f678a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atk4/lib/View/Button.php" afterPath="$PROJECT_DIR$/atk4/lib/View/Button.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atk4/lib/View/ButtonSet.php" afterPath="$PROJECT_DIR$/atk4/lib/View/ButtonSet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/DuplicatesFilter.php" afterPath="$PROJECT_DIR$/lib/DuplicatesFilter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Frontend.php" afterPath="$PROJECT_DIR$/lib/Frontend.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" afterPath="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atk4/lib/QuickSearch.php" afterPath="$PROJECT_DIR$/atk4/lib/QuickSearch.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/Retailer.php" afterPath="$PROJECT_DIR$/lib/Model/Retailer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Model/StoreRegister.php" afterPath="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/default/css/atk-main.css" afterPath="$PROJECT_DIR$/templates/default/css/atk-main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/newstoreregister.php" afterPath="$PROJECT_DIR$/page/newstoreregister.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/pendingstarlink.php" afterPath="$PROJECT_DIR$/page/pendingstarlink.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/register.php" afterPath="$PROJECT_DIR$/page/register.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/retailers.php" afterPath="$PROJECT_DIR$/page/retailers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/test.php" afterPath="$PROJECT_DIR$/page/test.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388908211980" ignored="false" />
+    <file path="/Dummy.txt" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389342530504" ignored="false" />
     <file path="/register.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388830358589" ignored="false" />
-    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388936698707" ignored="false" />
-    <file path="/NewStoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388831222973" ignored="false" />
-    <file path="/StoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388812398681" ignored="false" />
-    <file path="/pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388941084207" ignored="false" />
-    <file path="/Pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388831017591" ignored="false" />
-    <file path="/newstoreregister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388939152322" ignored="false" />
-    <file path="/retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1388944636592" ignored="false" />
+    <file path="/a.dummy" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389350628925" ignored="false" />
+    <file path="/NewStoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389112902713" ignored="false" />
+    <file path="/StoreRegister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389108546372" ignored="false" />
+    <file path="/pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389351925711" ignored="false" />
+    <file path="/Pendingstarlink.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389109811146" ignored="false" />
+    <file path="/newstoreregister.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389110588645" ignored="false" />
+    <file path="/retailers.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389352926220" ignored="false" />
+    <file path="/Retailer.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389113191758" ignored="false" />
+    <file path="/atk-main.css" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389278409726" ignored="false" />
+    <file path="/test.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389194649048" ignored="false" />
+    <file path="$PROJECT_DIR$/../prosaris/page/prosaris/doctors.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389343113248" ignored="false" />
+    <file path="$PROJECT_DIR$/../prosaris/page/prosaris/doctor.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389287324316" ignored="false" />
+    <file path="/doctor.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389287278350" ignored="false" />
+    <file path="$PROJECT_DIR$/../prosaris/lib/Model/base/Specialty.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389287872240" ignored="false" />
+    <file path="/doctors.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389343112746" ignored="false" />
+    <file path="/QuickSearch.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389352973609" ignored="false" />
+    <file path="/DuplicatesFilter.php" changelist="db1f5bb3-92d1-478f-a87d-c241a18f678a" time="1389350660602" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,70 +53,39 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="manager" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="58" selection-start="1909" selection-end="1947" vertical-scroll-proportion="-9.346154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pendingstarlink.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="33" selection-start="3199" selection-end="3207" vertical-scroll-proportion="-20.461538">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectProducts.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/selectProducts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="9" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pendingstarlink.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pendingstarlink.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="107" selection-start="4094" selection-end="4193" vertical-scroll-proportion="-17.307692">
+            <state line="213" column="39" selection-start="14772" selection-end="14772" vertical-scroll-proportion="0.5864929">
               <folding>
-                <marker date="1388943256003" expanded="true" signature="21248:21266" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="21606:21624" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="22818:22836" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="23211:23229" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="24519:24537" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="24913:24931" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="26215:26233" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="26644:26662" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="28472:28490" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="28830:28848" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="30035:30053" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="30428:30446" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="31729:31747" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="32123:32141" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="33418:33436" placeholder="..." />
-                <marker date="1388943256003" expanded="true" signature="33847:33865" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="21989:22007" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="22347:22365" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="23559:23577" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="23952:23970" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="25260:25278" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="25654:25672" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="26956:26974" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="27385:27403" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="29213:29231" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="29571:29589" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="30776:30794" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="31169:31187" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="32470:32488" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="32864:32882" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="34159:34177" placeholder="..." />
+                <marker date="1389353047407" expanded="false" signature="34588:34606" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewStoreRegister.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/NewStoreRegister.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="41" selection-start="1493" selection-end="1535" vertical-scroll-proportion="-13.923077">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -107,62 +93,100 @@
       <file leaf-file-name="newstoreregister.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="115" selection-start="3297" selection-end="3297" vertical-scroll-proportion="137.96153">
+            <state line="351" column="45" selection-start="31406" selection-end="31406" vertical-scroll-proportion="-16.115385">
               <folding>
-                <marker date="1388942391247" expanded="false" signature="16999:17017" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="17357:17375" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="18582:18600" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="18975:18993" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="20296:20314" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="20690:20708" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="22005:22023" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="22434:22452" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="23765:23783" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="24123:24141" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="25328:25346" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="25721:25739" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="27022:27040" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="27416:27434" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="28711:28729" placeholder="..." />
-                <marker date="1388942391247" expanded="false" signature="29140:29158" placeholder="..." />
-                <marker date="1388942391247" expanded="true" signature="30363:30570" placeholder="/* $q = $thi..." />
+                <marker date="1389210140442" expanded="false" signature="17585:17603" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="17943:17961" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="19168:19186" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="19561:19579" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="20882:20900" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="21276:21294" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="22591:22609" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="23020:23038" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="24351:24369" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="24709:24727" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="25914:25932" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="26307:26325" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="27608:27626" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="28002:28020" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="29297:29315" placeholder="..." />
+                <marker date="1389210140442" expanded="false" signature="29726:29744" placeholder="..." />
+                <marker date="1389210140442" expanded="true" signature="30949:31156" placeholder="/* $q = $thi..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StoreRegister.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="107" selection-start="1197" selection-end="1197" vertical-scroll-proportion="-15.692307">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Retailer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="674" selection-end="681" vertical-scroll-proportion="-4.1153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="retailers.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="retailers.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/retailers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="231" column="81" selection-start="17490" selection-end="17490" vertical-scroll-proportion="0.43467933">
+            <state line="237" column="13" selection-start="15879" selection-end="16253" vertical-scroll-proportion="-15.692307">
               <folding>
-                <marker date="1388944869980" expanded="false" signature="16687:16705" placeholder="..." />
-                <marker date="1388944869980" expanded="false" signature="17045:17063" placeholder="..." />
-                <marker date="1388944869980" expanded="false" signature="18250:18268" placeholder="..." />
-                <marker date="1388944869980" expanded="false" signature="18643:18661" placeholder="..." />
-                <marker date="1388944869980" expanded="false" signature="19944:19962" placeholder="..." />
-                <marker date="1388944869980" expanded="false" signature="20338:20356" placeholder="..." />
-                <marker date="1388944869980" expanded="false" signature="21633:21651" placeholder="..." />
-                <marker date="1388944869980" expanded="false" signature="22062:22080" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="17730:17748" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="18088:18106" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="19293:19311" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="19686:19704" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="20987:21005" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="21381:21399" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="22676:22694" placeholder="..." />
+                <marker date="1389352932183" expanded="false" signature="23105:23123" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickSearch.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atk4/lib/QuickSearch.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="-6.8076925">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DuplicatesFilter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/DuplicatesFilter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="5" selection-start="166" selection-end="166" vertical-scroll-proportion="16.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ButtonSet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atk4/lib/ButtonSet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="33" selection-start="517" selection-end="517" vertical-scroll-proportion="-10.461538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ButtonSet.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atk4/lib/View/ButtonSet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="1" selection-start="1572" selection-end="1572" vertical-scroll-proportion="-31.653847">
+              <folding>
+                <element signature="e#6#107#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickFilter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/QuickFilter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="61" selection-start="2662" selection-end="2662" vertical-scroll-proportion="-13.730769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Button.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/atk4/lib/View/Button.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="215" column="41" selection-start="5487" selection-end="5487" vertical-scroll-proportion="-96.38461">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -190,22 +214,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/atk4/lib/Grid/Advanced.php" />
-        <option value="$PROJECT_DIR$/atk4/lib/Grid.php" />
-        <option value="$PROJECT_DIR$/atk4/lib/AbstractView.php" />
-        <option value="$PROJECT_DIR$/page/selectProducts_retailers.php" />
-        <option value="$PROJECT_DIR$/page/selectProductsRetailers.php" />
-        <option value="$PROJECT_DIR$/page/selectProducts2.php" />
-        <option value="$PROJECT_DIR$/page/selectProducts.php" />
-        <option value="$PROJECT_DIR$/lib/Model/Product.php" />
+        <option value="$PROJECT_DIR$/page/register.php" />
+        <option value="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
         <option value="$PROJECT_DIR$/lib/Model/NewStoreRegister.php" />
         <option value="$PROJECT_DIR$/lib/Model/Retailer.php" />
-        <option value="$PROJECT_DIR$/page/register.php" />
-        <option value="$PROJECT_DIR$/page/newstoreregister.php" />
         <option value="$PROJECT_DIR$/lib/Model/StoreRegister.php" />
-        <option value="$PROJECT_DIR$/lib/Model/Pendingstarlink.php" />
-        <option value="$PROJECT_DIR$/page/pendingstarlink.php" />
+        <option value="$PROJECT_DIR$/page/test.php" />
+        <option value="$PROJECT_DIR$/lib/Frontend.php" />
+        <option value="$PROJECT_DIR$/page/newstoreregister.php" />
+        <option value="$PROJECT_DIR$/lib/QuickFilter.php" />
+        <option value="$PROJECT_DIR$/templates/default/css/atk-main.css" />
+        <option value="$PROJECT_DIR$/atk4/lib/View/ButtonSet.php" />
+        <option value="$PROJECT_DIR$/atk4/lib/View/Button.php" />
+        <option value="$PROJECT_DIR$/lib/DuplicatesFilter.php" />
         <option value="$PROJECT_DIR$/page/retailers.php" />
+        <option value="$PROJECT_DIR$/atk4/lib/QuickSearch.php" />
+        <option value="$PROJECT_DIR$/page/pendingstarlink.php" />
       </list>
     </option>
   </component>
@@ -342,6 +366,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -357,24 +435,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,7 +485,12 @@
       <recent name="C:\xampp\htdocs\starbrite\manager\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Web Application.Unnamed">
+  <component name="RunManager" selected="PHP Script.NewStoreRegister.php">
+    <configuration default="false" name="NewStoreRegister.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/lib/Model/NewStoreRegister.php">
+      <RunnerSettings RunnerId="PhpScriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpScriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -452,9 +517,15 @@
       <ConfigurationWrapper RunnerId="PhpWebAppDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.Unnamed" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.NewStoreRegister.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Web Application.Unnamed" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.NewStoreRegister.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StructureViewFactory">
@@ -584,7 +655,11 @@
       <created>1388908218384</created>
       <updated>1388908218384</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Some fixes">
+      <created>1388949196683</created>
+      <updated>1388949196683</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -611,14 +686,13 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855567" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4024256" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.5975744" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22358592" sideWeight="0.6714443" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278328" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40154016" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25133404" sideWeight="0.59845984" order="1" side_tool="false" content_ui="tabs" x="949" y="104" width="308" height="853" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23959444" sideWeight="0.67216724" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -627,6 +701,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -702,162 +777,162 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/atk4/lib/AbstractController.php">
+    <entry file="file://$PROJECT_DIR$/atk4/lib/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="816" selection-end="816" vertical-scroll-proportion="0.6979592">
+        <state line="27" column="6" selection-start="818" selection-end="818" vertical-scroll-proportion="0.3488372">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4/lib/Grid.php">
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Form/Basic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="512" selection-end="512" vertical-scroll-proportion="0.3510204">
+        <state line="27" column="26" selection-start="867" selection-end="867" vertical-scroll-proportion="0.33273703">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4-addons/mvc/MVCGrid.php">
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="27" selection-start="2302" selection-end="2316" vertical-scroll-proportion="1.4157783">
-          <folding />
-        </state>
+        <state line="17" column="25" selection-start="531" selection-end="531" vertical-scroll-proportion="0.51699466" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4/lib/MVCGrid.php">
+    <entry file="file://$PROJECT_DIR$/rebates.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="508" selection-end="508" vertical-scroll-proportion="0.55510205">
+        <state line="21" column="38" selection-start="699" selection-end="699" vertical-scroll-proportion="-6.6153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/atk4/lib/Grid/Advanced.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="363" column="33" selection-start="13681" selection-end="13681" vertical-scroll-proportion="0.33265308">
+        <state line="121" column="33" selection-start="3914" selection-end="3914" vertical-scroll-proportion="-43.884617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4-addons/mvc/Model/MVCTable.php">
+    <entry file="file://$PROJECT_DIR$/templates/default/css/atk-main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1190" column="27" selection-start="50738" selection-end="50738" vertical-scroll-proportion="0.62857145">
+        <state line="2942" column="1" selection-start="36984" selection-end="36984" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4-addons/billing/lib/billing/page/UserPayments.php">
+    <entry file="file://$PROJECT_DIR$/atk4/lib/ButtonSet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="22" selection-start="1645" selection-end="1651" vertical-scroll-proportion="0.6632653">
+        <state line="16" column="33" selection-start="517" selection-end="517" vertical-scroll-proportion="-10.461538">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/atk4/lib/Controller/MVCGrid.php">
+    <entry file="file://$PROJECT_DIR$/atk4/lib/View/ButtonSet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="41" selection-start="525" selection-end="525" vertical-scroll-proportion="0.55510205">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/StoreRegister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="107" selection-start="1197" selection-end="1197" vertical-scroll-proportion="-15.692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="58" selection-start="1909" selection-end="1947" vertical-scroll-proportion="-9.346154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/Pendingstarlink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="33" selection-start="3199" selection-end="3207" vertical-scroll-proportion="-20.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/Retailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="674" selection-end="681" vertical-scroll-proportion="-4.1153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Model/NewStoreRegister.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="41" selection-start="1493" selection-end="1535" vertical-scroll-proportion="-13.923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="107" selection-start="4094" selection-end="4193" vertical-scroll-proportion="-17.307692">
+        <state line="63" column="1" selection-start="1572" selection-end="1572" vertical-scroll-proportion="-31.653847">
           <folding>
-            <marker date="1388943256003" expanded="true" signature="21248:21266" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="21606:21624" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="22818:22836" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="23211:23229" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="24519:24537" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="24913:24931" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="26215:26233" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="26644:26662" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="28472:28490" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="28830:28848" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="30035:30053" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="30428:30446" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="31729:31747" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="32123:32141" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="33418:33436" placeholder="..." />
-            <marker date="1388943256003" expanded="true" signature="33847:33865" placeholder="..." />
+            <element signature="e#6#107#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/View/Button.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="41" selection-start="5487" selection-end="5487" vertical-scroll-proportion="-96.38461">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/newstoreregister.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="115" selection-start="3297" selection-end="3297" vertical-scroll-proportion="137.96153">
+        <state line="351" column="45" selection-start="31406" selection-end="31406" vertical-scroll-proportion="-16.115385">
           <folding>
-            <marker date="1388942391247" expanded="false" signature="16999:17017" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="17357:17375" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="18582:18600" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="18975:18993" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="20296:20314" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="20690:20708" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="22005:22023" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="22434:22452" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="23765:23783" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="24123:24141" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="25328:25346" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="25721:25739" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="27022:27040" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="27416:27434" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="28711:28729" placeholder="..." />
-            <marker date="1388942391247" expanded="false" signature="29140:29158" placeholder="..." />
-            <marker date="1388942391247" expanded="true" signature="30363:30570" placeholder="/* $q = $thi..." />
+            <marker date="1389210140442" expanded="false" signature="17585:17603" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="17943:17961" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="19168:19186" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="19561:19579" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="20882:20900" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="21276:21294" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="22591:22609" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="23020:23038" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="24351:24369" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="24709:24727" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="25914:25932" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="26307:26325" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="27608:27626" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="28002:28020" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="29297:29315" placeholder="..." />
+            <marker date="1389210140442" expanded="false" signature="29726:29744" placeholder="..." />
+            <marker date="1389210140442" expanded="true" signature="30949:31156" placeholder="/* $q = $thi..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/Filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="6" selection-start="512" selection-end="512" vertical-scroll-proportion="0.3325554">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/QuickFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="61" selection-start="2662" selection-end="2662" vertical-scroll-proportion="-13.730769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/DuplicatesFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="5" selection-start="166" selection-end="166" vertical-scroll-proportion="16.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atk4/lib/QuickSearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="882" selection-end="882" vertical-scroll-proportion="-6.8076925">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/retailers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="81" selection-start="17490" selection-end="17490" vertical-scroll-proportion="0.43467933">
+        <state line="237" column="13" selection-start="15879" selection-end="16253" vertical-scroll-proportion="-15.692307">
           <folding>
-            <marker date="1388944869980" expanded="false" signature="16687:16705" placeholder="..." />
-            <marker date="1388944869980" expanded="false" signature="17045:17063" placeholder="..." />
-            <marker date="1388944869980" expanded="false" signature="18250:18268" placeholder="..." />
-            <marker date="1388944869980" expanded="false" signature="18643:18661" placeholder="..." />
-            <marker date="1388944869980" expanded="false" signature="19944:19962" placeholder="..." />
-            <marker date="1388944869980" expanded="false" signature="20338:20356" placeholder="..." />
-            <marker date="1388944869980" expanded="false" signature="21633:21651" placeholder="..." />
-            <marker date="1388944869980" expanded="false" signature="22062:22080" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="17730:17748" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="18088:18106" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="19293:19311" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="19686:19704" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="20987:21005" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="21381:21399" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="22676:22694" placeholder="..." />
+            <marker date="1389352932183" expanded="false" signature="23105:23123" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/pendingstarlink.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="39" selection-start="14772" selection-end="14772" vertical-scroll-proportion="0.5864929">
+          <folding>
+            <marker date="1389353047407" expanded="false" signature="21989:22007" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="22347:22365" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="23559:23577" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="23952:23970" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="25260:25278" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="25654:25672" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="26956:26974" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="27385:27403" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="29213:29231" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="29571:29589" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="30776:30794" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="31169:31187" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="32470:32488" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="32864:32882" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="34159:34177" placeholder="..." />
+            <marker date="1389353047407" expanded="false" signature="34588:34606" placeholder="..." />
           </folding>
         </state>
       </provider>

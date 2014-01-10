@@ -13,32 +13,8 @@ class Model_Pendingstarlink extends Model_Table {
 
         parent::init();
 
-
-        $this->addField('cb_goldstore')->datatype('boolean')->caption('Gold Star');
-        $this->addField('cb_expiredate')->datatype('date')->caption('Expire Date');
-        //$this->addField("user_id")->visible(false)->editable(true);
-        $this->addField("cb_dealno")->caption("Deal No")->editable(false);
-        $this->addField("firstname");
-        $this->addField("lastname");
-        $this->addField("email")->editable(false);
-        $this->addField("username")->editable(false);
-        //$this->addExpression("name", "firstname" + "lastname")->editable(false)->caption("Name");
-        $this->addField("cb_email")->caption("Contact Email");
-        //$this->addExpression("email", "cb_dealno" + "@invalid.com")->caption("Email");
+//CONTACT INFO
         $this->addField("cb_storeno")->caption("Store Name");
-        $this->addField("cb_phone1")->caption("Phone1")->defaultValue('');
-        $this->addField("cb_phone2")->caption("Phone2")->defaultValue('');
-        $this->addField("website")->caption("Website");
-        $this->addField("cb_type")->caption("Type")->type('list')->setValueList($this->getDistinctTypes());
-        $this->addField("cb_notes")->caption("Notes");
-        $this->addField("cb_fax")->caption("Fax");
-        $this->addField("cb_onlinesell")->caption("Do you sell online?")->datatype('boolean')->enum(array('Y', 'N'));
-        $this->addField("cb_dist1")->caption("Primary Distributor");
-        $this->addField("cb_dist2")->caption("Secondary Distributor");
-        $this->addField("cb_dist1sale")->caption("Primary Distributor Salesman");
-        $this->addField("cb_dist2sale")->caption("Secondary Distributor Salesman");
-        $this->addField("cb_code")->caption("Code");
-        $this->addField("cb_trade")->caption("Type of Trade")->type('list')->setValueList($this->getDistinctTrade());
         $this->addField("cb_storenumber")->caption("Store Number");
         $this->addField("cb_address1")->caption('Address 1');
         $this->addField("cb_address2")->caption('Address 2');
@@ -46,7 +22,33 @@ class Model_Pendingstarlink extends Model_Table {
         $this->addField("cb_country")->caption('Country')->type('list');
         $this->addField("cb_state")->caption('State')->type('list');
         $this->addField("cb_zip")->caption('Zip Code');
-        $this->addField("cb_itemnumber")->caption("Products");
+        $this->addField("cb_email")->caption("Contact Email");
+        $this->addField("cb_phone1")->caption("Phone1")->defaultValue('');
+        $this->addField("cb_phone2")->caption("Phone2")->defaultValue('');
+        $this->addField("cb_fax")->caption("Fax");
+        $this->addField("website")->caption("Website");
+
+//DEALER INFO
+        $this->addField("cb_itemnumber")->caption("Products")->type('text');
+        $this->addField("cb_onlinesell")->caption("Do you sell online?")->datatype('boolean')->enum(array('Y', 'N'));
+        $this->addField("cb_trade")->caption("Type of Trade")->type('list')->setValueList($this->getDistinctTrade());
+        $this->addField("cb_dist1")->caption("Primary Distributor");
+        $this->addField("cb_dist1sale")->caption("Primary Distributor Salesman");
+        $this->addField("cb_dist2")->caption("Secondary Distributor");
+        $this->addField("cb_dist2sale")->caption("Secondary Distributor Salesman");
+
+//INTERNAL USE ONLY
+        $this->addField('cb_goldstore')->datatype('boolean')->caption('Gold Star');
+        $this->addField('cb_expiredate')->datatype('date')->caption('Expire Date');
+        $this->addField("cb_type")->caption("Type")->type('list')->setValueList($this->getDistinctTypes());
+        //$this->addField("user_id")->visible(false)->editable(true);
+        $this->addField("cb_dealno")->caption("Deal No")->editable(false);
+        $this->addField("email")->editable(false);
+        $this->addField("username")->editable(false);
+        //$this->addExpression("name", "firstname" + "lastname")->editable(false)->caption("Name");
+        //$this->addExpression("email", "cb_dealno" + "@invalid.com")->caption("Email");
+        $this->addField("cb_notes")->caption("Notes");
+        $this->addField("cb_code")->caption("Code")->editable(false);
         $this->addField('cb_fieldsetname')->editable(false);
         $this->addField("cb_plug_lat")->editable(false);
         $this->addField("cb_plug_lng")->editable(false);
@@ -54,6 +56,8 @@ class Model_Pendingstarlink extends Model_Table {
         $this->addField('address')->calculated($this->duplicateExpression);
         $this->addField("status")->setValueList(array('New'=>'New', 'Exported'=>'Exported'))->defaultValue('New')->editable(false);
         $this->addField("date_exported")->datatype('date')->editable(false);
+        $this->addField("firstname");
+        $this->addField("lastname");
         $this->addField('approved')->editable(true)->datatype('list')->listData(array(0=>'Not Approved',1=>'Approved'))->caption('Approved');
         $this->addField("confirmed")->editable(false);
         $this->addField("password")->system(true);
