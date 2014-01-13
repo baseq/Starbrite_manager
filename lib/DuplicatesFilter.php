@@ -21,7 +21,6 @@ class DuplicatesFilter extends QuickFilter {
     	parent::useFields($fields);
 
 
-
         $this->addField('dropdown', 'address', 'Duplicates')->attr['allow_new_value'] = true;
 
        
@@ -63,4 +62,3 @@ class DuplicatesFilter extends QuickFilter {
     //function addField($type, $name)
 
 }
-

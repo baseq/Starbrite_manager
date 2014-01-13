@@ -18,12 +18,23 @@ class page_register extends Page
         $f->setClass('template-master-details-grid template-master-details-grid-rows atk-row');
 
         $selectBtn = $f->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'350px', 'top'=>'-98px'));
-        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts'));
-        
+        $selectBtn->js('click')->univ()->frameURL('Select Products',$this->api->getDestinationURL('selectProducts', array('page_reg'=>$this->name)));
+
+        $label1 = $f->add('HtmlElement')
+            ->setElement('h4')
+            ->set('CONTACT INFO');
+        $label2 = $f->add('HtmlElement')
+            ->setElement('h4')
+            ->set('DEALER INFO');
+
         $f->template->trySet('fieldset','span4');
         $sep1 = $f->addSeparator('span4');
         $sep2 = $f->addSeparator('span4');
-        $f->add('Order')->move($sep1, 'before', 'cb_dist1')->move($sep2, 'before', 'cb_address1')->move($selectBtn, 'after', 'cb_itemnumber')->now();
+
+        $f->add('Order')->move($label1, 'before', 'cb_storeno')->move($label2, 'before', 'cb_itemnumber')->now();
+        $f->add('Order')->move($sep1, 'before', $label2)->move($selectBtn, 'after', 'cb_itemnumber')->now();
+
+        //$f->add('Order')->move($sep1, 'before', 'cb_dist1')->move($sep2, 'before', 'cb_address1')->move($selectBtn, 'after', 'cb_itemnumber')->now();
         
         
         //$selectBtn->grid->add('Button', 'press');
@@ -36,15 +47,15 @@ class page_register extends Page
         $f->getElement('cb_phone1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_phone2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('website')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_type')->setProperty('size', 40)->setProperty('style','width:218px;');
-        $f->getElement('cb_notes')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        //$f->getElement('cb_type')->setProperty('size', 40)->setProperty('style','width:218px;');
+        //$f->getElement('cb_notes')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_fax')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         //$f->getElement('cb_onlinesell')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist2')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist1sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_dist2sale')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
-        $f->getElement('cb_code')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
+        //$f->getElement('cb_code')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_trade')->setProperty('size', 40)->setProperty('style','width:218px;');
         $f->getElement('cb_storenumber')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_address1')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
@@ -145,12 +156,26 @@ class page_register extends Page
 
         $f->getElement('cb_zip')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_itemnumber')->setProperty('cols', 42);
-        $f->getElement('cb_itemnumber')->setProperty('readonly', 'true');
+        //$f->getElement('cb_itemnumber')->setProperty('readonly', 'true');
         $f->addSubmit('Submit');
 
         if($f->isSubmitted()) {
-            $fields = array('cb_email', 'cb_storeno', 'cb_phone1', 'cb_phone2', 'website', 'cb_type', 'cb_notes', 'cb_fax',
-                'cb_dist1', 'cb_dist2', 'cb_dist1sale', 'cb_dist2sale', 'cb_code', 'cb_trade', 'cb_storenumber', 'cb_address1',
+
+            //replace all non digits or comma from the cb_itemnumber field
+            $str = nl2br($f->get('cb_itemnumber'));
+
+            $str = str_replace('<br />',',',$str);
+            $str = str_replace(', ',',',$str);
+            $str = str_replace(' ,',',',$str);
+            $str = preg_replace('/ +/',',',$str);
+            $str = preg_replace('/[^0-9,]/','', $str);
+            $str = preg_replace('/,+/',',',$str);
+            $str = preg_replace('/,$/','',$str);
+
+            $f->set('cb_itemnumber', $str);
+
+            $fields = array('cb_email', 'cb_storeno', 'cb_phone1', 'cb_phone2', 'website', 'cb_fax',
+                'cb_dist1', 'cb_dist2', 'cb_dist1sale', 'cb_dist2sale', 'cb_trade', 'cb_storenumber', 'cb_address1',
                 'cb_address2', 'cb_city');
             foreach ($fields as $value){
                 $f->set($value, strtoupper($f->get($value)));
@@ -189,7 +214,7 @@ class page_register extends Page
     {
     	parent::render();
 
-    	$this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+    	$this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'));
     	 
     }
 }

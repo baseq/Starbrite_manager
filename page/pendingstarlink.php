@@ -185,7 +185,7 @@ class page_pendingstarlink extends page_base
         }
 
         $selectBtn = $formDetails->add('Button', 'button')->set('+')->setStyle(array('margin-left'=>'350px', 'top'=>'-98px'));
-        $selectBtn->js('click')->univ()->frameURL('Select Products', $this->api->url('selectProducts'));
+        $selectBtn->js('click')->univ()->frameURL('Select Products', $this->api->url('selectProducts', array('page_reg'=>$this->name)));
         $formDetails->getElement('approved')->empty_text = null;
         $formDetails->template->trySet('fieldset','span4');
         $sep1 = $formDetails->addSeparator('span4');
@@ -232,6 +232,19 @@ class page_pendingstarlink extends page_base
         }
 
         if ($formDetails->isSubmitted()) {
+            //replace all non digits or comma from the cb_itemnumber field
+            $str = nl2br($formDetails->get('cb_itemnumber'));
+
+            $str = str_replace('<br />',',',$str);
+            $str = str_replace(', ',',',$str);
+            $str = str_replace(' ,',',',$str);
+            $str = preg_replace('/ +/',',',$str);
+            $str = preg_replace('/[^0-9,]/','', $str);
+            $str = preg_replace('/,+/',',',$str);
+            $str = preg_replace('/,$/','',$str);
+
+            $formDetails->set('cb_itemnumber', $str);
+
             $fields = array('firstname', 'lastname', 'cb_email', 'cb_storeno', 'cb_phone1', 'cb_phone2', 'website', 'cb_type', 'cb_notes', 'cb_fax',
                 'cb_dist1', 'cb_dist2', 'cb_dist1sale', 'cb_dist2sale', 'cb_trade', 'cb_storenumber', 'cb_address1',
                 'cb_address2', 'cb_city');
@@ -439,7 +452,7 @@ class page_pendingstarlink extends page_base
     {
         parent::render();
 
-        $this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'))->_selector('body');
+        $this->js('addSelectedText', $this->form->js()->atk4_form('reloadField', 'cb_itemnumber'));
 
     }
 }

@@ -3,8 +3,7 @@ class page_test extends Page {
 	function init(){
 		parent::init();
 		
-		//$this->add('BasicAuth')->allow('Starbrite','Star2013')->check();
-		//$this->add('BasicAuth')->allow(array('Starbrite'=>'Star2013', 'Orderdept'=>'ciuciu'))->check();
+		$this->add('BasicAuth')->allow('Starbrite','Star2013')->check();
 
 		$crud=$this->add('CRUD');
 		$crud->setModel('Suplier');
