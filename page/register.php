@@ -71,88 +71,69 @@ class page_register extends Page
                 $this->api->forget('selected_record');
             }
         }        //TO DO: make this happen
-        $country_list=array(1=>'AFGHANISTAN',2=>'ÅLAND ISLANDS',3=>'ALBANIA',4=>'ALGERIA',5=>'AMERICAN SAMOA',
-            6=>'ANDORRA',7=>'ANGOLA',8=>'ANGUILLA',9=>'ANTARCTICA',10=>'ANTIGUA AND BARBUDA',11=>'ARGENTINA',
-            12=>'ARMENIA',13=>'ARUBA',14=>'AUSTRALIA',15=>'AUSTRIA',16=>'AZERBAIJAN',17=>'BAHAMAS',18=>'BAHRAIN',
-            19=>'BANGLADESH',20=>'BARBADOS',21=>'BELARUS',22=>'BELGIUM',23=>'BELIZE',24=>'BENIN',25=>'BERMUDA',
-            26=>'BHUTAN',27=>'BOLIVIA, PLURINATIONAL STATE OF',28=>'BONAIRE, SINT EUSTATIUS AND SABA',
-            29=>'BOSNIA AND HERZEGOVINA',30=>'BOTSWANA',31=>'BOUVET ISLAND',32=>'BRAZIL',33=>'BRITISH INDIAN OCEAN TERRITORY',
-            34=>'BRUNEI DARUSSALAM',35=>'BULGARIA',36=>'BURKINA FASO',37=>'BURUNDI',38=>'CAMBODIA',39=>'CAMEROON',
-            40=>'CANADA',41=>'CAPE VERDE',42=>'CAYMAN ISLANDS',43=>'CENTRAL AFRICAN REPUBLIC',44=>'CHAD',45=>'CHILE',
-            46=>'CHINA',47=>'CHRISTMAS ISLAND',48=>'COCOS (KEELING) ISLANDS',49=>'COLOMBIA',50=>'COMOROS',51=>'CONGO',
-            52=>'CONGO, THE DEMOCRATIC REPUBLIC OF THE',53=>'COOK ISLANDS',54=>'COSTA RICA',55=>'CÔTE D’IVOIRE',56=>'CROATIA',
-            57=>'CUBA',58=>'CURAÇAO',59=>'CYPRUS',60=>'CZECH REPUBLIC',61=>'DENMARK',62=>'DJIBOUTI',63=>'DOMINICA',
-            64=>'DOMINICAN REPUBLIC',65=>'ECUADOR',66=>'EGYPT',67=>'EL SALVADOR',68=>'EQUATORIAL GUINEA',69=>'ERITREA',
-            70=>'ESTONIA',71=>'ETHIOPIA',72=>'FALKLAND ISLANDS (MALVINAS)',73=>'FAROE ISLANDS',74=>'FIJI',75=>'FINLAND',
-            76=>'FRANCE',77=>'FRENCH GUIANA',78=>'FRENCH POLYNESIA',79=>'FRENCH SOUTHERN TERRITORIES',80=>'GABON',
-            81=>'GAMBIA',82=>'GEORGIA',83=>'GERMANY',84=>'GHANA',85=>'GIBRALTAR',86=>'GREECE',87=>'GREENLAND',
-            88=>'GRENADA',89=>'GUADELOUPE',90=>'GUAM',91=>'GUATEMALA',92=>'GUERNSEY',93=>'GUINEA',94=>'GUINEA-BISSAU',
-            95=>'GUYANA',96=>'HAITI',97=>'HEARD ISLAND AND MCDONALD ISLANDS',98=>'HOLY SEE (VATICAN CITY STATE)',
-            99=>'HONDURAS',100=>'HONG KONG',101=>'HUNGARY',102=>'ICELAND',103=>'INDIA',104=>'INDONESIA',105=>'IRAN, ISLAMIC REPUBLIC OF',
-            106=>'IRAQ',107=>'IRELAND',108=>'ISLE OF MAN',109=>'ISRAEL',110=>'ITALY',111=>'JAMAICA',112=>'JAPAN',
-            113=>'JERSEY',114=>'JORDAN',115=>'KAZAKHSTAN',116=>'KENYA',117=>'KIRIBATI',118=>'KOREA, DEMOCRATIC PEOPLE’S REPUBLIC OF',
-            119=>'KOREA, REPUBLIC OF',120=>'KUWAIT',121=>'KYRGYZSTAN',122=>'LAO PEOPLE’S DEMOCRATIC REPUBLIC',
-            123=>'LATVIA',124=>'LEBANON',125=>'LESOTHO',126=>'LIBERIA',127=>'LIBYA',128=>'LIECHTENSTEIN',
-            129=>'LITHUANIA',130=>'LUXEMBOURG',131=>'MACAO',132=>'MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF',
-            133=>'MADAGASCAR',134=>'MALAWI',135=>'MALAYSIA',136=>'MALDIVES',137=>'MALI',138=>'MALTA',
-            139=>'MARSHALL ISLANDS',140=>'MARTINIQUE',141=>'MAURITANIA',142=>'MAURITIUS',143=>'MAYOTTE',144=>'MEXICO',
-            145=>'MICRONESIA, FEDERATED STATES OF',146=>'MOLDOVA, REPUBLIC OF',147=>'MONACO',148=>'MONGOLIA',
-            149=>'MONTENEGRO',150=>'MONTSERRAT',151=>'MOROCCO',152=>'MOZAMBIQUE',153=>'MYANMAR',154=>'NAMIBIA',
-            155=>'NAURU',156=>'NEPAL',157=>'NETHERLANDS',158=>'NEW CALEDONIA',159=>'NEW ZEALAND',160=>'NICARAGUA',
-            161=>'NIGER',162=>'NIGERIA',163=>'NIUE',164=>'NORFOLK ISLAND',165=>'NORTHERN MARIANA ISLANDS',
-            166=>'NORWAY',167=>'OMAN',168=>'PAKISTAN',169=>'PALAU',170=>'PALESTINIAN TERRITORY, OCCUPIED',171=>'PANAMA',
-            172=>'PAPUA NEW GUINEA',173=>'PARAGUAY',174=>'PERU',175=>'PHILIPPINES',176=>'PITCAIRN',177=>'POLAND',178=>'PORTUGAL',
-            179=>'PUERTO RICO',180=>'QATAR',181=>'RÉUNION',182=>'ROMANIA',183=>'RUSSIAN FEDERATION',184=>'RWANDA',185=>'SAINT BARTHÉLEMY',
-            186=>'SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA',187=>'SAINT KITTS AND NEVIS',188=>'SAINT LUCIA',189=>'SAINT MARTIN (FRENCH PART)',
-            190=>'SAINT PIERRE AND MIQUELON',191=>'SAINT VINCENT AND THE GRENADINES',192=>'SAMOA',193=>'SAN MARINO',194=>'SAO TOME AND PRINCIPE',
-            195=>'SAUDI ARABIA',196=>'SENEGAL',197=>'SERBIA',198=>'SEYCHELLES',199=>'SIERRA LEONE',200=>'SINGAPORE',201=>'SINT MAARTEN (DUTCH PART)',
-            202=>'SLOVAKIA',203=>'SLOVENIA',204=>'SOLOMON ISLANDS',205=>'SOMALIA',206=>'SOUTH AFRICA',207=>'SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS',
-            208=>'SOUTH SUDAN',209=>'SPAIN',210=>'SRI LANKA',211=>'SUDAN',212=>'SURINAME',213=>'SVALBARD AND JAN MAYEN',214=>'SWAZILAND',
-            215=>'SWEDEN',216=>'SWITZERLAND',217=>'SYRIAN ARAB REPUBLIC',218=>'TAIWAN, PROVINCE OF CHINA',219=>'TAJIKISTAN',
-            220=>'TANZANIA, UNITED REPUBLIC OF',221=>'THAILAND',222=>'TIMOR-LESTE',223=>'TOGO',224=>'TOKELAU',225=>'TONGA',
-            226=>'TRINIDAD AND TOBAGO',227=>'TUNISIA',228=>'TURKEY',229=>'TURKMENISTAN',230=>'TURKS AND CAICOS ISLANDS',
-            231=>'TUVALU',232=>'UGANDA',233=>'UKRAINE',234=>'UNITED ARAB EMIRATES',235=>'UNITED KINGDOM',
-            'UNITED STATES OF AMERICA'=>'UNITED STATES OF AMERICA',237=>'UNITED STATES MINOR OUTLYING ISLANDS',238=>'URUGUAY',239=>'UZBEKISTAN',240=>'VANUATU',
-            241=>'VENEZUELA, BOLIVARIAN REPUBLIC OF',242=>'VIET NAM',243=>'VIRGIN ISLANDS, BRITISH',244=>'VIRGIN ISLANDS, U.S.',
-            245=>'WALLIS AND FUTUNA',246=>'WESTERN SAHARA',247=>'YEMEN',248=>'ZAMBIA',249=>'ZIMBABWE');
-        $region_list=array('AL','AK','AS','AZ','AR','CA','CO',
-            'CT','DE','DC','FL','GA','GU','HI','ID','IL','IN',
-            'IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO',
-            'MT','NE','NV','NH','NJ','NM','NY','NC','ND',
-            'MP','OH','OK','OR','PA','PR','RI',
-            'SC','SD','TN','TX','UT','VT','VI','VA','WA',
-            'WV','WI','WY');
-        //$region_list=$region_list[$_GET['region']]?:array();
-        $country_list2 = array();
-        foreach($country_list as $k=>$v) {
-            $country_list2[$v] = $v;
-        }
-        $country_list = $country_list2;
-        $region_list2 = array();
-        foreach ($region_list as $r) {
-            $region_list2[$r] = $r;
-        }
-        $region_list = $region_list2;
-        $f->getElement('cb_country')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')->setProperty('style','width:218px;')
-            ->setValueList($country_list);
-        $f->getElement('cb_state')->setProperty('style', 'width:220px')->setProperty('style','text-transform:uppercase;')->setProperty('style','width:218px;')
-            ->setValueList($region_list);
-        if ($_GET['country']) {
-            $f->set('cb_country', $_GET['country']);
-        } else {
-            $f->set('cb_country', 'UNITED STATES OF AMERICA');
-        }
-        $country = $f->getElement('cb_country');
-        $region = $f->getElement('cb_state');
+        $country_list = $f->model->countryList();
+        $region_list = $f->model->regionList();
 
-        if(strcmp($f->get('cb_country'), 'UNITED STATES OF AMERICA') == 0) {
-            $region->js(true)->parent()->parent()->show();
-            //$region->js(true)->closest('div')->siblings(array(0=>'label'))->show();
-        } else {
-            $region->js(true)->parent()->parent()->hide();
+        // country field
+        $f->getElement('cb_country')
+            ->setProperty('style', 'width:220px')
+            ->setProperty('style','text-transform:uppercase;')
+            ->setProperty('style','width:218px;')
+            ->setValueList($country_list);
+
+        // state field
+        $f->getElement('cb_state')
+            ->setProperty('style', 'width:220px')
+            ->setProperty('style','text-transform:uppercase;')
+            ->setProperty('style','width:218px;');
+
+
+        $country = $f->get('cb_country');
+        $region = $f->get('cb_state');
+        $countryIndex = null;
+        if(isset($_POST[$f->getElement('cb_country')->name])) {
+            $f->getElement('cb_country')->set($_POST[$f->getElement('cb_country')->name]);
+            $countryIndex = $f->get('cb_country');
+        } else if(isset($_GET['country'])){
+            $countryIndex = $_GET['country'];
         }
-        $country->js('change',$f->js()->atk4_form('reloadField','cb_state',
-            array($this->api->getDestinationURL(),'country'=>$country->js()->val())));
+        if ($countryIndex == null) {
+            foreach ($country_list as $k => $c) {
+                if (strcmp($country, $c) == 0) {
+                    $countryIndex = $k;
+                    break;
+                }
+            }
+        }
+        if($countryIndex==null) $countryIndex = 236;
+        if (isset($region_list[$countryIndex])) {
+            $regionIndex = null;
+            foreach ($region_list[$countryIndex] as $k => $r) {
+                if (strcmp($region, $r) == 0) {
+                    $regionIndex = $k;
+                    break;
+                }
+            }
+
+            $f->getElement('cb_state')->setValueList($region_list[$countryIndex]);
+            if ($regionIndex != null) {
+                $f->set('cb_state', $regionIndex);
+            }
+            $f->getElement('cb_state')->js(true)->parent()->parent()->show();
+        } else {
+            $f->getElement('cb_state')->js(true)->parent()->parent()->hide();
+        }
+        if($countryIndex!=null){
+            $f->set('cb_country', $countryIndex);
+        }
+        else {
+            $f->set('cb_country', 236);
+        }
+
+        $f->getElement('cb_country')->js('change', $f->js()->atk4_form('reloadField', 'cb_state', array(
+                $this->api->url(),
+                'country' => $f->getElement('cb_country')->js()->val())
+        ));
 
         $f->getElement('cb_zip')->setProperty('size', 40)->setProperty('style','text-transform:uppercase;');
         $f->getElement('cb_itemnumber')->setProperty('cols', 42);
@@ -192,7 +173,7 @@ class page_register extends Page
 
             $f->model->set('cb_dealno',  $cbdealno);
             $f->model->set('firstname', $f->get('cb_storeno'));
-            $f->model->set('lastname', " - ".$f->get('cb_storenumber')." ".$f->get('cb_city').", ".$f->get('cb_state'));
+            $f->model->set('lastname', " - ".$f->get('cb_storenumber')." ".$f->get('cb_city').", ".$region_list[$f->get('cb_country')][$f->get('cb_state')]);
             $f->model->set('username', $cbdealno);
             $f->model->set('password', $pass);
             $f->model->set('id', max(intval($cbdealno_comprof), intval($cbdealno_storeregister)) + 1);

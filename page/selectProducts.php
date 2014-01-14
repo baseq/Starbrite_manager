@@ -39,10 +39,19 @@ class page_selectProducts extends Page
             $ids[] = $_GET['Add'];
             $value = '';
             $prefix = '';
+            if($productkey!='') {
+                $value = $productkey;
+                $prefix = ',';
+            }
             foreach ($ids as $id) {
                 $model->load($id);
                 $pk = $model->getProductKey();
-                if ($pk) {
+                if (isset($productskeys)) {
+                    if (!in_array($pk, $productskeys)) {
+                        $value .= $prefix . $pk;
+                        $prefix = ',';
+                    }
+                } else {
                     $value .= $prefix . $pk;
                     $prefix = ',';
                 }
