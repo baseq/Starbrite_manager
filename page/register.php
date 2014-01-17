@@ -6,9 +6,12 @@ class page_register extends Page
     function init()
     {
         parent::init();
-        $this->add('HtmlElement')
+        $this->api->template->setHTML('logo', '<div style="margin-top:-10px;"><img src="templates/default/images/starlink.png" />
+        <p style="margin-bottom:-10px;"><strong>Hey Star brite Dealers!<br />Star Link is a dealer directory program that sends customers right to your store. Star Link is an easy way to improve your bottom line.<br />Complete the form below, list the products you stock, and you will be contacted by a Star brite representative for verification.</strong></p>
+        </div>');
+/*        $this->add('HtmlElement')
             ->setElement('h1')
-            ->set('Register');
+            ->set('Register');*/
         $this->js(true)->_load('wizard/page_wizard');
         $model = $this->setModel('NewStoreRegister');
 

@@ -64,15 +64,19 @@ class Frontend extends ApiFrontend
             ;
         }*/
         if ($this->auth->isLoggedIn()) {
-        	$menu->addMenuItem('retailers', 'Starlink');
-        	$menu->sub(); 
-            $menu->addMenuItem('pendingstarlink', 'Pending Starlink');
-            $menu->end();
-            $menu->addMenuItem('rebates', 'Rebates');
-            $menu->addMenuItem('logout', 'Logout');
-           
+            if ($this->page != 'register' && $this->page != 'thankyou') {
+                $menu->addMenuItem('retailers', 'Starlink');
+                $menu->sub();
+                $menu->addMenuItem('pendingstarlink', 'Pending Starlink');
+                $menu->end();
+                $menu->addMenuItem('starlinkproducts', 'Products');
+                $menu->addMenuItem('rebates', 'Rebates');
+                $menu->addMenuItem('logout', 'Logout');
+            }
         } else {
-        	$menu->addMenuItem('register', 'Register');
+        	if ($this->page != 'register' && $this->page != 'thankyou') {
+                $menu->addMenuItem('register', 'Register');
+            }
         }
         
         $auth->check();
